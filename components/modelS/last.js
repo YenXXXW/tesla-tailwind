@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 const Last =() =>{
     return(
@@ -22,16 +23,16 @@ const Last =() =>{
             </div>            
         </div>
         <div className="max-w-3xl text-gray-600 text-sm text-center mx-auto">
-            Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change.<a href="/"> Learn more about Standard Connectivity and any limitations.</a>
+            Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change.<Link href="/"><a> Learn more about Standard Connectivity and any limitations.</a></Link>
             <div className="my-20 flex flex-col md:flex-row justify-between">
-            <a className="no-underline">Tesla © 2022</a>
-            <a className="no-underline">Privacy & Legal</a>
-            <a className="no-underline">Vehicle Recalls</a>
-            <a className="no-underline">Contact</a>
-            <a className="no-underline">Carrers</a>
-            <a className="no-underline">News</a>
-            <a className="no-underline">Engage</a>
-            <a className="no-underline">Locations</a>
+            <Link href={'/'}><a className="no-underline">Tesla © 2022</a></Link>
+            <Link href={'/'}><a className="no-underline">Privacy & Legal</a></Link>
+            <Link href={'/'}><a className="no-underline">Vehicle Recalls</a></Link>
+            <Link href={'/'}><a className="no-underline">Contact</a></Link>
+            <Link href={'/'}><a className="no-underline">Carrers</a></Link>
+            <Link href={'/'}><a className="no-underline">News</a></Link>
+            <Link href={'/'}><a className="no-underline">Engage</a></Link>
+            <Link href={'/'}><a className="no-underline">Locations</a></Link>
             </div>
         </div>
         </>

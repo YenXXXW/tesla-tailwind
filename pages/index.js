@@ -17,7 +17,7 @@ export default function Home() {
         <meta name="description" content="Tesla clone by wai" />
         <link rel="icon" href="/tesla-logo-red.png" />
       </Head>
-      
+      <Navbar fill={'black'} position='fixed'/>
       
       <IndexComp photo={'/index/1.jpg'} model={'Model 3'} order={true}/>
       <IndexComp photo={'/index/2.jpg'} model={'Model Y'} order={true}/>

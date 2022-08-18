@@ -22,7 +22,7 @@ function ModelS() {
                 <meta name="description" content="Tesla clone by wai" />
                 <link rel="icon" href="/tesla-logo-red.png" />
             </Head>
-            <Navbar fill='black' position={'absolute'}/>
+           
             <div className="h-screen relative">
                 <Image src={'/ModelS/S1.jpg'} layout='fill' objectFit="cover"/>
                 <div className="w-full absolute top-[100px]">

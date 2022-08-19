@@ -62,7 +62,7 @@ const Navbar = ({fill , position }) => {
             
             {/* Drawer */}
             <div className={menu ? 'fixed top-0 right-0 h-screen w-[300px] bg-white ease-in duration-500 ':
-                            'fixed right-[100%] top-0 ease-out duration-500 '}>
+                            'fixed  top-0 right-[100%] ease-in duration-500 '}>
                 <div className='pt-10 ml-[250px]' onClick={()=>setMenu(false)}>
                     <AiOutlineClose size={20} className='cursor-pointer'/>
                 </div>

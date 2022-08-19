@@ -64,7 +64,7 @@ function IndexComp({photo , model , order }) {
             <p className={model === 'Solar Panels'? 'text-center text-lg' : 'hidden' }>Lowest cost Solar Panels in America</p>
             <p className={model === 'Solar Roof'?  'text-center  text-lg' : 'hidden' }>Produce Clean Energy From Your Roof</p>
         </motion.div>
-        <div className="bottom-[60px] absolute w-full  flex flex-col md:flex-row md:px-[200px] md:justify-between">
+        <div className="bottom-[20%] sm:bottom-[15%] absolute w-full  flex flex-col md:flex-row md:px-[200px] md:justify-between">
             <div className="py-2 text-center mx-auto w-5/6 px-5 rounded-full bg-gray-900 text-white md:w-[200px] lg:w-2/5">
                 Custom Order
             </div>

@@ -5,11 +5,11 @@ const FirstPage = () => {
         <>
         <div className="h-screen relative bg-red-400">
             <Image src={'/modelS/S1.jpg'} layout='fill' objectFit="cover"/>
-            <div className="w-full absolute top-[100px]">
+            <div className="w-full absolute top-[15%]">
                 <h1 className="text-center">Model S</h1>
                 <p className="text-center text-xl">Plaid</p>
             </div>
-            <div className="absolute w-full bottom-[15%] text-white font-bold  tracking-wide flex flex-col
+            <div className="absolute w-full bottom-[20%] xs:bottom-[15%] text-white font-bold  tracking-wide flex flex-col
              px-3 lg:flex-row lg:px-48">
                 <div className="flex justify-around md:w-[70%] md:mx-auto">
                     <div>

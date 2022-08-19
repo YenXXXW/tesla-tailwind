@@ -54,7 +54,7 @@ function IndexComp({photo , model , order }) {
     },[ inView1])
     return (
         <>
-        <div className='relative z-1 h-[720px] w-screen' ref={ref1}>
+        <div className='relative z-1 h-screen' ref={ref1}>
             <Image src={photo} layout='fill' objectFit='cover' />
             
         <motion.div variants={GeneralVariants} initial='hidden' animate={controls}

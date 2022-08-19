@@ -12,7 +12,7 @@ export default function Home() {
 
 
   return (
-    <div className='w-screen overflow-x-hidden'>
+    <div>
       <Head>
         <title>Electric Cars, Solar & Clean Energy</title>
         <meta name="description" content="Tesla clone by wai" />

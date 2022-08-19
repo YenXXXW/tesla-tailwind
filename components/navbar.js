@@ -10,7 +10,7 @@ const Navbar = ({fill , position }) => {
     const [menu ,setMenu] = useState(false)
 
     return (        
-        <div className={`z-10 flex w-full xl:grid justify-between xl:grid-cols-4 pt-4 h-8 ${position} bg-red-300`}>
+        <div className={`z-10 flex w-full xl:grid justify-between xl:grid-cols-4 pt-4 h-8 ${position}`}>
             <div className="pl-20 h-3 pt-2">
             <svg xmlns= 'http://www.w3.org/2000/svg'  className='cursor-pointer'
                  onClick={()=>{router.push('/')}}>

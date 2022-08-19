@@ -11,7 +11,7 @@ const Navbar = ({fill , position }) => {
 
     return (        
         <div className={`z-10 flex w-full xl:grid justify-between xl:grid-cols-4 pt-4 h-8 ${position}`}>
-            <div className="pl-20 h-3 pt-2">
+            <div className="pl-1 sm:pl-20 h-3 pt-2">
             <svg xmlns= 'http://www.w3.org/2000/svg'  className='cursor-pointer'
                  onClick={()=>{router.push('/')}}>
                     <path fill={fill} d='M0 0 h14 l-2 2 h-4 v8 h-2 v-8 h-4 l-2 -2' />

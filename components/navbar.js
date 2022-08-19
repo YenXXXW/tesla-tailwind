@@ -51,9 +51,12 @@ const Navbar = ({fill , position }) => {
                 <p>Account</p>
                 <p onClick={()=>setMenu(true)}>Menu</p>
             </div>
-            <div className='mr-3 xs:mr-0 xl:hidden font-bold  h-8 pt-1 px-4 rounded-xl cursor-pointer  bg-[#e0e2e7] ' onClick={()=>setMenu(true)}>
-                Menu
+            <div className='ml-auto w-[85px] bg-red-600 pr-3 ' >
+                <div className=' xs:mr-0 xl:hidden font-bold  h-8 pt-1 px-4 rounded-xl cursor-pointer  bg-[#e0e2e7] ' onClick={()=>setMenu(true)}>
+                    Menu
+                </div>
             </div>
+            
             {/* Blur */}
             <div className={menu ? ' fixed top-0 right-0 h-screen w-full backdrop-blur-sm bg-black/30' : ''} />
             

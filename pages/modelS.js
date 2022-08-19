@@ -13,6 +13,7 @@ import Specs from "../components/modelS/spec";
 import Last from "../components/modelS/last";
 import Safety from "../components/modelS/safety";
 import Test from "../components/modelS/test";
+import FirstPage from "../components/modelS/firstPage";
 
 function ModelS() {
     return (
@@ -22,7 +23,8 @@ function ModelS() {
                 <meta name="description" content="Tesla clone by wai" />
                 <link rel="icon" href="/tesla-logo-red.png" />
             </Head>
-            <Navbar fill='black' position={'absolute'}/>                       
+            <Navbar fill='black' position={'absolute'}/>           
+            <FirstPage />            
         </div>
     );
 }

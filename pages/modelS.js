@@ -22,11 +22,7 @@ function ModelS() {
                 <meta name="description" content="Tesla clone by wai" />
                 <link rel="icon" href="/tesla-logo-red.png" />
             </Head>
-            <Navbar fill='black' position={'absolute'}/>
-
-            
-            
-            
+            <Navbar fill='black' position={'absolute'}/>                       
         </div>
     );
 }

@@ -12,14 +12,14 @@ export default function Home() {
 
 
   return (
-    <div>
+    <div className='w-screen overflow-x-hidden'>
       <Head>
         <title>Electric Cars, Solar & Clean Energy</title>
         <meta name="description" content="Tesla clone by wai" />
         <link rel="icon" href="/tesla-logo-red.png" />
       </Head>
       
-      
+      <Navbar fill='black' position={'fixed'}/>
       <IndexComp photo={'/index/1.jpg'} model={'Model 3'} order={true}/>
       <IndexComp photo={'/index/2.jpg'} model={'Model Y'} order={true}/>
       <IndexComp photo={'/index/3.jpg'} model={'Model S'} order={true}/>

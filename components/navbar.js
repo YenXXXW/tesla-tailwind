@@ -11,7 +11,7 @@ const Navbar = ({fill , position }) => {
 
     return (        
         <div className={`z-10 flex w-full xl:grid justify-between xl:grid-cols-4 pt-4 h-8 ${position}`}>
-            <div className="pl-1 sm:pl-20 h-3 pt-2">
+            <div className="pl-1 sm:pl-15 h-3 pt-2">
             <svg xmlns= 'http://www.w3.org/2000/svg'  className='cursor-pointer'
                  onClick={()=>{router.push('/')}}>
                     <path fill={fill} d='M0 0 h14 l-2 2 h-4 v8 h-2 v-8 h-4 l-2 -2' />
@@ -51,7 +51,7 @@ const Navbar = ({fill , position }) => {
                 <p>Account</p>
                 <p onClick={()=>setMenu(true)}>Menu</p>
             </div>
-            <div className='ml-auto w-[85px] bg-red-600 pr-3 ' >
+            <div className='ml-auto w-[85px] pr-3 ' >
                 <div className=' xs:mr-0 xl:hidden font-bold  h-8 pt-1 px-4 rounded-xl cursor-pointer  bg-[#e0e2e7] ' onClick={()=>setMenu(true)}>
                     Menu
                 </div>

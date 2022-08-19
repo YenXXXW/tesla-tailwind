@@ -58,7 +58,7 @@ function IndexComp({photo , model , order }) {
             <Image src={photo} layout='fill' objectFit='cover' />
             
         <motion.div variants={GeneralVariants} initial='hidden' animate={controls}
-        className=' px-5 py-2  absolute top-[100px] w-full '>
+        className=' px-5 py-2  absolute top-[15%] w-full '>
             <h1 className="font-bold text-center  ">{model}</h1>
             <p className={order ? 'text-center  text-lg' : 'hidden'}>Order online for <a>Touchless Delivery</a></p>
             <p className={model === 'Solar Panels'? 'text-center text-lg' : 'hidden' }>Lowest cost Solar Panels in America</p>

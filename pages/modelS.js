@@ -16,7 +16,7 @@ import Test from "../components/modelS/test";
 
 function ModelS() {
     return (
-        <div className="overflow-x-hidden">
+        <div className="w-full">
             <Head>
                 <title>Model S | Tesla</title>
                 <meta name="description" content="Tesla clone by wai" />
@@ -24,7 +24,7 @@ function ModelS() {
             </Head>
             <Navbar fill='black' position={'absolute'}/>
             <div className="h-screen relative">
-                <Image src={'/ModelS/S1.jpg'} layout='fill' objectFit="cover"/>
+                <Image src={'/modelS/S1.jpg'} layout='fill' objectFit="cover"/>
                 <div className="w-full absolute top-[100px]">
                     <h1 className="text-center">Model S</h1>
                     <p className="text-center text-xl">Plaid</p>

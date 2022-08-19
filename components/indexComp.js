@@ -54,7 +54,7 @@ function IndexComp({photo , model , order }) {
     },[ inView1])
     return (
         <>
-        <div className='relative z-1 h-screen w-screen' ref={ref1}>
+        <div className='relative z-1 h-[720px] w-screen' ref={ref1}>
             <Image src={photo} layout='fill' objectFit='cover' />
             
         <motion.div variants={GeneralVariants} initial='hidden' animate={controls}
@@ -65,11 +65,11 @@ function IndexComp({photo , model , order }) {
             <p className={model === 'Solar Roof'?  'text-center  text-lg' : 'hidden' }>Produce Clean Energy From Your Roof</p>
         </motion.div>
         <div className="flex flex-col   sm:flex-row sm:justify-between absolute bottom-[80px] sm:w-[650px] left-0 right-0 ml-auto mr-auto ">
-            <motion.div className="cursor-pointer bg-gray-600 py-[9px] w-[400px] left-0 right-0 ml-auto mr-auto  sm:w-[300px] rounded-full text-white text-center"
+            <motion.div className="cursor-pointer bg-gray-600 py-[9px] w-5/6 left-0 right-0 ml-auto mr-auto  sm:w-2/5 rounded-full text-white text-center"
             variants={LeftVariants} initial='hidden' animate={controls}>
                 Custom Order
             </motion.div>
-            <motion.div className="cursor-pointer w-[400px] left-0 right-0 ml-auto mr-auto mt-3 sm:mt-0 bg-gray-100 py-[9px] sm:w-[300px] rounded-full  text-center"
+            <motion.div className="cursor-pointer w-5/6 left-0 right-0 ml-auto mr-auto mt-3 sm:mt-0 bg-gray-100 py-[9px] sm:w-2/5 rounded-full  text-center"
             variants={RightVariants} initial='hidden' animate={controls}>
                 Existing Inventory
             </motion.div>

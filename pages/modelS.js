@@ -63,17 +63,7 @@ function ModelS() {
             <div className="w-full h-screen relative">
                 <Image src='/modelS/S2.jpg' layout="fill" objectFit="cover" />
             </div>
-            <VideoSelect />
-            <StayConnected />
-            <BeyondLudicrious />
-            <ElectricPowerTrain />
-            <Exterior />
-            <Rentless />
-            <Range />
-            <Safety />
-            <Autopilot />
-            <Specs />
-            <Last />
+            
             
         </div>
     );

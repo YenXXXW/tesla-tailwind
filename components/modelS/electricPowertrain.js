@@ -90,8 +90,8 @@ function ElectricPowerTrain() {
                 </div>
             <span className=" hidden  xl:w-[1170px] 2xs:flex mb-5 lg:mx-auto text-center ">
                 
-                <div className={image === '/modelS/S14.jpg' ? " px-4 border-t-4 border-black  md:w-[500px] mr-[70px] lg:w-[550px]" :
-                "px-4 border-t-2 border-black  md:w-[500px] mr-[70px] lg:w-[550px] opacity-40"} onClick={()=>{setImage('/modelS/S14.jpg')}}>
+                <div className={image === '/modelS/S14.jpg' ? " px-4 border-t-4 border-black  md:w-[500px] mr-[70px] lg:w-[550px]  cursor-pointer" :
+                "px-4 border-t-2 border-black  md:w-[500px] mr-[70px] lg:w-[550px] opacity-40 cursor-pointer"} onClick={()=>{setImage('/modelS/S14.jpg')}}>
                     <h3 className="mt-6 text-start text-xl font-bold my-4">Model S</h3>
                     <p className="max-w-xl  text-start ">Dual Motor All-Wheel Drive unlocks more range than any other vehicle in our current lineup, with insane power and maximum contols.</p>
                     <div className="my-6 flex justify-between md:w-3/4">
@@ -109,8 +109,8 @@ function ElectricPowerTrain() {
                         </div>
                     </div>
                 </div>
-                <div className={image === '/modelS/S6.jpg' ? "px-4 border-t-4 border-black  md:w-[500px] lg:w-[550px]" :
-                "px-4 border-t-2 border-black  md:w-[500px]  lg:w-[550px] opacity-40"} onClick={()=>{setImage('/modelS/S6.jpg')}}>
+                <div className={image === '/modelS/S6.jpg' ? "px-4 border-t-4 border-black  md:w-[500px] lg:w-[550px] cursor-pointer" :
+                "px-4 border-t-2 border-black  md:w-[500px]  lg:w-[550px] opacity-40 cursor-pointer"} onClick={()=>{setImage('/modelS/S6.jpg')}}>
                     <h3 className="text-start mt-6 text-xl font-bold my-4">Model S Plaid</h3>
                     <p className="max-w-xl text-start">Maintain 1,000+ horsepower all the way to 200 mph with Tri-Motor All-Wheel Drive, featuring torque vectoring and three independent carbon-sleeved rotors.</p>
                     <div className="my-6 flex justify-around">

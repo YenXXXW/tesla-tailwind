@@ -1,111 +1,120 @@
-import { useRouter } from 'next/router'
-import Link from 'next/link'
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
-import { BsGlobe } from 'react-icons/bs'
-import { useState } from 'react';
+import Image from "next/image";
+import { motion , useAnimation } from 'framer-motion'
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
-const Navbar = ({fill , position }) => {
+function StayConnected() {
 
-    const router =useRouter()
-    const [menu ,setMenu] = useState(false)
+    const variant = {
+        hidden : {
+            y :50 , opacity : 0 ,
+        },
+        visible : {
+            y : 0 , opacity : 1 ,
+            transition : {
+                delay : 0.2
+            }
+        }
+    }
+    const variant1 = {
+        hidden : {
+            y :50 , opacity : 0 ,
+        },
+        visible : {
+            y : 0 , opacity : 1 ,
+            transition : {
+                delay : 0.4
+            }
+        }
+    }
 
-    return (        
-        <div className={`z-10 flex w-full xl:grid justify-between xl:grid-cols-4 pt-4 h-8 ${position} pr-4 xs:pr-0`}>
-            <div className="pl-1 sm:pl-14 h-3 pt-2 md:pl-20">
-            <svg xmlns= 'http://www.w3.org/2000/svg'  className='cursor-pointer'
-                 onClick={()=>{router.push('/')}}>
-                    <path fill={fill} d='M0 0 h14 l-2 2 h-4 v8 h-2 v-8 h-4 l-2 -2' />
-                    <path fill={fill} d='M28 0 h14 l-2 2 h-10 l-2 -2'/>
-                    <path fill={fill} d='M28 4 h14 l-2 2 h-10 l-2 -2'/>
-                    <path fill={fill} d='M28 8 h14 l-2 2 h-10 l-2 -2'/>
-                    <path fill={fill} d='M58 4 v-2 h10 l2 -2 h-14 v4 h14 v6
-                    h-14 l2 -2 h10 v-2 h-12 v-2'/>
-                    <path fill={fill} d='M84 0 h2 v8 h10 l-2 2 h-10'/>
-                    <path fill={fill} d='M108 0 h14 l-2 2 h-10 l-2 -2'/>
-                    <path fill={fill} d='M108 4 h14 v6 h-2 v-4 h-10 v4 h-2'/>
-                </svg>
+    const { ref : ref1, inView : inView1} = useInView()
+    const { ref : ref2, inView : inView2} = useInView()
+    const { ref : ref3, inView : inView3} = useInView()
+    const { ref : ref4, inView : inView4} = useInView()
+    const { ref : ref5, inView : inView5} = useInView()
+    const { ref : ref6, inView : inView6} = useInView()
+
+    const Controls1 = useAnimation()
+    const Controls2 = useAnimation()
+    const Controls3 = useAnimation()
+    const Controls4 = useAnimation()
+    const Controls5 = useAnimation()
+    const Controls6 = useAnimation()
+ 
+    useEffect(()=>{
+        if(inView1){
+            Controls1.start('visible')
+        }if(!inView1){
+            Controls1.start('hidden')
+        }
+        if(inView2){
+            Controls2.start('visible')
+        }if(!inView2){
+            Controls2.start('hidden')
+        }
+        if(inView3){
+            Controls3.start('visible')
+        }if(!inView3){
+            Controls3.start('hidden')
+        }
+        if(inView4){
+            Controls4.start('visible')
+        }if(!inView4){
+            Controls4.start('hidden')
+        }
+        if(inView5){
+            Controls5.start('visible')
+        }if(!inView5){
+            Controls5.start('hidden')
+        }
+        if(inView6){
+            Controls6.start('visible')
+        }if(!inView6){
+            Controls6.start('hidden')
+        }
+    },[inView1, inView2 ,inView3 , inView4 , inView5 , inView6])
+
+    return ( 
+        <div className="bg-black relative w-full py-24">
+            <div className="flex flex-col md:flex-row" ref={ref1}>
+                <motion.div className="md:w-1/2 md:ml-[13%]" 
+                variants={variant} initial='hidden' animate={Controls1} >
+                    <Image src='/modelS/S3.jpg' width='600px' height={'300px'}/>
+                </motion.div>
+                <motion.div variants={variant1} initial='hidden' animate={Controls2} 
+                className=" pb-14 text-white ml-8 md:ml-0 md:w-1/2 md:pb-0  flex flex-col my-auto ">
+                    <p className="mb-3 mt-2 font-bold " ref={ref2}>Stay Connected</p>
+                    <p className="w-[90%]">Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.</p>
+                </motion.div>
             </div>
-            <div className="hidden xl:col-span-2 xl:flex justify-between xl:items-center
-             xl:px-10  lg:font-semibold">
-                <Link href='/modelS' ><p className='no-underline cursor-pointer'>
-                    Model S</p>
-                </Link>
-                <Link href='/model3'><p className='no-underline cursor-pointer'>
-                    Model 3</p>
-                </Link>
-                <Link href='/modelX'><p className='no-underline cursor-pointer'>
-                    Model X</p>
-                </Link>
-                <Link href='/modelY'><p className='no-underline cursor-pointer'>
-                    Model Y</p>
-                </Link>
-                <Link href='/solarPanels'><p className='no-underline cursor-pointer'>
-                    Solar Panels</p>
-                </Link>
-                <Link href='/solarRoof'><p className='no-underline cursor-pointer'>
-                    Solar Roof</p>
-                </Link>
+            <div className="flex flex-col md:flex-row-reverse"  ref={ref3}>
+                <motion.div variants={variant} initial='hidden' animate={Controls3} 
+                className='mr-[10%]'>
+                    <video src='/modelS/Sv6.mp4' autoPlay loop defaultmuted='true' width='600px' />
+                </motion.div>
+                
+                <motion.div variants={variant1} initial='hidden' animate={Controls4} 
+                className="pb-14 text-white ml-8 md:ml-[13%] md:w-[43%] md:pb-0  flex flex-col my-auto ">
+                    <p className=' mt-2 mb-3 font-bold' ref={ref4}>Immersive Sound</p>
+                    <p className="  w-[90%]">A 22-speaker, 960-watt audio system with Active Road Noise Reduction offers immersive listening and studio-grade sound quality.</p>
+                </motion.div>
+                
+                
             </div>
-            <div className='hidden  pr-20 xl:pl-[140px] xl:pr-5 xl:flex  justify-between items-center font-semibold cursor-pointer'>
-                <p>Shop</p>
-                <p>Account</p>
-                <p onClick={()=>setMenu(true)}>Menu</p>
-            </div>
-            
-                <div className='  xl:hidden font-bold  h-8 pt-1 px-4 rounded-xl cursor-pointer  bg-[#e0e2e7] ' onClick={()=>setMenu(true)}>
-                    Menu
-                </div>
-            
-            
-            {/* Blur */}
-            <div className={menu ? ' fixed top-0 right-0 h-screen w-full backdrop-blur-sm bg-black/30' : ''} />
-            
-            {/* Drawer */}
-            <div className={menu ? 'fixed top-0 right-0 h-screen w-[300px] bg-white ease-in duration-500 ':
-                            'fixed  top-0 -right-[100%] ease-in duration-500 '}>
-                <div className='pt-10 ml-[250px]' onClick={()=>setMenu(false)}>
-                    <AiOutlineClose size={20} className='cursor-pointer'/>
-                </div>
-                <div className='flex flex-col ml-10 text-lg font-bold xl:hidden'>
-                    <Link href={'/modelS'} >
-                        <p className='no-underline  my-3 cursor-pointer'>Model S</p>
-                    </Link>
-                    <Link href={'/model3'}>
-                        <p className='no-underline  my-3 cursor-pointer'>Model 3</p>
-                    </Link>
-                    <Link href={'/modelX'}>
-                        <p className='no-underline my-3 cursor-pointer'>Model X</p>
-                    </Link>
-                    <Link href={'/modelY'}>
-                        <p className='no-underline my-3 cursor-pointer'>Model Y</p>
-                    </Link>
-                    <Link href={'/solarPanels'}>
-                        <p className='no-underline my-3 cursor-pointer'>Solar Panels</p>
-                    </Link>
-                    <Link href={'/solarRoof'}>
-                        <p className='no-underline my-3 cursor-pointer'>Solar Roof</p>
-                    </Link>
-                </div>
-                <div className='flex flex-col ml-10 text-lg font-bold'>
-                    <Link href='/'>
-                        <p className='no-underline my-3 cursor-pointer'>Eisting Inventory</p>
-                    </Link>
-                    <Link href='/'>
-                        <p className='no-underline my-3 cursor-pointer'>Used Inventory</p>
-                    </Link>
-                    <Link href='/'>
-                        <p className='no-underline my-3 cursor-pointer'>Trade-In</p>
-                    </Link>
-                    <Link href='/'>
-                        <p className='no-underline my-3 cursor-pointer'>Test Drive</p>
-                    </Link>
-                                  
-                </div>
-                <div className='ml-10 mt-5'>
-                    <p className='flex items-center font-bold'>
-                        < BsGlobe size={20} className='mr-3'/>United States
-                    </p>
-                    <p className='ml-[30px]'>English</p>
-                </div>
+            <div className="flex flex-col md:flex-row" ref={ref5}>
+                <motion.div variants={variant} initial='hidden' animate={Controls5} 
+                 className=" md:w-1/2 md:ml-[13%]">
+                    <Image src='/modelS/S4.jpg' width={'600px'} height='300px'/>
+                </motion.div>
+                <motion.div variants={variant1} initial='hidden' animate={Controls6} 
+                 className="pb-14 text-white ml-8 md:ml-0 md:w-1/2 md:pb-0  flex flex-col my-auto ">
+                    <p className="mt-2 mb-3 font-bold" ref={ref6}>Stay Connected</p>
+                    <p className="w-[90%]">Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.</p>
+                </motion.div>
             </div>
         </div>
+    );
+}
+
+export default StayConnected;

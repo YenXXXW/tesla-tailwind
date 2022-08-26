@@ -1,57 +1,148 @@
 import Image from "next/image";
+import { motion , useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 const Autopilot = () => {
+
+    const variant1 ={
+        hidden : {
+            y: 50 , opacity : 0
+        }, 
+        visible : {
+            y : 0 , opacity : 1,
+            transition : {
+                delay : 0.2
+            }
+        }
+    }
+    const variant2 ={
+        hidden : {
+            y: 50 , opacity : 0
+        }, 
+        visible : {
+            y : 0 , opacity : 1,
+            transition : {
+                delay : 0.3
+            }
+        }
+    }
+    const variant3 ={
+        hidden : {
+            y: 50 , opacity : 0
+        }, 
+        visible : {
+            y : 0 , opacity : 1,
+            transition : {
+                delay : 0.4
+            }
+        }
+    }
+    const variant4 ={
+        hidden : {
+            y: 50 , opacity : 0
+        }, 
+        visible : {
+            y : 0 , opacity : 1,
+            transition : {
+                delay : 0.5
+            }
+        }
+    }
+
+    const TopicControls = useAnimation()        
+    const { ref : TopicRef , inView : TopicInView  } = useInView()
+
+    const specControls = useAnimation()
+    const { ref : specRef, inView : specInView  } = useInView()
+
+    useEffect(()=>{
+        if (TopicInView){
+            TopicControls.start("visible")
+        }
+        if(!TopicInView){
+            TopicControls.start('hidden')
+        }
+        if (specInView){
+            specControls.start("visible")
+        }
+        if(!specInView){
+            specControls.start('hidden')
+        }
+       
+    },[TopicInView , specInView])
+
+
     return (
         <>
-        <div className="relative h-[460px]">
+        <div className="relative h-[460px] py-10">
             <Image src='/modelS/36.jpg'layout="fill" objectFit="cover"/>
             <div className="absolute w-full bottom-10 lg:top-10">
-                <div className="flex flex-row text-center justify-between w-1/2 mx-auto lg:flex-col lg:ml-10 lg:text-start">
-                    <div className="lg:mb-10">
-                        <p className="text-4xl">360°</p>
-                        <p className="lg:hidden text-sm">Degrees</p>
-                        <p className="lg:hidden text-sm">of Visibility</p>
-                        <p className="hidden lg:block text-sm">Rear, side and forward-facing cameras</p>
-                        <p className="hidden lg:block text-sm">provide maximum visibility</p>
-                    </div>
-                    <div className="lg:mb-10">
-                        <p className="text-4xl">250 m</p>
-                        <p className="lg:hidden text-sm">of Powerful</p>
-                        <p className="lg:hidden text-sm">Visual Processing</p>
-                        <p className="hidden lg:block text-sm">Powerful visual processing at up to 250</p>
-                        <p className="hidden lg:block text-sm">meters of range</p>
-                    </div>
-                    <div>
-                        <svg xmlns= 'http://www.w3.org/2000/svg' className='w-[50px] h-[50px]'>
+                <div className="flex flex-row text-center justify-between  mx-auto w-[75%] xs:w-[60%] md:w-1/2 lg:flex-col lg:ml-10 lg:text-start" ref={TopicRef}>
+                    <motion.div variants={variant1} initial='hidden' animate={TopicControls}
+                     className="lg:mb-10">
+                        <p className="text-xl md:text-4xl font-bold">360°</p>
+                        <p className="lg:hidden text-xs md:text-sm mt-3">Degrees</p>
+                        <p className="lg:hidden text-xs md:text-sm">of Visibility</p>
+                        <p className="hidden lg:block text-xs md:text-sm">Rear, side and forward-facing cameras</p>
+                        <p className="hidden lg:block text-xs md:text-sm">provide maximum visibility</p>
+                    </motion.div>
+                    <motion.div  variants={variant2} initial='hidden' animate={TopicControls}
+                     className="lg:mb-10">
+                        <p className="text-xl md:text-4xl font-bold ">250 m</p>
+                        <p className="lg:hidden text-xs md:text-sm mt-3">of Powerful</p>
+                        <p className="lg:hidden text-xs md:text-sm">Visual Processing</p>
+                        <p className="hidden lg:block text-xs md:text-sm">Powerful visual processing at up to 250</p>
+                        <p className="hidden lg:block text-xs  md:text-sm">meters of range</p>
+                    </motion.div>
+                    <motion.div  variants={variant3} initial='hidden' animate={TopicControls}>
+                        <svg xmlns= 'http://www.w3.org/2000/svg' className='w-[25px] h-[25px] md:hidden'>
+                            <circle fill='black' stroke="black" strokeWidth={'1px'} r="7" cx="15" cy="15"> </circle>
+                            <circle fill='white' stroke="white" strokeWidth={'1px'} r="2" cx="12" cy="12"> </circle>            
+                            <circle fill='none' stroke="black" strokeWidth={'1px'} r="10" cx="15" cy="15"> </circle>
+                            <circle fill='white' stroke="white" strokeWidth={'1px'} r="1" cx="20" cy="20"> </circle>
+                        </svg>  
+                        <svg xmlns= 'http://www.w3.org/2000/svg' className='hidden w-[50px] h-[50px] md:block'>
                             <circle fill='black' stroke="black" strokeWidth={'1px'} r="15" cx="25" cy="25"> </circle>
                             <circle fill='white' stroke="white" strokeWidth={'1px'} r="5" cx="20" cy="20"> </circle>            
                             <circle fill='none' stroke="black" strokeWidth={'1px'} r="20" cx="25" cy="25"> </circle>
                             <circle fill='white' stroke="white" strokeWidth={'1px'} r="3" cx="30" cy="30"> </circle>
                         </svg>   
-                        <p className="lg:hidden text-xs">Tesla</p> 
-                        <p className="lg:hidden text-sm">Vision</p> 
-                        <p className="hidden lg:block text-sm">Tesla Vision detects nearby cars, helps</p>
-                        <p className="hidden lg:block text-sm">prevent potential collisions and assists</p>
-                        <p className="hidden lg:block text-sm">with parking</p>
-                    </div>
+                        <p className="lg:hidden text-xs mt-3">Tesla</p> 
+                        <p className="lg:hidden text-xs md:text-sm">Vision</p> 
+                        <p className="hidden lg:block text-xs md:text-sm">Tesla Vision detects nearby cars, helps</p>
+                        <p className="hidden lg:block text-xs md:text-sm">prevent potential collisions and assists</p>
+                        <p className="hidden lg:block text-xs md:text-sm">with parking</p>
+                    </motion.div>
                 </div>
             </div>
             
         </div>
         <div className="lg:flex mb-5">
-            <div className="ml-10 my-8 lg:ml-[100px] xl:ml-[150px] mr-[100px]">
-                <p className="text-[22px]">Autopilot</p>
-                <h2 className='font-bold mt-2 mb-4'>Future of Driving</h2> 
-                <div className="mt-4 hidden lg:block lg:w-[250px] text-center border-gray-800  border-[4px] rounded-full py-1  hover:bg-gray-800 hover:text-white ">
+            <div className="ml-10 my-8 lg:ml-[100px] xl:ml-[150px] mr-[100px]" ref={TopicRef}>
+                <motion.p className="text-[22px]"
+                 variants={variant1} initial='hidden' animate={TopicControls}>
+                    Autopilot
+                </motion.p>
+                <motion.h2 className='font-bold mt-2 mb-4'
+                 variants={variant2} initial='hidden' animate={TopicControls}>
+                    Future of Driving
+                </motion.h2> 
+                <motion.div  variants={variant4} initial='hidden' animate={TopicControls}
+                 className="mt-4 hidden lg:block lg:w-[250px] text-center border-gray-800  border-[4px] rounded-full py-1  hover:bg-gray-800 hover:text-white ">
                     ORDER NOW
-                </div>               
+                </motion.div>               
             </div>
             <div className="ml-10 text-[18px] max-w-4xl lg:my-auto">
-                <p>Autopilot enables your car to steer, accelerate and brake automatically within its lane under your active supervision, assisting with the most burdensome parts of driving. With over-the-air software updates, the latest enhancements are available instantly.</p>
+                <motion.p
+                 variants={variant3} initial='hidden' animate={TopicControls}>
+                    Autopilot enables your car to steer, accelerate and brake automatically within its lane under your active supervision, assisting with the most burdensome parts of driving. With over-the-air software updates, the latest enhancements are available instantly.
+                </motion.p>
             </div>
-            <div className="my-6 mx-auto w-[90%] text-center border-gray-800  border-[4px] rounded-full py-1 hover:bg-gray-800 hover:text-white md:w-[200px] md:ml-10 lg:hidden">
+            <motion.div  variants={variant4} initial='hidden' animate={TopicControls}
+             className="my-6 mx-auto w-[90%] text-center border-gray-800  border-[4px] rounded-full py-1 hover:bg-gray-800 hover:text-white md:w-[200px] md:ml-10 lg:hidden">
                 ORDER NOW
-            </div>
+            </motion.div>
         </div>
         </>
     );

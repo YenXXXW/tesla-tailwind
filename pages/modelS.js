@@ -14,8 +14,25 @@ import Last from "../components/modelS/last";
 import Safety from "../components/modelS/safety";
 import Test from "../components/modelS/test";
 import FirstPage from "../components/modelS/firstPage";
+import InteriorTheFuture from "../components/modelS/interiorthefuture";
+import Features from "../components/modelS/features";
+import { useEffect, useState } from "react";
+import Freedom from "../components/modelS/freedom";
 
 function ModelS() {
+
+    const [scrollY , setScrollY] = useState(0)
+
+    useEffect(()=>{
+        const handleScroll =()=>{
+            setScrollY(window.scrollY)
+        }
+        handleScroll()
+        window.addEventListener( 'scroll' , handleScroll);
+        return()=>{
+            window.removeEventListener('scroll' , handleScroll)
+        }
+    })
     return (
         <div className="w-full">
             <Head>
@@ -23,8 +40,26 @@ function ModelS() {
                 <meta name="description" content="Tesla clone by wai" />
                 <link rel="icon" href="/tesla-logo-red.png" />
             </Head>
-            <Navbar fill='black' position={'fixed'}/>           
-            <FirstPage />            
+            <div className={scrollY > 50 ? "hidden" : 'block'}>
+                <Navbar fill='black' position={'fixed'}/>
+            </div>
+                       
+            <FirstPage />
+            <InteriorTheFuture />
+            <VideoSelect />
+            <StayConnected /> 
+            <BeyondLudicrious />
+            <ElectricPowerTrain />
+            <Exterior />
+            <Rentless />
+            <Range />
+            <Freedom />
+            <Safety />
+            <Autopilot />
+            <Features />
+            <Specs />
+            <Last />
+            
         </div>
     );
 }

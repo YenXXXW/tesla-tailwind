@@ -48,8 +48,8 @@ function ElectricPowerTrain() {
         </div>
         <div className="pb-6">
             <div className="relative flex 2xs:hidden overflow-x-hidden">
-                <div className={image === '/modelS/S14.jpg' ? "border-t-4 border-black pl-3 relative left-[0%] w-[250px] ease-in duration-500"
-                : "border-t-2 border-black pl-3 absolute -left-[42%] w-[250px] ease-in duration-500 opacity-40"}  onClick={()=>setImage('/modelS/S14.jpg')}>
+                <div className={image === '/modelS/S14.jpg' ? "border-t-4 border-black pl-3 relative left-[0%] w-[250px] ease-in duration-500 cursor-pointer"
+                : "border-t-2 border-black pl-3 absolute -left-[42%] w-[250px] ease-in duration-500 opacity-40 cursor-pointer"}  onClick={()=>setImage('/modelS/S14.jpg')}>
                     <h4 className='font-bold mt-3'>Model S</h4>
                     <p className="text-sm max-w-xl my-3">Dual Motor All-Wheel Drive unlocks more range than any other vehicle in our current lineup, with insane power and maximum contols.</p>
                     <div>
@@ -68,8 +68,8 @@ function ElectricPowerTrain() {
                     </div>
                 
                 </div>
-                <div className={image === '/modelS/S6.jpg' ? "border-t-4 border-black pl-3 relative left-[30%] w-[250px] ease-in duration-500" : 
-                "border-t-2 border-black pl-3 absolute left-[73%] w-[250px] ease-in duration-500 opacity-40"} onClick={()=>setImage('/modelS/S6.jpg')}>
+                <div className={image === '/modelS/S6.jpg' ? "border-t-4 border-black pl-3 relative left-[30%] w-[250px] ease-in duration-500 cursor-pointer" : 
+                "border-t-2 border-black pl-3 absolute left-[73%] w-[250px] ease-in duration-500 opacity-40 cursor-pointer"} onClick={()=>setImage('/modelS/S6.jpg')}>
                     <h4 className='font-bold mt-3'>Model S Plaid</h4>
                     <p className="text-sm max-w-xl my-3">Maintain 1,000+ horsepower all the way to 200 mph with Tri-Motor All-Wheel Drive, featuring torque vectoring and three independent carbon-sleeved rotors.</p>
                     <div>

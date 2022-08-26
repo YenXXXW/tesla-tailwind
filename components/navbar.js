@@ -10,9 +10,9 @@ const Navbar = ({fill , position }) => {
     const [menu ,setMenu] = useState(false)
 
     return (        
-        <div className={`z-10 flex w-full xl:grid justify-between xl:grid-cols-4 pt-4 h-8 ${position}`}>
-            <div className="pl-1 sm:pl-14 h-3 pt-2 md:pl-20">
-            <svg xmlns= 'http://www.w3.org/2000/svg'  className='cursor-pointer'
+        <div className={`px-2 w-full  pt-3 z-10 ${position} flex`}>
+            <div className='mt-2 h-2 w-40 '>
+                <svg xmlns= 'http://www.w3.org/2000/svg'  className='cursor-pointer'
                  onClick={()=>{router.push('/')}}>
                     <path fill={fill} d='M0 0 h14 l-2 2 h-4 v8 h-2 v-8 h-4 l-2 -2' />
                     <path fill={fill} d='M28 0 h14 l-2 2 h-10 l-2 -2'/>
@@ -25,38 +25,38 @@ const Navbar = ({fill , position }) => {
                     <path fill={fill} d='M108 4 h14 v6 h-2 v-4 h-10 v4 h-2'/>
                 </svg>
             </div>
-            <div className="hidden xl:col-span-2 xl:flex justify-between xl:items-center
-             xl:px-10  lg:font-semibold">
-                <Link href='/modelS' ><p className='no-underline cursor-pointer'>
+            <div className='font-bold w-[70%] xl:hidden'></div>
+                <div className='hidden xl:flex  w-[70%]  justify-around pl-[10%] pr-[5%] '>
+                <Link href='/modelS' ><p className='font-bold no-underline cursor-pointer'>
                     Model S</p>
                 </Link>
-                <Link href='/model3'><p className='no-underline cursor-pointer'>
+                <Link href='/model3'><p className='font-bold no-underline cursor-pointer'>
                     Model 3</p>
                 </Link>
-                <Link href='/modelX'><p className='no-underline cursor-pointer'>
+                <Link href='/modelX'><p className='font-bold no-underline cursor-pointer'>
                     Model X</p>
                 </Link>
-                <Link href='/modelY'><p className='no-underline cursor-pointer'>
+                <Link href='/modelY'><p className='font-bold no-underline cursor-pointer'>
                     Model Y</p>
                 </Link>
-                <Link href='/solarPanels'><p className='no-underline cursor-pointer'>
+                <Link href='/solarPanels'><p className='font-bold no-underline cursor-pointer'>
                     Solar Panels</p>
                 </Link>
-                <Link href='/solarRoof'><p className='no-underline cursor-pointer'>
+                <Link href='/solarRoof'><p className='font-bold no-underline cursor-pointer'>
                     Solar Roof</p>
                 </Link>
             </div>
-            <div className='hidden  pr-20 xl:pl-[140px] xl:pr-5 xl:flex  justify-between items-center font-semibold cursor-pointer'>
-                <p>Shop</p>
-                <p>Account</p>
-                <p onClick={()=>setMenu(true)}>Menu</p>
-            </div>
-            <div className='ml-auto w-[85px] pr-3 ' >
-                <div className=' xs:mr-0 xl:hidden font-bold  h-8 pt-1 px-4 rounded-xl cursor-pointer  bg-[#e0e2e7] ' onClick={()=>setMenu(true)}>
+            <div className='font-bold flex justify-around w-[300px] '>
+                <div className='w-[100px] xl:hidden'></div>
+                <div className='hidden xl:flex justify-around w-[200px]'>
+                    <p>Shop</p>
+                    <p>Account</p>
+                </div>
+                <div className='bg-slate-400 rounded-lg px-4 py-1 xl:px-0 xl:py-0 xl:bg-transparent cursor-pointer'
+                onClick={()=>setMenu(true)}>
                     Menu
                 </div>
             </div>
-            
             {/* Blur */}
             <div className={menu ? ' fixed top-0 right-0 h-screen w-full backdrop-blur-sm bg-black/30' : ''} />
             

@@ -30,6 +30,17 @@ function ElectricPowerTrain() {
         }
    },[inView])
 
+    useEffect(()=>{
+        const interval = setInterval(()=>{
+            if (image === '/modelS/S14.jpg'){
+                setImage('/modelS/S6.jpg')
+            }else{
+                setImage('/modelS/S14.jpg')
+            }
+        },2900)
+
+        return () => clearInterval(interval);
+    },[image])
 
     return (
         <>

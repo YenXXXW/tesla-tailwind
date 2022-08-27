@@ -79,13 +79,13 @@ function StayConnected() {
         <div className="bg-black text-white relative w-full py-24">
             <div className='flex flex-col md:flex-row md:px-[5%] lg:px-[10%]' ref={ref1}>
                 <motion.div variants={variant} initial='hidden' animate={Controls1}
-                 className="w-1/2 ">
+                 className="md:w-1/2 ">
                     <div className=" w-full relative">
                         <Image src='/modelS/S3.jpg' height={'300px'} width='600px' />
                     </div>
                 </motion.div>                
                 <motion.div variants={variant1} initial='hidden' animate={Controls2} 
-                 className="pb-14 md:pb-0 w-1/2  my-auto grid justify-items-end  ">
+                 className="pb-14 md:pb-0 md:w-1/2  my-auto ml-8 md:ml-0 md:grid md:justify-items-end ">
                     <div className="w-[80%]  ">
                         <p className="mb-3 mt-2 font-bold " ref={ref2}>Stay Connected</p>
                         <p>Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.</p>
@@ -96,13 +96,13 @@ function StayConnected() {
 
             <div className='flex flex-col md:flex-row-reverse md:px-[5%] lg:px-[10%]' ref={ref3}>
                 <motion.div variants={variant} initial='hidden' animate={Controls3}
-                 className="w-1/2 ">
+                 className="md:w-1/2 ">
                     <div className=" w-full relative">
                         <video src='/modelS/Sv6.mp4' autoPlay loop defaultmuted='true' width='600px' />
                     </div>
                 </motion.div>                
                 <motion.div variants={variant1} initial='hidden' animate={Controls4}
-                 className="pb-14 md:pb-0 w-1/2  my-auto grid justify-items-start  ">
+                 className="pb-14 md:pb-0 md:w-1/2  my-auto ml-8 md:ml-0 md:grid md:justify-items-start  ">
                     <div className="w-[80%]  ">
                         <p className="mb-3 mt-2 font-bold " ref={ref4}>Immersive Sound</p>
                         <p>A 22-speaker, 960-watt audio system with Active Road Noise Reduction offers immersive listening and studio-grade sound quality.</p>
@@ -112,13 +112,13 @@ function StayConnected() {
 
             <div className='flex flex-col md:flex-row md:px-[5%] lg:px-[10%]' ref={ref5}>
                 <motion.div  variants={variant} initial='hidden' animate={Controls5} 
-                 className="w-1/2 ">
+                 className="md:w-1/2 ">
                     <div className=" w-full relative">
-                        <Image src='/modelS/S3.jpg' height={'300px'} width='600px' />
+                        <Image src='/modelS/S4.jpg' height={'300px'} width='600px' />
                     </div>
                 </motion.div>                
                 <motion.div  variants={variant1} initial='hidden' animate={Controls6} 
-                 className="pb-14 md:pb-0 w-1/2  my-auto grid justify-items-end  ">
+                 className="pb-14 md:pb-0 md:w-1/2  my-auto ml-8 md:ml-0 md:grid md:justify-items-end  ">
                     <div className="w-[80%]  ">
                         <p className="mb-3 mt-2 font-bold " ref={ref6}>Room for Everything</p>
                         <p>With front and rear trunks and fold-flat seats you can fit your bike without taking the wheel off—and your luggage too.</p>

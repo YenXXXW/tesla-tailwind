@@ -76,50 +76,57 @@ const  Rentless =()=>{
     },[inView1, inView2 ,inView3 , inView4 , inView5 , inView6])
 
     return(
-        <>
-        <div className="bg-black relative text-white pt-[100px] pb-[50px]">
-            <div className="flex flex-col-reverse md:flex-row" ref={ref1}>
-                <motion.div  variants={variant1} initial='hidden' animate={Controls2}
-                 className="pb-14 pl-10 md:w-[600px] lg:pl-[100px] xl:pl-[150px] md:my-auto">
-                    <p ref={ref2} className="pt-2 pb-3  font-bold  md:text-lg">Rentless Performance</p>
-                    <p className="text-sm md:text-base">Staggered, performance wheels and tires keep the car planted and help transfer maximum power down to the road.</p>
-                </motion.div>
-                <motion.div className="md:ml-[100px] lg:hidden" variants={variant} initial='hidden' animate={Controls1}>
-                    <Image src='/modelS/S8.jpg' width='540px' height={'300px'} />
-                </motion.div>                
-                <motion.div className="hidden md:ml-[100px] lg:block" variants={variant} initial='hidden' animate={Controls1}>
-                    <Image src='/modelS/S8.jpg' width='600px' height={'350px'} />
-                </motion.div>                
-            </div>
-            <div className="flex flex-col md:flex-row" ref={ref3}>
-                <motion.div className="md:ml-[100px] lg:hidden" variants={variant} initial='hidden' animate={Controls3}>
-                    <Image src='/modelS/S9.jpg' width='540px' height={'300px'} />
-                </motion.div>                
-                <motion.div className="hidden md:ml-[100px] lg:block" variants={variant} initial='hidden' animate={Controls3}>
-                    <Image src='/modelS/S9.jpg' width='600px' height={'350px'}/>
-                </motion.div>   
-                <motion.div variants={variant1} initial='hidden' animate={Controls4}
-                 className="pb-14  pl-10 md:w-[600px] lg:pl-[100px] md:my-auto xl:pl-[150px] ">
-                    <p ref={ref4} className="pt-2 pb-3  font-bold md:text-lg">Optimized Aerodynamics</p>
-                    <p className="text-sm md:text-base">Attention to detail on all exterior surfaces makes Model S the most aerodynamic production car on Earth.</p>
-                </motion.div>             
-            </div>
-            <div className="flex flex-col-reverse md:flex-row" ref={ref5}>
-                <motion.div variants={variant1} initial='hidden' animate={Controls6}
-                 className="pb-14  pl-10 md:w-[600px] lg:pl-[100px] xl:pl-[150px] md:my-auto">
-                    <p ref={ref6} className="pt-2 pb-3 font-bold  md:text-lg">Refined Styling</p>
-                    <p className="text-sm md:text-base">An iconic silhouette meets refreshed, elegant proportions.</p>
-                </motion.div>
-                <motion.div className="md:ml-[100px] lg:hidden" variants={variant} initial='hidden' animate={Controls5}>
-                    <Image src='/modelS/S10.jpg' width='540px' height={'300px'} />
-                </motion.div >                
-                <motion.div className="hidden md:ml-[100px] lg:block" variants={variant} initial='hidden' animate={Controls5}>
-                    <Image src='/modelS/S10.jpg' width='600px' height={'350px'} />
-                </motion.div>                
-            </div>
+        <div className="bg-black text-white relative w-full py-24">
+        <div className='flex flex-col md:flex-row-reverse md:px-[5%] lg:px-[10%]' ref={ref1}>
+            <motion.div variants={variant} initial='hidden' animate={Controls1}
+             className="md:w-1/2 ">
+                <div className=" w-full relative">
+                    <Image src='/modelS/S8.jpg' height={'300px'} width='600px' />
+                </div>
+            </motion.div>                
+            <motion.div variants={variant1} initial='hidden' animate={Controls2} 
+             className="pb-14 md:pb-0 md:w-1/2  my-auto ml-8 md:ml-0 md:grid md:justify-items-start ">
+                <div className="w-[80%]  ">
+                    <p className="mb-3 mt-2 font-bold " ref={ref2}>Stay Connected</p>
+                    <p>Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.</p>
+                </div>
+                
+            </motion.div>
         </div>
-        
-        </>
+
+        <div className='flex flex-col md:flex-row md:px-[5%] lg:px-[10%]' ref={ref3}>
+            <motion.div variants={variant} initial='hidden' animate={Controls3}
+             className="md:w-1/2 ">
+                <div className=" w-full relative">
+                <Image src='/modelS/S9.jpg' height={'300px'} width='600px' />
+                </div>
+            </motion.div>                
+            <motion.div variants={variant1} initial='hidden' animate={Controls4}
+             className="pb-14 md:pb-0 md:w-1/2  my-auto ml-8 md:ml-0 md:grid md:justify-items-end">
+                <div className="w-[80%]  ">
+                    <p className="mb-3 mt-2 font-bold " ref={ref4}>Immersive Sound</p>
+                    <p>A 22-speaker, 960-watt audio system with Active Road Noise Reduction offers immersive listening and studio-grade sound quality.</p>
+                </div>                    
+            </motion.div>
+        </div>
+
+        <div className='flex flex-col md:flex-row-reverse md:px-[5%] lg:px-[10%]' ref={ref5}>
+            <motion.div  variants={variant} initial='hidden' animate={Controls5} 
+             className="md:w-1/2 ">
+                <div className=" w-full relative">
+                    <Image src='/modelS/S10.jpg' height={'300px'} width='600px' />
+                </div>
+            </motion.div>                
+            <motion.div  variants={variant1} initial='hidden' animate={Controls6} 
+             className="pb-14 md:pb-0 md:w-1/2  my-auto ml-8 md:ml-0 md:grid md:justify-items-start">
+                <div className="w-[80%]  ">
+                    <p className="mb-3 mt-2 font-bold " ref={ref6}>Room for Everything</p>
+                    <p>With front and rear trunks and fold-flat seats you can fit your bike without taking the wheel off—and your luggage too.</p>
+                </div>                    
+            </motion.div>
+        </div>
+
+    </div>
     )
 }
 export default Rentless;

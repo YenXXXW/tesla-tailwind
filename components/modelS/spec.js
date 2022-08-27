@@ -64,7 +64,7 @@ const Specs = () => {
 
     return (
         <>
-        <div className='bg-black lg:flex h-screen'>
+        <div className='bg-black lg:flex sm:h-screen'>
             <div className='flex m-auto h-[450px] lg:w-2/5 '>
                 <Image src='/modelS/spec.jpg' width='600px' height={'450px'}/>
             </div>

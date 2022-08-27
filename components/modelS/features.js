@@ -44,6 +44,42 @@ function Features() {
     const d = '/modelS/Xv4.mp4'
 
     const [width , setWidth ] = useState(undefined)
+        
+    const [video,setVideo] = useState(a)
+
+    useEffect(()=>{
+        const interval1 = setInterval(()=>{
+            if (video === a){
+                setVideo(b)
+            }
+        },15000)
+
+        const interval2 = setInterval(()=>{
+            if (video === b){
+                setVideo(c)
+            }
+        },9000)
+
+        const interval3 = setInterval(()=>{
+            if (video === c){
+                setVideo(d)
+            }
+        },4000)
+
+        const interval4 = setInterval(()=>{
+            if (video === d){
+                setVideo(a)
+            }
+        },10000)
+
+        return () =>{
+            clearInterval(interval1);
+            clearInterval(interval2);
+            clearInterval(interval3);
+            clearInterval(interval4);
+        } 
+    },[video])
+
 
     useEffect(()=>{
         const handleResize =()=>{
@@ -52,8 +88,7 @@ function Features() {
         window.addEventListener('resize' , handleResize)
         return()=> window.removeEventListener('resize' , handleResize)
     },[])
-    
-    const [video,setVideo] = useState(a)
+
 
     return (
         <div className="py-10">

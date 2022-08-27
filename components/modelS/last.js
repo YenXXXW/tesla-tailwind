@@ -78,7 +78,7 @@ const Last =() =>{
         <>
         <div className="pt-10 ml-9 text-center md:flex lg:text-start bg-white">
             <div className="mx-auto lg:w-2/5" ref={TopicRef}>
-                <motion.p className=" text-2xl font-bold mt-7 mb-4 "
+                <motion.p className="text-start  text-2xl font-bold mt-7 mb-4 "
                  variants={variant1} initial='hidden' animate={TopicControls}>
                     Model S
                 </motion.p>
@@ -107,7 +107,7 @@ const Last =() =>{
                 </motion.div>
             </div>            
         </div>
-        <div className="max-w-3xl text-gray-600 text-sm text-center mx-auto">
+        <div className="mt-10 max-w-3xl text-gray-600 text-sm text-center mx-auto">
             Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change.<Link href="/"><a> Learn more about Standard Connectivity and any limitations.</a></Link>
             <div className="my-20 flex flex-col md:flex-row justify-between">
             <Link href={'/'}><a className="no-underline">Tesla © 2022</a></Link>

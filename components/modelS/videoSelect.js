@@ -67,15 +67,15 @@ function VideoSelect() {
             <div className='mx-10 md:ml-[400px] pb-[100px] '>
             <div className="flex mt-10  w-[150px] h-[30px] sm:hidden">
                 <svg className="w-[150px] h-[16px]">
-                <circle className="cursor-pointer " fill={video === '/modelS/Sv1.mp4' ? 'white' : 'gray'} stroke="gray" r='5' cx='10' cy='8' 
+                <circle className="cursor-pointer " fill={video === '/modelS/Sv1.mp4' ? 'white' : 'gray'} stroke="gray" r='6' cx='10' cy='8' 
                 onClick={()=>setVideo('/modelS/Sv1.mp4')}/>
-                <circle className="cursor-pointer " fill={video === '/modelS/Sv2.mp4' ? 'white' : 'gray'} stroke="gray" r='5' cx='25' cy='8' 
+                <circle className="cursor-pointer " fill={video === '/modelS/Sv2.mp4' ? 'white' : 'gray'} stroke="gray" r='6' cx='30' cy='8' 
                 onClick={()=>setVideo('/modelS/Sv2.mp4')}/>
-                <circle className="cursor-pointer" fill={video === '/modelS/Sv3.mp4' ? 'white' : 'gray'} stroke="gray" r='5' cx='40' cy='8'
+                <circle className="cursor-pointer" fill={video === '/modelS/Sv3.mp4' ? 'white' : 'gray'} stroke="gray" r='6' cx='50' cy='8'
                 onClick={()=>setVideo('/modelS/Sv3.mp4')} />
-                <circle className="cursor-pointer" fill={video === '/modelS/Sv4.mp4' ? 'white' : 'gray'} stroke="gray" r='5' cx='55' cy='8' 
+                <circle className="cursor-pointer" fill={video === '/modelS/Sv4.mp4' ? 'white' : 'gray'} stroke="gray" r='6' cx='70' cy='8' 
                 onClick={()=>setVideo('/modelS/Sv4.mp4')}/>
-                <circle className="cursor-pointer" fill={video === '/modelS/Sv5.mp4' ? 'white' : 'gray'} stroke="gray" r='5' cx='70' cy='8' 
+                <circle className="cursor-pointer" fill={video === '/modelS/Sv5.mp4' ? 'white' : 'gray'} stroke="gray" r='6' cx='90' cy='8' 
                 onClick={()=>setVideo('/modelS/Sv5.mp4')}/>
                 </svg>
             </div>

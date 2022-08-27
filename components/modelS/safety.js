@@ -123,7 +123,7 @@ const Safety = () => {
 
     return (
         <div className="ml-10 mt-[40px]  flex flex-col lg:flex-row-reverse mb-16 justify-between">
-            <div className="relative lg:w-[65%] mt-24 xs:mt-0" >              
+            <div className="relative lg:w-[65%] mt-24 xs:mt-0 bg-white" >              
                 
                 <div className="absolute hidden h-[500px] z-30 w-full top-[30px] xl:block">
                     <motion.p variants={Svgvariant1} initial='hidden' animate={SvgControls}

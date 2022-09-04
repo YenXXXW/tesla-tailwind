@@ -64,7 +64,7 @@ const Design = () => {
     
 
     return (
-        <div className="w-full my-10 h-screen">
+        <div className="w-full my-10 ">
             <div className="w-full h-[60vh] lg:h-[70vh] relative" ref={ref}>
                 <Image src='/SolarRoof/SR2.jpg' layout='fill' objectFit='cover'/>
             </div>
@@ -82,7 +82,7 @@ const Design = () => {
                     </div>
                     <div className="lg:my-auto pr-6">
                         <motion.p variants={variant3} initial='hidden' animate={Controls}
-                         className="text-sm ">Install Solar Roof and power your home with a fully integrated solar and energy storage system. The glass solar tiles and steel roofing tiles look great up close and from the street, complementing your home&apos;s natural styling. Chat with an Energy Advisor to ask any questions about installing solar with Tesla.</motion.p>
+                         className="sm:text-sm ">Install Solar Roof and power your home with a fully integrated solar and energy storage system. The glass solar tiles and steel roofing tiles look great up close and from the street, complementing your home&apos;s natural styling. Chat with an Energy Advisor to ask any questions about installing solar with Tesla.</motion.p>
                         <motion.button variants={variant4} initial='hidden' animate={Controls}
                          className="sm:hidden   border-[3px]  mt-5 border-gray-800 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-800">
                             ORDER NOW

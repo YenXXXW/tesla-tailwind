@@ -70,7 +70,7 @@ const Installation = () => {
                 <div className="mx-auto flex flex-col sm:flex-row max-w-[900px] pt-3 h-[50vh] md:h-[40vh] lg:h-[30vh] ">
                     <div className="lg:min-w-[350px] my-auto mr-20" ref={ref}>
                         <motion.p variants={variant1} initial='hidden' animate={Controls}
-                         className="font-thin">Installation</motion.p>
+                          className="font-thin text-xl">Installation</motion.p>
                         <motion.p variants={variant2} initial='hidden' animate={Controls}
                          className="text-xl md:text-3xl font-bold lg:mb-3">Trusted Expertise</motion.p>
                         <motion.button variants={variant4} initial='hidden' animate={Controls}
@@ -80,9 +80,9 @@ const Installation = () => {
                     </div>
                     <div className="my-auto pr-6">
                         <motion.p variants={variant3} initial='hidden' animate={Controls}
-                         className="text-sm ">Our in-house team of energy professionals has installed nearly 4.0 GW of solar across approximately 480,000 roofs—cumulatively generating over 25.0 TWhs of clean energy. From design to power on, we take care of everything. Chat with an Energy Advisor to ask any questions about Solar Roof.</motion.p>
+                         className="sm:text-sm ">Our in-house team of energy professionals has installed nearly 4.0 GW of solar across approximately 480,000 roofs—cumulatively generating over 25.0 TWhs of clean energy. From design to power on, we take care of everything. Chat with an Energy Advisor to ask any questions about Solar Roof.</motion.p>
                         <motion.button variants={variant4} initial='hidden' animate={Controls}
-                         className="sm:hidden   border-[3px]  mt-3 border-gray-800 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-800">
+                         className="sm:hidden   border-[3px]  mt-5 border-gray-800 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-800">
                             ORDER NOW
                         </motion.button>
                     </div>                    

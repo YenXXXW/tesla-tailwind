@@ -6,7 +6,7 @@ import Autopilot from '../components/modelS/autopilot';
 import Interior from '../components/model3/interior';
 import Specs from "../components/modleY/specs";
 import Last from "../components/modleY/last";
-import Range from "../components/modleY/Range";
+
 
 function ModelY() {
     return (
@@ -15,7 +15,7 @@ function ModelY() {
             <Safety bottom={'low center of gravity'}/>
             <Utility />
             <AllWheel />
-            <Range />
+            
             <Autopilot />
             <Interior />
             <Specs />

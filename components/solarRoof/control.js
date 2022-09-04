@@ -85,7 +85,7 @@ const Control = () => {
                         <motion.p variants={variant3} initial='hidden' animate={Controls}
                          className="sm:text-sm ">With the Tesla app, you can monitor your energy production in real time. Control your system from anywhere with instant alerts and remote access.</motion.p>
                         <motion.button variants={variant4} initial='hidden' animate={Controls}
-                         className="sm:hidden   border-[3px]  mt-3 border-gray-800 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-800">
+                         className="sm:hidden   border-[3px]  mt-5 border-gray-800 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-800">
                             ORDER NOW
                         </motion.button>
                     </div>                    

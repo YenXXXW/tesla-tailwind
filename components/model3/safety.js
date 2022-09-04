@@ -86,7 +86,7 @@ const Safety = ({bottom}) => {
     },[inView])  
 
     return (
-        <div className="flex flex-col lg:flex-row " >
+        <div className="pt-10 flex flex-col lg:flex-row " >
             <div className="bg-white flex justify-center">
                 
                 <div className="relative w-[300px] md:w-[400px] lg:w-[73vw] " >
@@ -113,12 +113,12 @@ const Safety = ({bottom}) => {
             <div className="text-base max-w-4xl pl-10 flex flex-col lg:pl-0 lg:pr-4 pt-5 ">
                 <div>
                     <motion.p variants={variant1} initial='hidden' animate={Controls}
-                     className="font-light">Safety</motion.p>
+                     className="font-light text-xl">Safety</motion.p>
                     <motion.p  variants={variant2} initial='hidden' animate={Controls}
-                     className="text-xl sm:text-2xl lg:text-3xl font-bold">Built for Safety</motion.p>
+                     className="text-2xl md:text-3xl font-bold">Built for Safety</motion.p>
                     
                 </div>
-                <motion.div className="text-sm" variants={variant3} initial='hidden' animate={Controls}>
+                <motion.div  variants={variant3} initial='hidden' animate={Controls}>
                     <p ref={ref}>Safety is the most important part of every Tesla. We design our vehicles to exceed safety standards.</p>
                     <p className="font-bold mt-5">5-Star Rating</p>
                     <p>Model 3 achieved NHTSA 5-star safety ratings in every category and subcategory.</p>

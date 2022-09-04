@@ -66,7 +66,7 @@ const Savings = () => {
 
     
     return (
-        <div className="w-full h-screen flex flex-col lg:flex-row-reverse pb-10">
+        <div className="w-full flex flex-col lg:flex-row-reverse pb-10">
             <div className="w-full lg:w-[70%] " ref={ref}>
                 <video src='/solarPannel/SPv1.mp4'  autoPlay loop defaultmuted='true' width='940px'/>
             </div>

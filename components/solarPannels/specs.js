@@ -7,7 +7,7 @@ const Specs = () => {
                 <Image src='/solarPannel/SP6.jpg' width={'400px'} height={'200px'} className='align-middle '/>
             </div>
             <div className="w-1/2  flex-col justify-center hidden sm:flex">
-                <Image src='/SolarPannel/SP6.jpg' width={'550px'} height={'300px'} className='align-middle '/>
+                <Image src='/solarPannel/SP6.jpg' width={'550px'} height={'300px'} className='align-middle '/>
             </div>
             <div className="text-white h-full text-sm  w-full sm:w-1/2 sm:grid sm:items-center">
                 <div className="sm:w-full tracking-wide ">

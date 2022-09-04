@@ -82,7 +82,7 @@ const Savings = () => {
                 </div>
                 <div className="sm:my-auto lg:my-0 pr-6">
                     <motion.p  variants={variant3} initial='hidden' animate={Controls}
-                    className="text-sm ">Use solar energy to power your home and reduce your dependence on the grid. Purchase solar at the lowest price of any national provider with Tesla's price match guarantee and take control of your monthly electricity bill. Learn more about your potential savings in our Design Studio.</motion.p>
+                    className="text-sm ">Use solar energy to power your home and reduce your dependence on the grid. Purchase solar at the lowest price of any national provider with Tesla&apos;s price match guarantee and take control of your monthly electricity bill. Learn more about your potential savings in our Design Studio.</motion.p>
                     <motion.button variants={variant4} initial='hidden' animate={Controls}
                      className="sm:hidden lg:block lg:mt-[280px] border-[3px]  mt-3 border-gray-800 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-800">
                         See your Savings

@@ -1,9 +1,25 @@
-import Navbar from "../components/navbar";
+import FirstPage from "../components/modleY/firstPage";
+import Safety from '../components/model3/safety'
+import Utility from "../components/modleY/utility";
+import AllWheel from "../components/modleY/allWheel";
+import Range from "../components/modleY/Range";
+import Autopilot from '../components/modelS/autopilot';
+import Interior from '../components/model3/interior';
+import Specs from "../components/modleY/specs";
+import Last from "../components/modleY/last";
 
 function ModelY() {
     return (
         <div>
-            <Navbar fill='black' position={'relative'}/>
+            <FirstPage />
+            <Safety bottom={'low center of gravity'}/>
+            <Utility />
+            <AllWheel />
+            <Range />
+            <Autopilot />
+            <Interior />
+            <Specs />
+            <Last />
         </div>
     );
 }

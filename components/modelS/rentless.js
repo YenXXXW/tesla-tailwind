@@ -87,8 +87,8 @@ const  Rentless =()=>{
             <motion.div variants={variant1} initial='hidden' animate={Controls2} 
              className="pb-14 md:pb-0 md:w-1/2  my-auto ml-8 md:ml-0 md:grid md:justify-items-start ">
                 <div className="w-[80%]  ">
-                    <p className="mb-3 mt-2 font-bold " ref={ref2}>Stay Connected</p>
-                    <p>Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.</p>
+                    <p className="mb-3 mt-2 font-bold " ref={ref2}>Relentless Performance</p>
+                    <p className="text-sm">Staggered, performance wheels and tires keep the car planted and help transfer maximum power down to the road.</p>
                 </div>
                 
             </motion.div>
@@ -104,8 +104,8 @@ const  Rentless =()=>{
             <motion.div variants={variant1} initial='hidden' animate={Controls4}
              className="pb-14 md:pb-0 md:w-1/2  my-auto ml-8 md:ml-0 md:grid md:justify-items-end">
                 <div className="w-[80%]  ">
-                    <p className="mb-3 mt-2 font-bold " ref={ref4}>Immersive Sound</p>
-                    <p>A 22-speaker, 960-watt audio system with Active Road Noise Reduction offers immersive listening and studio-grade sound quality.</p>
+                    <p className="mb-3 mt-2 font-bold " ref={ref4}>Optimized Aerodynamics</p>
+                    <p className="text-sm">Attention to detail on all exterior surfaces makes Model S the most aerodynamic production car on Earth.</p>
                 </div>                    
             </motion.div>
         </div>
@@ -121,7 +121,7 @@ const  Rentless =()=>{
              className="pb-14 md:pb-0 md:w-1/2  my-auto ml-8 md:ml-0 md:grid md:justify-items-start">
                 <div className="w-[80%]  ">
                     <p className="mb-3 mt-2 font-bold " ref={ref6}>Room for Everything</p>
-                    <p>With front and rear trunks and fold-flat seats you can fit your bike without taking the wheel off—and your luggage too.</p>
+                    <p className="text-sm">With front and rear trunks and fold-flat seats you can fit your bike without taking the wheel off—and your luggage too.</p>
                 </div>                    
             </motion.div>
         </div>

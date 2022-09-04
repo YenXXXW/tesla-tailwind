@@ -47,7 +47,7 @@ function ElectricPowerTrain() {
         <motion.div className="mt-[100px] mx-10 lg:ml-[100px] xl:ml-[150px]"
          variants={variant} initial='hidden' animate={Controls}>
             <h2 className="font-bold" ref={ref}>Electric Powertrain</h2>
-            <p className=" max-w-4xl my-10 md:text-lg">
+            <p className=" max-w-4xl my-3 md:text-base">
             Model S platforms unite powertrain and battery technologies for unrivaled performance, range and efficiency. New module and pack thermal architecture allows faster charging and gives you more power and endurance in all conditions.
             </p>
         </motion.div>
@@ -58,7 +58,7 @@ function ElectricPowerTrain() {
             <Image src='/modelS/S6.jpg' layout="fill" objectFit="cover"/>
         </div>
         <div className="pb-6">
-            <div className="relative flex 2xs:hidden overflow-x-hidden">
+            <div className="relative flex 2xs:hidden overflow-x-hidden overflow-y-clip">
                 <div className={image === '/modelS/S14.jpg' ? "border-t-4 border-black pl-3 relative left-[0%] w-[250px] ease-in duration-500 cursor-pointer"
                 : "border-t-2 border-black pl-3 absolute -left-[42%] w-[250px] ease-in duration-500 opacity-40 cursor-pointer"}  onClick={()=>setImage('/modelS/S14.jpg')}>
                     <h4 className='font-bold mt-3'>Model S</h4>
@@ -85,7 +85,7 @@ function ElectricPowerTrain() {
                     <p className="text-sm max-w-xl my-3">Maintain 1,000+ horsepower all the way to 200 mph with Tri-Motor All-Wheel Drive, featuring torque vectoring and three independent carbon-sleeved rotors.</p>
                     <div>
                         <div className="my-2">
-                            <p className="text-xl font-bold tracking-wider">1.99 s8</p>
+                            <p className="text-xl font-bold tracking-wider">1.99 s</p>
                             <p className="text-xs">0-60mph</p>
                         </div>
                         <div className="my-2">

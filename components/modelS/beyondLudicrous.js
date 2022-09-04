@@ -66,20 +66,20 @@ const BeyondLudicrious =()=>{
         <div className="h-[500px] relative ">
             <Image src='/modelS/S5.jpg' layout='fill' objectFit='cover'/>
             <div className="absolute bottom-20 w-full">
-                <div className="flex justify-around text-white xl:mx-40"  ref={ref}>
+                <div className="flex justify-around text-white xl:mx-40 lg:mx-52"  ref={ref}>
                     <motion.div className="text-center" 
                      variants={variant1} initial='hidden' animate={Controls}>
-                        <p className="text-2xl md:text-4xl font-bold">1,020hp</p>
+                        <p className="text-xl md:text-2xl font-bold">1,020hp</p>
                         <p>Peak Power</p>
                     </motion.div>
                     <motion.div className="text-center"
                      variants={variant2} initial='hidden' animate={Controls}>
-                        <p className="text-2xl md:text-4xl font-bold">9.23s</p>
+                        <p className="text-xl md:text-2xl font-bold">9.23s</p>
                         <p>@155 mph 1/4 mile</p>
                     </motion.div>
                     <motion.div className="text-center"
                      variants={variant3} initial='hidden' animate={Controls}>
-                        <p className="text-2xl md:text-4xl font-bold">1.99s</p>
+                        <p className="text-xl md:text-2xl font-bold">1.99s</p>
                         <p>0-60 mph*</p>
                     </motion.div>
                 </div>

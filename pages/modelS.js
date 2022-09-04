@@ -1,6 +1,6 @@
 import Navbar from "../components/navbar";
 import Head from 'next/head'
-import Image from "next/image";
+import Link from "next/link";
 import VideoSelect from "../components/modelS/videoSelect";
 import StayConnected from "../components/modelS/stayconnected";
 import BeyondLudicrious from "../components/modelS/beyondLudicrous";
@@ -59,7 +59,7 @@ function ModelS() {
             <Features />
             <Specs />
             <Last />
-            
+            <Test />
         </div>
     );
 }

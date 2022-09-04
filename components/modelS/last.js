@@ -75,10 +75,10 @@ const Last =() =>{
     },[TopicInView , inView])
 
     return(
-        <>
+        <div className="pt-10">
         <div className="pt-10 ml-9 text-center md:flex lg:text-start bg-white">
             <div className="mx-auto lg:w-2/5" ref={TopicRef}>
-                <motion.p className="text-start  text-2xl font-bold mt-7 mb-4 "
+                <motion.p className="text-start xs:text-center text-2xl font-bold mt-7 mb-4 "
                  variants={variant1} initial='hidden' animate={TopicControls}>
                     Model S
                 </motion.p>
@@ -120,7 +120,7 @@ const Last =() =>{
             <Link href={'/'}><a className="no-underline">Locations</a></Link>
             </div>
         </div>
-        </>
+        </div>
     )
 }
 

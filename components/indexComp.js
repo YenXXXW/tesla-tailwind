@@ -3,7 +3,7 @@ import { useEffect , useRef } from 'react'
 import { motion , useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
-function IndexComp({photo , model , order }) {
+function IndexComp({photo , model , order  }) {
     
     const controls =useAnimation()
     const{ ref : ref1 , inView : inView1 } = useInView()
@@ -59,7 +59,7 @@ function IndexComp({photo , model , order }) {
             
         <motion.div variants={GeneralVariants} initial='hidden' animate={controls}
         className=' px-5 py-2  absolute top-[15%] w-full '>
-            <h1 className="font-bold text-center  ">{model}</h1>
+            <h1 className="text-center  ">{model}</h1>
             <p className={order ? 'text-center  text-lg' : 'hidden'}>Order online for <a>Touchless Delivery</a></p>
             <p className={model === 'Solar Panels'? 'text-center text-lg' : 'hidden' }>Lowest cost Solar Panels in America</p>
             <p className={model === 'Solar Roof'?  'text-center  text-lg' : 'hidden' }>Produce Clean Energy From Your Roof</p>

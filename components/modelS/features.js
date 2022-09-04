@@ -93,9 +93,9 @@ function Features() {
     return (
         <div className="py-10">
         <div className="max-w-4xl ml-8 md:ml-28  lg:ml-[100px] px-4" ref={ref}>
-            <motion.h2 className=" font-bold my-4 "  variants={variant1} initial='hidden' animate={Controls}>Features</motion.h2>
+            <motion.p className=" font-bold text-2xl my-4 "  variants={variant1} initial='hidden' animate={Controls}>Features</motion.p>
             <motion.p
-             className="md:text-lg"  variants={variant2} initial='hidden' animate={Controls}
+             className="text-sm"  variants={variant2} initial='hidden' animate={Controls}
             >Enhanced Autopilot and Full Self-Driving capability introduce additional features and improve existing functionality to make your car more capable over time, includi
             </motion.p>
         </div>
@@ -171,22 +171,22 @@ function Features() {
         <div className="hidden md:block w-full text-center ">
             <div className={video === a ? "inline-block align-text-top w-[150px] lg:w-[200px] text-start pb-3 border-t-4 border-black  cursor-pointer"
             : "inline-block align-text-top w-[150px] lg:w-[200px] text-start pb-3 border-t-2 border-black opacity-40  cursor-pointer"} onClick={()=>setVideo(a)}>
-                <p className="text-top py-3 text-lg md:text-2xl font-bold  ">Navigate on Autopilot</p>
+                <p className="text-top py-3 text-lg font-bold  ">Navigate on Autopilot</p>
                 <p>Active guidance from on-ramp to off-ramp</p>
             </div>
             <div className={video === b ? "inline-block  align-text-top w-[150px] lg:w-[200px] text-start mx-12  border-t-4 border-black  cursor-pointer" :
                "inline-block  align-text-top w-[150px] lg:w-[200px] text-start mx-12  border-t-2 border-black opacity-40  cursor-pointer" } onClick={()=>setVideo(b)}>
-                <p className="py-3 text-lg md:text-2xl font-bold">Auto Lane Change</p>
+                <p className="py-3 text-lg font-bold">Auto Lane Change</p>
                 <p>Automatically change lanes while driving on the highway</p>
             </div>
             <div className={video === c ? "inline-block  align-text-top w-[150px] lg:w-[200px] text-start  border-t-4 border-black  cursor-pointer" : 
             "inline-block  align-text-top w-[150px] lg:w-[200px] text-start  border-t-2 border-black opacity-40  cursor-pointer"} onClick={()=>setVideo(c)}>
-                <p className="py-3 text-lg md:text-2xl font-bold">Summon</p>
+                <p className="py-3 text-lg font-bold">Summon</p>
                 <p>Automatically retrive your car</p>
             </div>
             <div className={ video === d ? "inline-block  align-text-top w-[150px] lg:w-[200px] text-start ml-12 border-t-4 border-black cursor-pointer" 
              : "inline-block  align-text-top w-[150px] lg:w-[200px] text-start ml-12 border-t-2 border-black opacity-40  cursor-pointer"} onClick={()=>setVideo(d)}>
-                <p className="py-3 text-lg md:text-2xl font-bold">Autopark</p>
+                <p className="py-3 text-lg font-bold">Autopark</p>
                 <p>Parallel and perpendicular parking with a single touch</p>
             </div>
         </div>

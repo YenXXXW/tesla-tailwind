@@ -75,27 +75,27 @@ const Autopilot = () => {
 
     return (
         <>
-        <div className="relative h-[460px] py-10">
+        <div className="relative h-[45vh] lg:h-[60vh] py-10">
             <Image src='/modelS/36.jpg'layout="fill" objectFit="cover"/>
-            <div className="absolute w-full bottom-10 lg:top-10">
+            <div className="absolute w-full bottom-5 lg:top-5">
                 <div className="flex flex-row text-center justify-between  mx-auto w-[75%] xs:w-[60%] md:w-1/2 lg:flex-col lg:ml-10 lg:text-start" ref={TopicRef}>
                     <motion.div variants={variant1} initial='hidden' animate={TopicControls}
                      className="lg:mb-10">
-                        <p className="text-xl md:text-4xl font-bold">360°</p>
-                        <p className="lg:hidden text-xs md:text-sm mt-3">Degrees</p>
-                        <p className="lg:hidden text-xs md:text-sm">of Visibility</p>
-                        <p className="hidden lg:block text-xs md:text-sm">Rear, side and forward-facing cameras</p>
-                        <p className="hidden lg:block text-xs md:text-sm">provide maximum visibility</p>
+                        <p className="text-xl md:text-3xl font-bold">360°</p>
+                        <p className="lg:hidden text-xs  mt-1">Degrees</p>
+                        <p className="lg:hidden text-xs ">of Visibility</p>
+                        <p className="hidden lg:block text-xs ">Rear, side and forward-facing cameras</p>
+                        <p className="hidden lg:block text-xs ">provide maximum visibility</p>
                     </motion.div>
                     <motion.div  variants={variant2} initial='hidden' animate={TopicControls}
                      className="lg:mb-10">
-                        <p className="text-xl md:text-4xl font-bold ">250 m</p>
-                        <p className="lg:hidden text-xs md:text-sm mt-3">of Powerful</p>
-                        <p className="lg:hidden text-xs md:text-sm">Visual Processing</p>
-                        <p className="hidden lg:block text-xs md:text-sm">Powerful visual processing at up to 250</p>
-                        <p className="hidden lg:block text-xs  md:text-sm">meters of range</p>
+                        <p className="text-xl md:text-3xl font-bold ">250 m</p>
+                        <p className="lg:hidden text-xs  mt-3">of Powerful</p>
+                        <p className="lg:hidden text-xs ">Visual Processing</p>
+                        <p className="hidden lg:block text-xs ">Powerful visual processing at up to 250</p>
+                        <p className="hidden lg:block text-xs ">meters of range</p>
                     </motion.div>
-                    <motion.div  variants={variant3} initial='hidden' animate={TopicControls}>
+                    <motion.div  variants={variant3} initial='hidden' animate={TopicControls} >
                         <svg xmlns= 'http://www.w3.org/2000/svg' className='w-[25px] h-[25px] md:hidden'>
                             <circle fill='black' stroke="black" strokeWidth={'1px'} r="7" cx="15" cy="15"> </circle>
                             <circle fill='white' stroke="white" strokeWidth={'1px'} r="2" cx="12" cy="12"> </circle>            
@@ -109,31 +109,31 @@ const Autopilot = () => {
                             <circle fill='white' stroke="white" strokeWidth={'1px'} r="3" cx="30" cy="30"> </circle>
                         </svg>   
                         <p className="lg:hidden text-xs mt-3">Tesla</p> 
-                        <p className="lg:hidden text-xs md:text-sm">Vision</p> 
-                        <p className="hidden lg:block text-xs md:text-sm">Tesla Vision detects nearby cars, helps</p>
-                        <p className="hidden lg:block text-xs md:text-sm">prevent potential collisions and assists</p>
-                        <p className="hidden lg:block text-xs md:text-sm">with parking</p>
+                        <p className="lg:hidden text-xs ">Vision</p> 
+                        <p className="hidden lg:block text-xs ">Tesla Vision detects nearby cars, helps</p>
+                        <p className="hidden lg:block text-xs ">prevent potential collisions and assists</p>
+                        <p className="hidden lg:block text-xs ">with parking</p>
                     </motion.div>
                 </div>
             </div>
             
         </div>
-        <div className="lg:flex mb-5">
-            <div className="ml-10 my-8 lg:ml-[100px] xl:ml-[150px] mr-[100px]" ref={TopicRef}>
+        <div className="lg:flex my-5">
+            <div className="ml-10 my-8 lg:ml-[100px]  mr-[100px]" ref={TopicRef}>
                 <motion.p className="text-[22px]"
                  variants={variant1} initial='hidden' animate={TopicControls}>
                     Autopilot
                 </motion.p>
-                <motion.h2 className='font-bold mt-2 mb-4'
+                <motion.p className='font-bold mt-2 mb-4 text-3xl'
                  variants={variant2} initial='hidden' animate={TopicControls}>
                     Future of Driving
-                </motion.h2> 
+                </motion.p> 
                 <motion.div  variants={variant4} initial='hidden' animate={TopicControls}
                  className="mt-4 hidden lg:block lg:w-[250px] text-center border-gray-800  border-[4px] rounded-full py-1  hover:bg-gray-800 hover:text-white ">
                     ORDER NOW
                 </motion.div>               
             </div>
-            <div className="ml-10 text-[18px] max-w-4xl lg:my-auto">
+            <div className="ml-10  max-w-4xl lg:my-auto lg:pr-5 text-base">
                 <motion.p
                  variants={variant3} initial='hidden' animate={TopicControls}>
                     Autopilot enables your car to steer, accelerate and brake automatically within its lane under your active supervision, assisting with the most burdensome parts of driving. With over-the-air software updates, the latest enhancements are available instantly.

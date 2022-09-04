@@ -84,7 +84,7 @@ const FirstPage = () => {
             <Image src={'/modelS/S1.jpg'} layout='fill' objectFit="cover"/>
             <motion.div className="w-full absolute top-[15%]"
             variants={variant1} initial='hidden' animate={modelControls}>
-                <h1 className="text-center">Model S</h1>
+                <h2 className="text-center font-bold">Model S</h2>
                 <p className="text-center text-xl">Plaid</p>
             </motion.div>
             <div className="absolute w-full bottom-[20%] xs:bottom-[15%] text-white font-bold  tracking-wide flex flex-col
@@ -111,7 +111,7 @@ const FirstPage = () => {
                         <p className="text-center mt-2 text-xs font-normal lg:text-sm ">Peak Power</p>
                     </motion.div>
                 </div>
-                <motion.button className="mt-3 border-[4px] rounded-full md:mx-auto md:w-[25%] hover:text-gray-800 hover:bg-white"
+                <motion.button className="mt-3 border-[4px]  h-8 rounded-full sm:mx-auto sm:w-[200px] hover:text-gray-800 hover:bg-white"
                 variants={variant5} initial='hidden' animate={specControls}>ORDER NOW</motion.button>
             </div>
         </div>

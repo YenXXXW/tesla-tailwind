@@ -138,7 +138,7 @@ function Freedom() {
             }else{
                 setMap(a)
             }
-        },2900)
+        },4000)
 
         return () => clearInterval(interval);
     },[map])
@@ -146,9 +146,9 @@ function Freedom() {
     return (
         <div className="py-10">
             <div className="my-10 md:my-14 ml-8 md:ml-[150px]" ref={ref}>
-                <motion.h2 className="my-3 font-bold"
+                <motion.p className="my-3 font-bold text-3xl"
                  variants={variant} initial='hidden' animate={Controls}
-                 >Freedom to Travel</motion.h2>
+                 >Freedom to Travel</motion.p>
                 <motion.p variants={variant1} initial='hidden' animate={Controls}
                 >Enter a destination on your touchscreen and Trip Planner will automatically calculate your route with Superchargers along the way.</motion.p>
             </div>        
@@ -220,11 +220,11 @@ function Freedom() {
                              d="M783.8,488.9v-3.9l2.8-6.4v-2.2l1.9-3.3v-5.4l1.4-2.6v-4l1.9-3.8V446l3.7-4v-11.5l2.9-7.2l0.3-11.5l-0.3-15.5l1.2-4.1L796,387v-6.3l-1.8-3.3v-10.3l-4.2-7.4l-3.7-10l-6.7-9.4l-6.8-6.7v-4.6l-3.7-8.6l-3.7-4l-7-12.8l-2.6-9.2l-3.4-6.4v-2.8l-0.4-7.6l-4.1-9.9l-2.9-3.6l-1.6-4l-3.9-3.9l-1.5-0.7h-15l-6.5-7.9l-5.7-4.7h-18.3l-4.9-1.8l-9.8-14.9l-4.9-4.3l-0.7-5.4l-16.1-16.9l-1.2-9l-9.1-12.8L636,167l-5.7-2.7L615,151l-1.5-2.1l-3.1-9.7l-1.1-8.8l-2.7-3.6l-1.8-8.4l-4.3-5.4l-3.9-9.1l-0.3-9.4l-7.9-9.7l-0.4-2l4.4-4.8l4.7-0.5l1.1-4.2" fill="none" stroke="black"  strokeWidth="3px" />
                             <circle r='4' cx='600' cy='70' stroke="black" strokeWidth={'2px'}/>
                             <motion.path variants={variant6} initial='hidden' animate={mapControls4}
-                             d='M583 64 l13 6 l-13 6' fill='red' stroke='red' strokeWidth='1px'/>
+                             d='M582 64 l13 6 l-13 6' fill='red' stroke='red' strokeWidth='1px'/>
                         </svg> 
                     </div>
-                    <motion.div variants={variant6} initial='hidden' animate={mapControls4}
-                     className="bg-[#ff0000] z-30 absolute top-[10%] left-[41.5%] px-[2%] 
+                    <motion.div variants={variant5} initial='hidden' animate={mapControls4}
+                     className="bg-[#ff0000] z-30 absolute top-[10%] left-[39.5%] px-[2%] 
                     py-[0.5%] text-xxs sm:text-xs text-white md:px-[1%] md:text-sm md:font-bold 
                     tracking-wider ">
                         185 miles
@@ -246,69 +246,69 @@ function Freedom() {
                     map === d && width >372   &&  "absolute  flex sm:hidden text-center md:hidden -left-[60%] ease-in duration-500" }>
                         <div className={map === a ? "w-[150px] border-t-4 border-black cursor-pointer"
                         :" w-[150px] border-t-2 border-black cursor-pointer opacity-40"} onClick={()=>setMap(a)}>
-                            <p className="text-top py-3 text-sm sm:text-base font-bold text-start ">Navigate on Autopilot</p>
-                            <p className="text-xs text-start">Active guidance from on-ramp to off-ramp</p>
+                            <p className="text-top py-3 text-sm sm:text-base font-bold text-start ">San Francisco to Los Angeles</p>
+                            <p className="font-bold text-start">383 miles</p>
                         </div>
                         <div className={map === b ? " w-[150px] border-t-4 border-black cursor-pointer mx-5"
                         : " w-[150px] border-t-2 border-black cursor-pointer mx-5 opacity-40"} onClick={()=>setMap(b)}>
-                            <p className="text-top py-3 text-sm sm:text-base font-bold text-start ">Auto Lane Change</p>
-                            <p className="text-xs text-start">Automatically change lanes while driving on the highway</p>
+                            <p className="text-top py-3 text-sm sm:text-base font-bold text-start ">Berkeley to Lake Tahoe</p>
+                            <p className="font-bold text-start">178 miles</p>
                         </div>
                         <div className={map === c ? " w-[150px] border-t-4 border-black cursor-pointer mr-5"
                         :" w-[150px] border-t-2 border-black cursor-pointer mr-5 opacity-40"} onClick={()=>setMap(c)}>
-                            <p className="text-top py-3 text-sm sm:text-base font-bold text-start">Summon</p>
-                            <p className="text-xs text-start">Automatically retrive your car</p>
+                            <p className="text-top py-3 text-sm sm:text-base font-bold text-start">Manhattan to Boston</p>
+                            <p className="font-bold text-start">211 miles</p>
                         </div>
                         <div onClick={()=>setMap(d)} className={map === d ? " w-[150px] border-t-4 border-black cursor-pointer "
                         : " w-[150px] border-t-2 border-black cursor-pointer opacity-40"} >
-                            <p className="text-top py-3 text-sm sm:text-base font-bold text-start ">Autopark</p>
-                            <p className="text-xs text-start">Parallel and perpendicular parking with a single touch</p>
+                            <p className="text-top py-3 text-sm sm:text-base font-bold text-start ">Fort Lauderdale to Orlando</p>
+                            <p className="font-bold text-start">195 miles</p>
                         </div>
                     </div>
                 </div>
                 <div className="hidden sm:block overflow-x-hidden text-center md:hidden">
                     <div className={map === a ? "inline-block align-text-top w-[120px] border-t-4 border-black cursor-pointer"
                     :"inline-block align-text-top w-[120px] border-t-2 border-black cursor-pointer opacity-40"} onClick={()=>setMap(a)}>
-                        <p className="text-top py-3 text-sm sm:text-base font-bold text-start ">Navigate on Autopilot</p>
-                        <p className="text-xs text-start">Active guidance from on-ramp to off-ramp</p>
+                        <p className="text-top py-3 text-sm sm:text-base font-bold text-start ">San Francisco to Los Angeles</p>
+                        <p className="font-bold text-start">383 miles</p>
                     </div>
                     <div className={map === b ? "inline-block align-text-top w-[120px] border-t-4 border-black cursor-pointer mx-5"
                     : "inline-block align-text-top w-[120px] border-t-2 border-black cursor-pointer mx-5 opacity-40"}  onClick={()=>setMap(b)}>
-                        <p className="text-top py-3 text-sm sm:text-base font-bold text-start ">Auto Lane Change</p>
-                        <p className="text-xs text-start">Automatically change lanes while driving on the highway</p>
+                        <p className="text-top py-3 text-sm sm:text-base font-bold text-start ">Berkeley to Lake Tahoe</p>
+                        <p className="font-bold text-start">178 miles</p>
                     </div>
                     <div className={map === c ? "inline-block align-text-top w-[120px] border-t-4 border-black cursor-pointer mr-5"
                     :"inline-block align-text-top w-[120px] border-t-2 border-black cursor-pointer mr-5 opacity-40"}  onClick={()=>setMap(c)}>
-                        <p className="text-top py-3 text-sm sm:text-base font-bold text-start">Summon</p>
-                        <p className="text-xs text-start">Automatically retrive your car</p>
+                        <p className="text-top py-3 text-sm sm:text-base font-bold text-start">Manhattan to Boston</p>
+                        <p className="font-bold text-start">211 miles</p>
                     </div>
                     <div className={map === d ? "inline-block align-text-top w-[120px] border-t-4 border-black cursor-pointer "
                     : "inline-block align-text-top w-[120px] border-t-2 border-black cursor-pointer opacity-40"}  onClick={()=>setMap(d)}>
-                        <p className="text-top py-3 text-sm sm:text-base font-bold text-start ">Autopark</p>
-                        <p className="text-xs text-start">Parallel and perpendicular parking with a single touch</p>
+                        <p className="text-top py-3 text-sm sm:text-base font-bold text-start ">Fort Lauderdale to Orlando</p>
+                        <p className="font-bold text-start">195 miles</p>
                     </div>
                 </div>
 
                 <div className="hidden md:block w-full text-center ">
                     <div className={map === a ? "inline-block align-text-top w-[150px] lg:w-[200px] text-start pb-3 border-t-4 border-black  cursor-pointer"
                     : "inline-block align-text-top w-[150px] lg:w-[200px] text-start pb-3 border-t-2 border-black opacity-40  cursor-pointer"} onClick={()=>setMap(a)}>
-                        <p className="text-top py-3 text-lg md:text-xl font-bold  ">San Francisco to Los Angeles</p>
-                        <p className="text-xl md:text-4xl font-bold">383 miles</p>
+                        <p className="text-top py-3 text-lg  font-bold  ">San Francisco to Los Angeles</p>
+                        <p className="text-xl md:text-2xl font-bold">383 miles</p>
                     </div>
                     <div className={map === b ? "inline-block  align-text-top w-[150px] lg:w-[200px] text-start mx-12  border-t-4 border-black  cursor-pointer" :
                     "inline-block  align-text-top w-[150px] lg:w-[200px] text-start mx-12  border-t-2 border-black opacity-40  cursor-pointer" } onClick={()=>setMap(b)}>
-                        <p className="py-3 text-lg md:text-xl font-bold">Berkeley to Lake Tahoe</p>
-                        <p className="text-xl md:text-4xl font-bold">178 miles</p>
+                        <p className="py-3 text-lg  font-bold">Berkeley to Lake Tahoe</p>
+                        <p className="text-xl md:text-2xl font-bold">178 miles</p>
                     </div>
                     <div className={map === c ? "inline-block  align-text-top w-[150px] lg:w-[200px] text-start  border-t-4 border-black  cursor-pointer" : 
                     "inline-block  align-text-top w-[150px] lg:w-[200px] text-start  border-t-2 border-black opacity-40  cursor-pointer"} onClick={()=>setMap(c)}>
-                        <p className="py-3 text-lg md:text-xl font-bold">Manhattan to Boston</p>
-                        <p className=" relative text-xl md:text-4xl font-bold">211 miles</p>
+                        <p className="py-3 text-lg  font-bold">Manhattan to Boston</p>
+                        <p className=" relative text-xl md:text-2xl font-bold">211 miles</p>
                     </div>
                     <div className={ map === d ? "inline-block  align-text-top w-[150px] lg:w-[200px] text-start ml-12 border-t-4 border-black cursor-pointer" 
                     : "inline-block  align-text-top w-[150px] lg:w-[200px] text-start ml-12 border-t-2 border-black opacity-40  cursor-pointer"} onClick={()=>setMap(d)}>
-                        <p className="py-3 text-lg md:text-xl font-bold">Fort Lauderdale to Orlando</p>
-                        <p className="text-xl md:text-4xl font-bold">195 miles</p>
+                        <p className="py-3 text-lg font-bold">Fort Lauderdale to Orlando</p>
+                        <p className="text-xl md:text-2xl font-bold">195 miles</p>
                     </div>
                 </div>
             </div> 

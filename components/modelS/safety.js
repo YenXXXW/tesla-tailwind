@@ -115,9 +115,6 @@ const Safety = () => {
             SvgControls2.start("hidden")
         }
 
-        console.log(`SvgControls is ${SvginView}`)
-        console.log(`SvgControls1 is ${SvginView1}`)
-        console.log(`SvgControls2 is ${SvginView2}`)
     },[TopicinView , SvginView , SvginView1 , SvginView2])
 
 

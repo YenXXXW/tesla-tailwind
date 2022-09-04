@@ -10,7 +10,7 @@ const Navbar = ({fill , position }) => {
     const [menu ,setMenu] = useState(false)
 
     return (        
-        <div className={`px-2 w-full  pt-3 z-10 ${position} flex`}>
+        <div className={`px-2 w-full text-sm pt-3 z-10 ${position} flex text-${fill}`}>
             <div className='mt-2 h-2 w-40 '>
                 <svg xmlns= 'http://www.w3.org/2000/svg'  className='cursor-pointer'
                  onClick={()=>{router.push('/')}}>
@@ -25,8 +25,8 @@ const Navbar = ({fill , position }) => {
                     <path fill={fill} d='M108 4 h14 v6 h-2 v-4 h-10 v4 h-2'/>
                 </svg>
             </div>
-            <div className='font-bold w-[70%] xl:hidden'></div>
-                <div className='hidden xl:flex  w-[70%]  justify-around pl-[10%] pr-[5%] '>
+            <div className='font-bold w-[70%] lg:hidden'></div>
+                <div className='hidden lg:flex  w-[70%]  justify-around pl-[10%] pr-[5%] '>
                 <Link href='/modelS' ><p className='font-bold no-underline cursor-pointer'>
                     Model S</p>
                 </Link>
@@ -47,12 +47,12 @@ const Navbar = ({fill , position }) => {
                 </Link>
             </div>
             <div className='font-bold flex justify-around w-[300px] '>
-                <div className='w-[100px] xl:hidden'></div>
-                <div className='hidden xl:flex justify-around w-[200px]'>
+                <div className='w-[100px] lg:hidden'></div>
+                <div className='hidden lg:flex justify-around w-[200px]'>
                     <p>Shop</p>
                     <p>Account</p>
                 </div>
-                <div className='bg-slate-400 rounded-lg px-4 py-1 xl:px-0 xl:py-0 xl:bg-transparent cursor-pointer'
+                <div className='bg-slate-400 rounded-lg px-4 py-1 lg:py-0 lg:bg-transparent cursor-pointer'
                 onClick={()=>setMenu(true)}>
                     Menu
                 </div>
@@ -64,9 +64,9 @@ const Navbar = ({fill , position }) => {
             <div className={menu ? 'fixed top-0 right-0 h-screen w-[300px] bg-white ease-in duration-500 ':
                             'fixed  top-0 -right-[100%] ease-in duration-500 '}>
                 <div className='pt-10 ml-[250px]' onClick={()=>setMenu(false)}>
-                    <AiOutlineClose size={20} className='cursor-pointer'/>
+                    <AiOutlineClose size={20} className='cursor-pointer text-black'/>
                 </div>
-                <div className='flex flex-col ml-10 text-lg font-bold xl:hidden'>
+                <div className='flex flex-col ml-10 text-lg font-bold text-black lg:hidden'>
                     <Link href={'/modelS'} >
                         <p className='no-underline  my-3 cursor-pointer'>Model S</p>
                     </Link>
@@ -86,7 +86,7 @@ const Navbar = ({fill , position }) => {
                         <p className='no-underline my-3 cursor-pointer'>Solar Roof</p>
                     </Link>
                 </div>
-                <div className='flex flex-col ml-10 text-lg font-bold'>
+                <div className='flex flex-col ml-10 text-lg text-black font-bold'>
                     <Link href='/'>
                         <p className='no-underline my-3 cursor-pointer'>Eisting Inventory</p>
                     </Link>

@@ -13,7 +13,7 @@ const Specs = () => {
                 <div className="sm:w-full tracking-wide ">
                     <span className="text-xl md:text-3xl font-bold">Solar Pannel </span>
                     <span className="text-xl md:text-3xl">Specs</span>
-                    <div className="flex flex-row mt-2 md:mt-5">
+                    <div className="flex flex-row mt-4 md:mt-5">
                         <div className="w-1/2 sm:w-[200px]">
                             <svg className='w-[50px] h-[3px] mt-6 mb-2' xmlns= 'http://www.w3.org/2000/svg'><path stroke='white' strokeWidth={'1px'} d='M0 0 h40' className="mt-3"/></svg>
                             <p className="text-sm font-bold">Tile and Power Warranty</p>

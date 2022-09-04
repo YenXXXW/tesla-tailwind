@@ -81,7 +81,7 @@ const Utility = () => {
     return (
         <div className="w-full pb-10">
             <div className="w-full flex flex-col  pb-6">  
-                <div className="mx-auto flex flex-col sm:flex-row pt-3 h-[25vh] justify-center my-10 pl-8 pr-5" ref={ref}>
+                <div className="mx-auto flex flex-col sm:flex-row pt-3  justify-center my-10 pl-8 pr-5" ref={ref}>
                     <div className="min-w-[250px]  mr-10">
                         <motion.p  variants={variant1} initial='hidden' animate={Controls} className='text-xl font-light'>Utility</motion.p>
                         <motion.p  variants={variant2} initial='hidden' animate={Controls}
@@ -91,7 +91,7 @@ const Utility = () => {
                             ORDER NOW
                         </motion.button>
                     </div>
-                    <div className=" max-w-[700px]">
+                    <div className=" max-w-[700px] ">
                         <motion.p  variants={variant3} initial='hidden' animate={Controls}
                         className="sm:text-sm ">Model Y provides maximum versatility—able to carry 7 passengers and their cargo. Each second row seat folds flat independently, creating flexible storage for skis, furniture, luggage and more. The liftgate opens to a low trunk floor that makes loading and unloading easy and quick.</motion.p>
                         <motion.button variants={variant4} initial='hidden' animate={Controls}

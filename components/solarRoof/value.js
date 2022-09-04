@@ -89,7 +89,7 @@ const Value = () => {
                 </div>
                 <div className="sm:my-auto lg:my-0 pr-6">
                     <motion.p  variants={variant3} initial='hidden' animate={Controls}
-                    className="text-sm ">Solar Roof helps pay for itself with the energy it produces. As a fully integrated system, Solar Roof can maximize your solar generation and help you take control of your monthly electricity bill.</motion.p>
+                    className="sm:text-sm ">Solar Roof helps pay for itself with the energy it produces. As a fully integrated system, Solar Roof can maximize your solar generation and help you take control of your monthly electricity bill.</motion.p>
                     
                     <motion.button variants={variant4} initial='hidden' animate={Controls}
                      className="sm:hidden lg:block  lg:mt-[320px] border-[2px]  mt-5 border-gray-800 h-8 rounded-full w-[200px]  lg:w-[80%] hover:text-white hover:bg-gray-800">

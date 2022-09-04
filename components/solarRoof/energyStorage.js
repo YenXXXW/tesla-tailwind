@@ -94,7 +94,7 @@ const EnergyStorage = () => {
                 </div>
                 <div className="sm:my-auto lg:my-0 pr-6">
                     <motion.p  variants={variant3} initial='hidden' animate={Controls}
-                    className="text-sm ">Powerwall is a compact home battery that can be bundled with solar, providing you with 24/7 energy security. It stores the energy you produce with Solar Roof so you can power your home anytime—at night or during an outage.</motion.p>
+                    className="sm:text-sm ">Powerwall is a compact home battery that can be bundled with solar, providing you with 24/7 energy security. It stores the energy you produce with Solar Roof so you can power your home anytime—at night or during an outage.</motion.p>
                     <div className="flex lg:flex-col">
                     <motion.button variants={variant4} initial='hidden' animate={Controls}
                      className="sm:hidden lg:block mr-2 lg:mt-[210px] border-[2px]  mt-5 border-gray-800 h-8 rounded-full w-[200px]  lg:w-[80%] hover:text-white hover:bg-gray-800">

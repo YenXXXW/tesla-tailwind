@@ -74,9 +74,9 @@ const Durability = () => {
             </div>
             <div className="ml-8 flex flex-col sm:flex-row lg:flex-col lg:w-[29%] pt-3 h-[40vh] lg:h-screen">
                 <div className="min-w-[250px] sm:my-auto lg:my-0">
-                    <motion.p  variants={variant1} initial='hidden' animate={Controls}>Durability</motion.p>
+                    <motion.p  variants={variant1} initial='hidden' animate={Controls}  className="font-thin text-xl">Durability</motion.p>
                     <motion.p  variants={variant2} initial='hidden' animate={Controls}
-                    className="text-xl md:text-3xl font-bold lg:mb-3">Protection Against Outages</motion.p>
+                    className="text-2xl md:text-3xl mb-3">Protection Against Outages</motion.p>
                     <div className="flex flex-col ">
                     <motion.button  variants={variant4} initial='hidden' animate={Controls}
                      className="hidden sm:block lg:hidden border-[2px]  mt-5 border-gray-800 h-8 rounded-full w-[200px]  hover:text-white hover:bg-gray-800">
@@ -90,7 +90,7 @@ const Durability = () => {
                 </div>
                 <div className="sm:my-auto lg:my-0 pr-6">
                     <motion.p  variants={variant3} initial='hidden' animate={Controls}
-                    className="text-sm ">Powerwall is a compact home battery that can be bundled with solar, providing you with 24/7 energy security. It stores the energy you produce with Solar Roof so you can power your home anytime—at night or during an outage.</motion.p>
+                    className="sm:text-sm ">Powerwall is a compact home battery that can be bundled with solar, providing you with 24/7 energy security. It stores the energy you produce with Solar Roof so you can power your home anytime—at night or during an outage.</motion.p>
                     <div className="flex lg:flex-col">
                     <motion.button variants={variant4} initial='hidden' animate={Controls}
                      className="sm:hidden lg:block mr-2 lg:mt-[210px] border-[2px]  mt-5 border-gray-800 h-8 rounded-full w-[200px]  lg:w-[80%] hover:text-white hover:bg-gray-800">

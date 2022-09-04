@@ -81,11 +81,11 @@ const Utility = () => {
     return (
         <div className="w-full pb-10">
             <div className="w-full flex flex-col  pb-6">  
-                <div className="mx-auto flex flex-col sm:flex-row pt-3 h-[25vh] justify-center my-10" ref={ref}>
+                <div className="mx-auto flex flex-col sm:flex-row pt-3 h-[25vh] justify-center my-10 pl-8 pr-5" ref={ref}>
                     <div className="min-w-[250px]  mr-10">
-                        <motion.p  variants={variant1} initial='hidden' animate={Controls}>Utility</motion.p>
+                        <motion.p  variants={variant1} initial='hidden' animate={Controls} className='text-xl font-light'>Utility</motion.p>
                         <motion.p  variants={variant2} initial='hidden' animate={Controls}
-                        className="text-xl md:text-2xl font-bold lg:mb-3">A Place for Everything</motion.p>
+                        className="text-2xl md:text-3xl mb-3">A Place for Everything</motion.p>
                         <motion.button  variants={variant4} initial='hidden' animate={Controls}
                         className="hidden sm:block border-[4px]  mt-5 border-gray-700 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-700">
                             ORDER NOW
@@ -93,7 +93,7 @@ const Utility = () => {
                     </div>
                     <div className=" max-w-[700px]">
                         <motion.p  variants={variant3} initial='hidden' animate={Controls}
-                        className="text-sm ">Model Y provides maximum versatility—able to carry 7 passengers and their cargo. Each second row seat folds flat independently, creating flexible storage for skis, furniture, luggage and more. The liftgate opens to a low trunk floor that makes loading and unloading easy and quick.</motion.p>
+                        className="sm:text-sm ">Model Y provides maximum versatility—able to carry 7 passengers and their cargo. Each second row seat folds flat independently, creating flexible storage for skis, furniture, luggage and more. The liftgate opens to a low trunk floor that makes loading and unloading easy and quick.</motion.p>
                         <motion.button variants={variant4} initial='hidden' animate={Controls}
                         className="sm:hidden  border-[4px]  mt-3 border-gray-700 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-700">
                             ORDER NOW
@@ -101,7 +101,7 @@ const Utility = () => {
                     </div>                
                 </div>
                 <div className="w-full  relative" ref={ref}>
-                    <div className=" relative w-[90vw] h-[50vh] sm:w-[90vw] sm:h-[80vh] mx-auto mt-3 ">
+                    <div className=" relative w-[90vw] h-[30vh] sm:w-[90vw] sm:h-[80vh] mx-auto mt-3 ">
                         <Image src={image} layout='fill' objectFit="cover" className="rounded-2xl"/>
                     </div>
                 </div>
@@ -115,8 +115,8 @@ const Utility = () => {
                     onClick={()=>setImage(b)}/>
                     </svg>
                 </div>
-                <p className={image === a ? "block" : "hidden"}>Versatile seating and storage for cargo and passengers</p>
-                <p className={image === b ? "block" : "hidden"}>Room for up to seven with optional third row</p>
+                <p className={image === a ? "block text-base" : "hidden"}>Versatile seating and storage for cargo and passengers</p>
+                <p className={image === b ? "block text-base" : "hidden"}>Room for up to seven with optional third row</p>
             </div>
         </div>
     );

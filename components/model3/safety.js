@@ -110,7 +110,7 @@ const Safety = ({bottom}) => {
                 
                 </div>                        
             </div>
-            <div className="text-base max-w-4xl pl-10 flex flex-col lg:pl-0 lg:pr-4 pt-5 ">
+            <div className="text-base max-w-4xl pl-10 flex flex-col lg:pl-0 lg:pr-4 pt-5 pr-5">
                 <div>
                     <motion.p variants={variant1} initial='hidden' animate={Controls}
                      className="font-light text-xl">Safety</motion.p>

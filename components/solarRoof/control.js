@@ -71,7 +71,7 @@ const Control = () => {
             </div>
             <div className="pl-10 w-full">
                 <div className="mx-auto flex flex-col sm:flex-row max-w-[900px] pt-3 h-[50vh] md:h-[40vh] lg:h-[30vh] ">
-                    <div className="lg:min-w-[350px] my-auto mr-20" ref={ref}>
+                    <div className="lg:min-w-[350px] sm:my-auto mr-20" ref={ref}>
                         <motion.p variants={variant1} initial='hidden' animate={Controls}
                          className="font-thin text-lg">Control</motion.p>
                         <motion.p variants={variant2} initial='hidden' animate={Controls}
@@ -81,7 +81,7 @@ const Control = () => {
                             ORDER NOW
                         </motion.button>
                     </div>
-                    <div className="lg:my-auto pr-6">
+                    <div className="sm:my-auto pr-6">
                         <motion.p variants={variant3} initial='hidden' animate={Controls}
                          className="text-sm ">With the Tesla app, you can monitor your energy production in real time. Control your system from anywhere with instant alerts and remote access.</motion.p>
                         <motion.button variants={variant4} initial='hidden' animate={Controls}

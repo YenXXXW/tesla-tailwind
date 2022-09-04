@@ -66,7 +66,7 @@ const  Experience = () => {
 
     return (
         <div className="w-full my-10 h-screen">
-            <div className="w-full h-[60vh] lg:h-[70vh] relative" ref={ref}>
+            <div className="w-full h-[50vh] lg:h-[70vh] relative" ref={ref}>
                 <Image src='/SolarRoof/SR5.jpg' layout='fill' objectFit='cover'/>
             </div>
             <div className="pl-10 w-full">
@@ -83,7 +83,7 @@ const  Experience = () => {
                     </div>
                     <div className="sm:my-auto pr-6">
                         <motion.p variants={variant3} initial='hidden' animate={Controls}
-                         className="text-sm ">Manage your solar system from anywhere in the world with 24/7 mobile monitoring. Watch your energy in real time or set your preferences to optimize for energy independence.</motion.p>
+                         className="sm:text-sm ">Manage your solar system from anywhere in the world with 24/7 mobile monitoring. Watch your energy in real time or set your preferences to optimize for energy independence.</motion.p>
                         <motion.button variants={variant4} initial='hidden' animate={Controls}
                          className="sm:hidden   border-[3px]  mt-5 border-gray-800 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-800">
                             ORDER NOW

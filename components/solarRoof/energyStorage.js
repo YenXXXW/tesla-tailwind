@@ -78,9 +78,9 @@ const EnergyStorage = () => {
             </div>
             <div className="ml-8 flex flex-col sm:flex-row lg:flex-col lg:w-[29%] pt-3 h-[40vh] lg:h-screen">
                 <div className="min-w-[250px] sm:my-auto lg:my-0">
-                    <motion.p  variants={variant1} initial='hidden' animate={Controls}>Energy Storage</motion.p>
+                    <motion.p  variants={variant1} initial='hidden' animate={Controls}  className="font-thin text-xl">Energy Storage</motion.p>
                     <motion.p  variants={variant2} initial='hidden' animate={Controls}
-                    className="text-xl md:text-3xl font-bold lg:mb-3">Protection Against Outages</motion.p>
+                    className="text-2xl md:text-3xl mb-3">Protection Against Outages</motion.p>
                     <div className="flex flex-col ">
                     <motion.button  variants={variant4} initial='hidden' animate={Controls}
                      className="hidden sm:block lg:hidden border-[2px]  mt-5 border-gray-800 h-8 rounded-full w-[200px]  hover:text-white hover:bg-gray-800">

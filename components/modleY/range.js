@@ -100,4 +100,4 @@ const Range =()=>{
         
     )
 }
-export default Range
+export default Range;

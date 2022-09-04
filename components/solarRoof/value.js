@@ -77,9 +77,9 @@ const Value = () => {
             </div>
             <div className="ml-8 flex flex-col sm:flex-row lg:flex-col lg:w-[29%] pt-3 h-[40vh] lg:h-screen">
                 <div className="min-w-[250px] sm:my-auto lg:my-0 lg:mt-4">
-                    <motion.p  variants={variant1} initial='hidden' animate={Controls}>Value</motion.p>
+                    <motion.p  variants={variant1} initial='hidden' animate={Controls} className="font-thin text-xl">Value</motion.p>
                     <motion.p  variants={variant2} initial='hidden' animate={Controls}
-                    className="text-xl md:text-3xl font-bold lg:mb-3">Pay Less</motion.p>
+                    className="text-2xl md:text-3xl  lg:mb-3">Pay Less</motion.p>
                     
                     <motion.button  variants={variant4} initial='hidden' animate={Controls}
                      className="hidden sm:block lg:hidden border-[2px]  mt-5 border-gray-800 h-8 rounded-full w-[200px]  hover:text-white hover:bg-gray-800">

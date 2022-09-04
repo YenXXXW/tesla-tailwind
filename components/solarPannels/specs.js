@@ -3,7 +3,7 @@ import Image from "next/image";
 const Specs = () => {
     return ( 
         <div className="sm:h-screen bg-black flex flex-col sm:flex-row pb-5 pl-7 ">
-            <div className=" flex  justify-center  sm:hidden ">
+            <div className=" flex  justify-center h-[300px] sm:hidden ">
                 <Image src='/solarPannel/SP6.jpg' width={'400px'} height={'200px'} className='align-middle '/>
             </div>
             <div className="w-1/2  flex-col justify-center hidden sm:flex">
@@ -11,7 +11,7 @@ const Specs = () => {
             </div>
             <div className="text-white h-full text-sm  w-full sm:w-1/2 sm:grid sm:items-center">
                 <div className="sm:w-full tracking-wide ">
-                    <span className="text-xl md:text-3xl font-bold">Solar Roof </span>
+                    <span className="text-xl md:text-3xl font-bold">Solar Pannel </span>
                     <span className="text-xl md:text-3xl">Specs</span>
                     <div className="flex flex-row mt-2 md:mt-5">
                         <div className="w-1/2 sm:w-[200px]">

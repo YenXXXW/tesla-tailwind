@@ -68,7 +68,7 @@ const Efficiency = () => {
     return (
         <div className="w-full flex flex-col lg:flex-row-reverse mb-10">
             <div className="w-full lg:w-[70%] relative" ref={ref}>
-                <div className="w-full h-[35vh] relative lg:hidden">
+                <div className="w-full h-[40vh] relative lg:hidden">
                     <Image src='/SolarRoof/SR4.jpg' layout="fill" objectFit="cover"/>
                 </div>
                 <div className="hidden w-full h-screen relative lg:block">

@@ -1,45 +1,98 @@
 import Image from "next/image";
+import { useEffect } from "react";
+import { motion , useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
-const Safety = () => {
+const Savings = () => {
+
+    const variant1 ={
+        hidden : {
+            y: 50 , opacity : 0
+        }, 
+        visible : {
+            y : 0 , opacity : 1,
+            transition : {
+                delay : 0.2
+            }
+        }
+    }
+    const variant2 ={
+        hidden : {
+            y: 50 , opacity : 0
+        }, 
+        visible : {
+            y : 0 , opacity : 1,
+            transition : {
+                delay : 0.35
+            }
+        }
+    }
+    const variant3 ={
+        hidden : {
+            y: 50 , opacity : 0
+        }, 
+        visible : {
+            y : 0 , opacity : 1,
+            transition : {
+                delay : 0.50
+            }
+        }
+    }
+    const variant4 ={
+        hidden : {
+            y: 50 , opacity : 0
+        }, 
+        visible : {
+            y : 0 , opacity : 1,
+            transition : {
+                delay : 0.65
+            }
+        }
+    }
+
+    const Controls = useAnimation()        
+    const { ref , inView  } = useInView()
+
+    useEffect(()=>{
+        if (inView){
+            Controls.start("visible")
+        }
+        if(!inView){
+            Controls.start('hidden')
+        }
+       
+    },[inView])
+    
+
+    
     return (
-        <div className="py-10  flex flex-col lg:flex-row overflow-x-hidden w-full">
-            <div className="relative w-[904px] h-[568px]">
-                
-                <Image src="/model3/32.jpg" layout="fill" objectFit="cover" className="relative"/>
-                <div className="absolute z-40 w-[904px] h-[568px]">
-                    <svg xmlns= 'http://www.w3.org/2000/svg' viewBox="0 0 904 568" className="bg-red-300 absolute" >
-                        <circle fill='white' stroke="black" strokeWidth={'2px'} r="4" cx="90" cy="200" />
-                        <path 
-                            stroke="black" strokeWidth={'2px'} d="M90 196 v-100" />
-                        <circle fill='white' stroke="black" strokeWidth={'2px'} r="4" cx="260" cy="80" />
-                        <path
-                            stroke="black" strokeWidth={'2px'} d="M260 77 v-47" />
-                        <circle fill='white' stroke="black" strokeWidth={'2px'} r="4" cx="240" cy="230" />
-                        <path 
-                            stroke="black" strokeWidth={'2px'} d="M240 233 v60" />
-                    </svg>     
-                </div>
+        <div className="w-full h-screen flex flex-col lg:flex-row-reverse pb-10">
+            <div className="w-full lg:w-[70%] " ref={ref}>
+                <video src='/SolarPannel/SPv1.mp4'  autoPlay loop defaultmuted='true' width='940px'/>
             </div>
-            
-            <div className="max-w-4xl pl-8 md:pl-10 flex flex-col lg:w-[330px]">
-                <div className="">
-                    <p className="font-light">Safety</p>
-                    <p className="text-3xl font-bold">Built for Safety</p>
-                    <button className="hidden w-[250px] border-[3px] border-black rounded-full  mt-6 py-1 lg:block"
-                    >ORDER NOW</button>
+            <div className="ml-8 flex flex-col sm:flex-row lg:flex-col lg:w-[29%] pt-3  lg:h-screen">
+                <div className="min-w-[250px] sm:my-auto lg:my-0">
+                    <motion.p  variants={variant1} initial='hidden' animate={Controls}>Savings</motion.p>
+                    <motion.p  variants={variant2} initial='hidden' animate={Controls}
+                    className="text-xl md:text-3xl font-bold lg:mb-3">Electricity For Less</motion.p>
+                    <motion.button  variants={variant4} initial='hidden' animate={Controls}
+                     className="hidden sm:block lg:hidden border-[3px]  mt-5 border-gray-800 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-800">
+                        See your Savings
+                    </motion.button>
                 </div>
-                <div className="">
-                    <p>Safety is the most important part of every Tesla. We design our vehicles to exceed safety standards.</p>
-                    <p className="font-bold mt-5">5-Star Rating</p>
-                    <p>Model 3 achieved NHTSA 5-star safety ratings in every category and subcategory.</p>
-                    <p className="font-bold mt-5">Top Safety Pick+</p>
-                    <p>Model 3 received the IIHS Top Safety Pick+ award, with top ratings in all crashworthiness and front crash prevention categories.</p>
-                    <button className=" w-[250px] border-[3px] border-black rounded-full  mt-6 py-1 lg:hidden"
-                    >ORDER NOW</button>
-                </div>                
+                <div className="sm:my-auto lg:my-0 pr-6">
+                    <motion.p  variants={variant3} initial='hidden' animate={Controls}
+                    className="text-sm ">Use solar energy to power your home and reduce your dependence on the grid. Purchase solar at the lowest price of any national provider with Tesla&apos;s price match guarantee and take control of your monthly electricity bill. Learn more about your potential savings in our Design Studio.</motion.p>
+                    <motion.button variants={variant4} initial='hidden' animate={Controls}
+                     className="sm:hidden lg:block lg:mt-[280px] border-[3px]  mt-3 border-gray-800 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-800">
+                        See your Savings
+                    </motion.button>
+                </div>
+                
             </div>
         </div>
+
     );
 }
  
-export default Safety;
+export default Savings;

@@ -67,7 +67,7 @@ const Savings = () => {
     
     return (
         <div>
-            <video src='/SolarPannel/Spv2.mp4'/>
+            <video src='/modelS/Sv6.mp4' autoPlay loop defaultmuted='true' width='600px' />
         </div>
 
     );

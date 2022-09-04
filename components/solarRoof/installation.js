@@ -64,7 +64,7 @@ const Installation = () => {
     
 
     return (
-        <div className="w-full my-10 bg-red-300">
+        <div className="w-full my-10 ">
             
             <div className="pl-10 w-full" ref={ref}>
                 <div className="mx-auto flex flex-col sm:flex-row max-w-[900px] pt-3 h-[50vh] md:h-[40vh] lg:h-[30vh] ">

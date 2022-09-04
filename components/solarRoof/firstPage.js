@@ -81,7 +81,7 @@ const FirstPage = () => {
     return ( 
         <div className="h-screen relative text-white tracking-wide" ref={ref}>
             <Navbar fill={'white'} position={'absolute'}/>
-            <Image src='/solarRoof/SR1.jpg' layout="fill" objectFit="cover"/>
+            <Image src='/SolarRoof/SR1.jpg' layout="fill" objectFit="cover"/>
             <motion.div variants={variant1} initial='hidden' animate={modelControls}
              className="absolute top-[15%] w-full">
                 <p className="text-center text-5xl">Solar Roof</p>

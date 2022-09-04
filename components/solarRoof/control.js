@@ -67,7 +67,7 @@ const Control = () => {
     return (
         <div className="w-full my-10 h-screen">
             <div className="w-full h-[50vh] md:h-[60vh] lg:h-[70vh] relative" ref={ref}>
-                <Image src='/solarRoof/SR5.jpg' layout='fill' objectFit='cover'/>
+                <Image src='/SolarRoof/SR5.jpg' layout='fill' objectFit='cover'/>
             </div>
             <div className="pl-10 w-full">
                 <div className="mx-auto flex flex-col sm:flex-row max-w-[900px] pt-3 h-[50vh] md:h-[40vh] lg:h-[30vh] ">

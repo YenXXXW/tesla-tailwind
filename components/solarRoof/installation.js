@@ -90,7 +90,7 @@ const Installation = () => {
             </div>
                  
             <div className="w-full mt-5 flex justify-center">
-                <video src='/solarRoof/SRv2__.mp4' autoPlay loop defaultmuted='true' width="820px"  className="rounded-lg "/>
+                <video src='/SolarRoof/SRv2__.mp4' autoPlay loop defaultmuted='true' width="820px"  className="rounded-lg "/>
             </div>
         </div>
     );

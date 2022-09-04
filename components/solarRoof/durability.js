@@ -69,7 +69,7 @@ const Durability = () => {
         <div className="w-full flex flex-col lg:flex-row pb-10">
             <div className="w-full lg:w-[70%] relative " ref={ref}>                
                 <div className="w-full flex justify-center">
-                    <video src='/solarRoof/SRv1_.mp4' autoPlay loop defaultmuted='true' width="820px" className="rounded-lg"/>
+                    <video src='/SolarRoof/SRv1_.mp4' autoPlay loop defaultmuted='true' width="820px" className="rounded-lg"/>
                 </div>
             </div>
             <div className="ml-8 flex flex-col sm:flex-row lg:flex-col lg:w-[29%] pt-3 h-[40vh] lg:h-screen">

@@ -67,7 +67,7 @@ const PowerOn= () => {
     return (
         <div className="w-full my-10  ">
             <div className="w-full  relative" ref={ref}>
-                <video src='/SolarPannel/SPv2.mp4' autoPlay loop defaultmuted='true' />
+                <video src='/solarPannel/SPv2.mp4' autoPlay loop defaultmuted='true' />
             </div>
             <div className=" pl-10 w-full">
                 <div className="mx-auto  flex flex-col sm:flex-row max-w-[900px] pt-3 h-[50vh] md:h-[40vh] lg:h-[30vh] ">

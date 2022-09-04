@@ -14,6 +14,14 @@ function SolarPanels() {
         <div>
             <FirstPage />
             <Savings />
+            <Design />
+            <PowerWall />
+            <PowerOn />
+            <Efficiency />
+            <Experience />
+            <Specs />
+            <Last />
+            
         </div>
     );
 }

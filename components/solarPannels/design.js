@@ -69,7 +69,7 @@ const Design = () => {
         <div className="w-full h-screen flex flex-col lg:flex-row-reverse">
             <div className="w-full lg:w-[70%] relative" ref={ref}>
                 <div className="w-full h-[40vh] sm:h-[60vh] relative lg:hidden">
-                    <Image src='/SolarPannel/SP2.jpg' layout="fill" objectFit="cover"/>
+                    <Image src='/solarPannel/SP2.jpg' layout="fill" objectFit="cover"/>
                 </div>
                 <div className="hidden w-full h-screen relative lg:block">
                     <Image src='/SolarPannel/SP2.jpg' layout="fill" objectFit="cover"/>

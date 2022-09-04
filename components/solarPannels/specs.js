@@ -4,7 +4,7 @@ const Specs = () => {
     return ( 
         <div className="sm:h-screen bg-black flex flex-col sm:flex-row pb-5 pl-7 ">
             <div className=" flex  justify-center  sm:hidden ">
-                <Image src='/SolarPannel/SP6.jpg' width={'400px'} height={'200px'} className='align-middle '/>
+                <Image src='/solarPannel/SP6.jpg' width={'400px'} height={'200px'} className='align-middle '/>
             </div>
             <div className="w-1/2  flex-col justify-center hidden sm:flex">
                 <Image src='/SolarPannel/SP6.jpg' width={'550px'} height={'300px'} className='align-middle '/>

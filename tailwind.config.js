@@ -32,7 +32,7 @@ module.exports = {
   },
     extend: {
       fontFamily : {
-        Barlow : ['Barlow']
+        Rubik : ['Rubik']
       },      
     },
     

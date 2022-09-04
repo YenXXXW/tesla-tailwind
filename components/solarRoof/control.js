@@ -81,7 +81,7 @@ const Control = () => {
                             ORDER NOW
                         </motion.button>
                     </div>
-                    <div className="my-auto pr-6">
+                    <div className="lg;my-auto pr-6">
                         <motion.p variants={variant3} initial='hidden' animate={Controls}
                          className="text-sm ">With the Tesla app, you can monitor your energy production in real time. Control your system from anywhere with instant alerts and remote access.</motion.p>
                         <motion.button variants={variant4} initial='hidden' animate={Controls}

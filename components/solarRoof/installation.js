@@ -68,7 +68,7 @@ const Installation = () => {
             
             <div className="pl-10 w-full" ref={ref}>
                 <div className="mx-auto flex flex-col sm:flex-row max-w-[900px] pt-3 h-[50vh] md:h-[40vh] lg:h-[30vh] ">
-                    <div className="lg:min-w-[350px] my-auto mr-20" ref={ref}>
+                    <div className="lg:min-w-[350px] sm:my-auto mr-20" ref={ref}>
                         <motion.p variants={variant1} initial='hidden' animate={Controls}
                           className="font-thin text-xl">Installation</motion.p>
                         <motion.p variants={variant2} initial='hidden' animate={Controls}
@@ -78,7 +78,7 @@ const Installation = () => {
                             ORDER NOW
                         </motion.button>
                     </div>
-                    <div className="my-auto pr-6">
+                    <div className="sm:my-auto pr-6">
                         <motion.p variants={variant3} initial='hidden' animate={Controls}
                          className="sm:text-sm ">Our in-house team of energy professionals has installed nearly 4.0 GW of solar across approximately 480,000 roofs—cumulatively generating over 25.0 TWhs of clean energy. From design to power on, we take care of everything. Chat with an Energy Advisor to ask any questions about Solar Roof.</motion.p>
                         <motion.button variants={variant4} initial='hidden' animate={Controls}

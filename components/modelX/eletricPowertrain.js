@@ -46,8 +46,8 @@ function ElectricPowerTrain() {
         <>
         <motion.div className="mt-[100px] mx-10 lg:ml-[100px] xl:ml-[150px]"
          variants={variant} initial='hidden' animate={Controls}>
-            <p className="font-bold text-3xl" ref={ref}>Electric Powertrain</p>
-            <p className=" max-w-4xl my-3 md:text-base">
+            <p className="text-3xl" ref={ref}>Electric Powertrain</p>
+            <p className=" max-w-4xl my-3 text-base">
             Model X platforms unite powertrain and battery technologies for unrivaled performance, range and efficiency. New module and pack thermal architecture allows faster charging and gives you more power and endurance in all conditions.
             </p>
         </motion.div>
@@ -59,8 +59,8 @@ function ElectricPowerTrain() {
         </div>
         <div className="pb-6">
             <div className="relative flex 2xs:hidden overflow-x-hidden overflow-y-visible">
-                <div className={image === '/modelS/S14.jpg' ? "border-t-4 border-black pl-3 relative left-[0%] w-[250px] ease-in duration-500 cursor-pointer h-[55vh]"
-                : "border-t-2 border-black pl-3 absolute -left-[42%] w-[250px] ease-in duration-500 opacity-40 cursor-pointer h-[55vh]"}  onClick={()=>setImage('/modelS/S14.jpg')}>
+                <div className={image === '/modelS/S14.jpg' ? "border-t-4 border-black pl-3 relative left-[0%] w-[250px] ease-in duration-500 cursor-pointer h-[65vh]"
+                : "border-t-2 border-black pl-3 absolute -left-[42%] w-[250px] ease-in duration-500 opacity-40 cursor-pointer h-[65vh]"}  onClick={()=>setImage('/modelS/S14.jpg')}>
                     <h4 className='font-bold mt-3'>Model X</h4>
                     <p className="text-sm max-w-xl my-3">Dual Motor All-Wheel Drive platform has the longest range, and now delivers incredible power and acceleration.</p>
                     <div>
@@ -79,8 +79,8 @@ function ElectricPowerTrain() {
                     </div>
                 
                 </div>
-                <div className={image === '/modelS/S6.jpg' ? "border-t-4 border-black pl-3 relative left-[30%] w-[250px] ease-in duration-500 cursor-pointer h-[55vh]" : 
-                "border-t-2 border-black pl-3 absolute left-[73%] w-[250px] ease-in duration-500 opacity-40 cursor-pointer h-[55vh]"} onClick={()=>setImage('/modelS/S6.jpg')}>
+                <div className={image === '/modelS/S6.jpg' ? "border-t-4 border-black pl-3 relative left-[30%] w-[250px] ease-in duration-500 cursor-pointer h-[65vh]" : 
+                "border-t-2 border-black pl-3 absolute left-[73%] w-[250px] ease-in duration-500 opacity-40 cursor-pointer h-[65vh]"} onClick={()=>setImage('/modelS/S6.jpg')}>
                     <h4 className='font-bold mt-3'>Model X Plaid</h4>
                     <p className="text-sm max-w-xl my-3">Tri Motor All-Wheel Drive platform with torque vectoring features three independent motors, each with a carbon fiber-sleeved rotor that maintains peak power output all the way to top speed.</p>
                     <div>

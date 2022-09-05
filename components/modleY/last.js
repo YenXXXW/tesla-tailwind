@@ -75,12 +75,12 @@ const Last =() =>{
     },[TopicInView , inView])
 
     return(
-        <div className="pt-10 h-screen bg-black text-white">
+        <div className="pt-10 h-screen text-white">
         <div className="pt-10 ml-9 text-center md:flex lg:text-start ">
             <div className="mx-auto lg:w-2/5" ref={TopicRef}>
                 <motion.p className="text-start xs:text-center text-2xl font-bold mt-7 mb-4 "
                  variants={variant1} initial='hidden' animate={TopicControls}>
-                    Order Model X
+                    Order Model Y
                 </motion.p>
                 <div className="flex flex-col lg:flex-row ">
                     <motion.button  variants={variant2} initial='hidden' animate={TopicControls}

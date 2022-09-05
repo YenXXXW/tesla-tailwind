@@ -137,13 +137,13 @@ const Interior = () => {
                         ORDER NOW
                     </motion.button>
                 </div>
-                <div className="md:my-auto md:pr-4 ">
+                <div className="md:my-auto pr-3 ">
                     <motion.p variants={variant3} initial='hidden' animate={modelControls}
                      className="max-w-3xl sm:text-sm">
                     The inside of Model 3 is unlike any other car. You can use your smartphone as a key, and access all driver controls in the central 15-inch touchscreen. The all-glass roof extends from front to back, creating a sense of openness from every seat.
                     </motion.p>
                     <motion.button variants={variant4} initial='hidden' animate={modelControls}
-                     className="w-[250px] xs:mt-5 border-[3px] border-gray-800 rounded-full  hover:bg-gray-800 hover:text-white md:hidden">
+                     className="w-[250px] mt-5 border-[3px] border-gray-800 rounded-full  hover:bg-gray-800 hover:text-white md:hidden">
                         ORDER NOW
                     </motion.button>
                 </div>

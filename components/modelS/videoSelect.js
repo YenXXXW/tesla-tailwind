@@ -1,36 +1,39 @@
-import { useState , useEffect } from 'react'
+import { useState , useEffect } from 'react';
+import { useInview } from 'react-intersection-observer'
 
 function VideoSelect() {
     const [video , setVideo ] = useState('/modelS/Sv1.mp4')
 
+    const { ref , inView} = useInview()
+
     useEffect(()=>{
         const interval1 = setInterval(()=>{
-            if (video === '/modelS/Sv1.mp4'){
+            if (inView && video === '/modelS/Sv1.mp4'){
                 setVideo('/modelS/Sv2.mp4')
             }
         },16000)
 
         const interval2 = setInterval(()=>{
-            if (video === '/modelS/Sv2.mp4'){
+            if (inView && video === '/modelS/Sv2.mp4'){
                 setVideo('/modelS/Sv3.mp4')
             }
-            if(video === '/modelS/Sv3.mp4'){
+            if(inView && video === '/modelS/Sv3.mp4'){
                 setVideo('/modelS/Sv4.mp4')
             }
             
         },7000)
         
         const interval3 = setInterval(()=>{
-            if (video === '/modelS/Sv3.mp4'){
+            if ( inView && video === '/modelS/Sv3.mp4'){
                 setVideo('/modelS/Sv4.mp4')
             }
-            if(video === '/modelS/Sv4.mp4'){
+            if( inView && video === '/modelS/Sv4.mp4'){
                 setVideo('/modelS/Sv5.mp4')
             }
         },6000)
 
         const interval4 = setInterval(()=>{
-            if (video === '/modelS/Sv5.mp4'){
+            if ( inView && video === '/modelS/Sv5.mp4'){
                 setVideo('/modelS/Sv1.mp4')
             }
         },12000)
@@ -41,28 +44,30 @@ function VideoSelect() {
             clearInterval(interval3);      
             clearInterval(interval4);    
         } 
-    },[video])
+    },[inView , video])
     return (
         <div className="relative bg-black">
-            <div className={video === '/modelS/Sv1.mp4' ? "flex justify-center pt-[100px]" : 'hidden'}>
-                <video src={'/modelS/Sv1.mp4'} layout='fill'  autoPlay loop defaultmuted='true'
-                className=" rounded-3xl"></video>                
-            </div>
-            <div className={video === '/modelS/Sv2.mp4' ? "flex justify-center pt-[100px]" : 'hidden'}>
-                <video src={'/modelS/Sv2.mp4'} layout='fill'  autoPlay loop defaultmuted='true'
-                className=" rounded-3xl"></video>                
-            </div>
-            <div className={video === '/modelS/Sv3.mp4' ? "flex justify-center pt-[100px]" : 'hidden'}>
-                <video src={'/modelS/Sv3.mp4'} layout='fill'  autoPlay loop defaultmuted='true'
-                className=" rounded-3xl"></video>                
-            </div>
-            <div className={video === '/modelS/Sv4.mp4' ? "flex justify-center pt-[100px]" : 'hidden'}>
-                <video src={'/modelS/Sv4.mp4'} layout='fill'  autoPlay loop defaultmuted='true'
-                className=" rounded-3xl"></video>                
-            </div>
-            <div className={video === '/modelS/Sv5.mp4' ? "flex justify-center pt-[100px]" : 'hidden'}>
-                <video src={'/modelS/Sv5.mp4'} layout='fill'  autoPlay loop defaultmuted='true'
-                className=" rounded-3xl"></video>                
+            <div ref={ref}>
+                <div className={video === '/modelS/Sv1.mp4' ? "flex justify-center pt-[100px]" : 'hidden'}>
+                    <video src={'/modelS/Sv1.mp4'} layout='fill'  autoPlay loop defaultmuted='true'
+                    className=" rounded-3xl"></video>                
+                </div>
+                <div className={video === '/modelS/Sv2.mp4' ? "flex justify-center pt-[100px]" : 'hidden'}>
+                    <video src={'/modelS/Sv2.mp4'} layout='fill'  autoPlay loop defaultmuted='true'
+                    className=" rounded-3xl"></video>                
+                </div>
+                <div className={video === '/modelS/Sv3.mp4' ? "flex justify-center pt-[100px]" : 'hidden'}>
+                    <video src={'/modelS/Sv3.mp4'} layout='fill'  autoPlay loop defaultmuted='true'
+                    className=" rounded-3xl"></video>                
+                </div>
+                <div className={video === '/modelS/Sv4.mp4' ? "flex justify-center pt-[100px]" : 'hidden'}>
+                    <video src={'/modelS/Sv4.mp4'} layout='fill'  autoPlay loop defaultmuted='true'
+                    className=" rounded-3xl"></video>                
+                </div>
+                <div className={video === '/modelS/Sv5.mp4' ? "flex justify-center pt-[100px]" : 'hidden'}>
+                    <video src={'/modelS/Sv5.mp4'} layout='fill'  autoPlay loop defaultmuted='true'
+                    className=" rounded-3xl"></video>                
+                </div>
             </div>
             <div className='mx-10 md:ml-[400px] pb-[100px] '>
             <div className="flex mt-10  w-[150px] h-[30px] sm:hidden">

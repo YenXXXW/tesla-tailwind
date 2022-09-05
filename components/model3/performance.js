@@ -79,8 +79,8 @@ const Performance = () => {
     },[inView])
 
     return (
-        <div className="h-screen">
-            <div className="h-[45vh] sm:h-[60vh] w-full relative " ref={ref}>
+        <div>
+            <div className="h-[60vh] w-full relative " ref={ref}>
                 <div className="absolute z-30 bottom-5 w-full text-white">
                     <div className="flex justify-around text-center w-full">
                         <div>
@@ -124,16 +124,16 @@ const Performance = () => {
             <div className="max-w-[1100px] pl-8 md:pl-10 flex flex-col my-4 lg:flex-row ">
                 <div className="sm:w-[380px] lg:pl-14">
                     <motion.p variants={variant1} initial='hidden' animate={specControls}
-                     className="font-light mt-2">Performance</motion.p>
+                     className="font-light text-xl mt-2">Performance</motion.p>
                     <motion.p variants={variant2} initial='hidden' animate={specControls}
-                     className="text-3xl font-bold">Quickest Acceleration</motion.p>
+                     className="text-2xl md:text-3xl mb-3">Quickest Acceleration</motion.p>
                     <motion.button variants={variant4} initial='hidden' animate={specControls}
                      className="hidden w-[250px] border-[3px] border-gray-800 rounded-full  mt-6 py-1 lg:block hover:bg-gray-800 hover:text-white"
                     >ORDER NOW</motion.button>
                 </div>
                 <div className="lg:pl-14">
                     <motion.p variants={variant3} initial='hidden' animate={specControls}
-                     className="text-sm lg:pl-40 lg:pt-3">Model 3 comes with the option of dual motor all-wheel drive, 20” Überturbine Wheels and Performance Brakes for total control in all weather conditions. A carbon fiber spoiler improves stability at high speeds, all allowing Model 3 to accelerate from 0-60 mph* in as little as 3.1 seconds.</motion.p>
+                     className="sm:text-sm lg:pl-40 lg:pt-3 pr-5">Model 3 comes with the option of dual motor all-wheel drive, 20” Überturbine Wheels and Performance Brakes for total control in all weather conditions. A carbon fiber spoiler improves stability at high speeds, all allowing Model 3 to accelerate from 0-60 mph* in as little as 3.1 seconds.</motion.p>
                     <motion.button  variants={variant4} initial='hidden' animate={specControls}
                      className=" w-[250px] border-[3px] border-gray-800 rounded-full  mt-6 py-1 lg:hidden hover:bg-gray-800 hover:text-white"
                     >ORDER NOW</motion.button>

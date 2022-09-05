@@ -82,14 +82,14 @@ const Last =() =>{
                  variants={variant1} initial='hidden' animate={TopicControls}>
                     Model X
                 </motion.p>
-                <div className="flex justify-center flex-col lg:flex-row ">
+                <div className="flex w-full  bg-red-300  flex-col lg:flex-row ">
                     <motion.button  variants={variant2} initial='hidden' animate={TopicControls}
-                     className=" w-5/6 rounded-full text-lg font-bold border-[4px] border-gray-800 hover:bg-gray-800 hover:text-white hover:font-normal md:w-[250px] lg:w-[250px] lg:mr-20"
+                     className=" mx-auto w-[300px] justify-center rounded-full text-lg font-bold border-[4px] border-gray-800 hover:bg-gray-800 hover:text-white hover:font-normal md:w-[250px] lg:w-[250px] lg:mr-20"
                     >
                         ORDER NOW
                     </motion.button>
                     <motion.button  variants={variant3} initial='hidden' animate={TopicControls}
-                     className=" w-5/6 rounded-full text-lg font-bold border-[4px] mt-4 border-gray-800 hover:bg-gray-800 hover:text-white hover:font-normal md:w-[250px] lg:mt-0 lg:w-[250px]"
+                     className=" mx-auto w-[300px]  rounded-full text-lg font-bold border-[4px] mt-4 border-gray-800 hover:bg-gray-800 hover:text-white hover:font-normal md:w-[250px] lg:mt-0 lg:w-[250px]"
                     >
                         Compare
                     </motion.button>

@@ -86,7 +86,7 @@ const Safety = ({bottom}) => {
     },[inView])  
 
     return (
-        <div className="pt-10 flex flex-col lg:flex-row " >
+        <div className="py-10 flex flex-col lg:flex-row " >
             <div className="bg-white flex justify-center">
                 
                 <div className="relative w-[300px] md:w-[400px] lg:w-[73vw] " >

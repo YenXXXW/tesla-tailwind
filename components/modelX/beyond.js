@@ -64,7 +64,7 @@ const BeyondLudicrious =()=>{
     return(
         <>
         <div className="h-[500px] relative ">
-            <Image src='/modelX/X10.jpg' layout='fill' objectFit="contain"/>
+            <Image src='/modelX/X10.jpg' layout='fill' objectFit="fill"/>
             <div className="absolute bottom-20 w-full">
                 <div className="flex justify-around text-white xl:mx-40  lg:mx-52"  ref={ref}>
                     <motion.div className="text-center" 

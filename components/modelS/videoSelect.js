@@ -1,10 +1,10 @@
 import { useState , useEffect } from 'react';
-import { useInview } from 'react-intersection-observer'
+import { useInView } from "react-intersection-observer";
 
 function VideoSelect() {
     const [video , setVideo ] = useState('/modelS/Sv1.mp4')
 
-    const { ref , inView} = useInview()
+    const { ref , inView} = useInView()
 
     useEffect(()=>{
         const interval1 = setInterval(()=>{

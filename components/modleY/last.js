@@ -84,12 +84,12 @@ const Last =() =>{
                 </motion.p>
                 <div className="flex flex-col lg:flex-row ">
                     <motion.button  variants={variant2} initial='hidden' animate={TopicControls}
-                     className=" w-5/6 rounded-full text-sm border-[4px]  border-white hover:bg-white hover:text-gray-800   md:w-[250px] lg:w-[250px] lg:mr-20"
+                     className=" w-5/6 rounded-full text-sm border-[3px]  border-gray-800 hover:bg-gray-800 hover:text-white   md:w-[250px] lg:w-[250px] lg:mr-20"
                     >
                         ORDER NOW
                     </motion.button>
                     <motion.button  variants={variant3} initial='hidden' animate={TopicControls}
-                     className=" w-5/6 rounded-full py-1 text-sm border-[4px] mt-4  border-white hover:bg-white hover:text-gray-800  md:w-[250px] lg:mt-0 lg:w-[250px]"
+                     className=" w-5/6 rounded-full py-1 text-sm border-[3px] mt-4  border-gray-800 hover:bg-gray-800 hover:text-white  md:w-[250px] lg:mt-0 lg:w-[250px]"
                     >
                         Compare
                     </motion.button>

@@ -58,7 +58,7 @@ function ElectricPowerTrain() {
             <Image src='/modelS/S6.jpg' layout="fill" objectFit="cover"/>
         </div>
         <div className="pb-6">
-            <div className="relative flex 2xs:hidden overflow-x-hidden overflow-y-auto">
+            <div className="relative flex 2xs:hidden overflow-x-hidden overflow-y-visible">
                 <div className={image === '/modelS/S14.jpg' ? "border-t-4 border-black pl-3 relative left-[0%] w-[250px] ease-in duration-500 cursor-pointer"
                 : "border-t-2 border-black pl-3 absolute -left-[42%] w-[250px] ease-in duration-500 opacity-40 cursor-pointer"}  onClick={()=>setImage('/modelS/S14.jpg')}>
                     <h4 className='font-bold mt-3'>Model X</h4>

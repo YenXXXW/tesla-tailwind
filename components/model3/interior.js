@@ -129,17 +129,17 @@ const Interior = () => {
             <div className="py-3 ml-10 flex flex-col md:flex-row">
                 <div className="md:ml-[100px] md:mr-[70px] md:w-[400px] ">
                     <motion.p variants={variant1} initial='hidden' animate={modelControls}
-                     className="font-light">Interior</motion.p>
+                     className="font-light text-xl">Interior</motion.p>
                     <motion.p variants={variant2} initial='hidden' animate={modelControls}
-                     className="font-bold text-2xl tracking-widest">Built Around the Driver</motion.p>
+                     className="text-2xl md:text-3xl mb-3 tracking-widest">Built Around the Driver</motion.p>
                     <motion.button variants={variant4} initial='hidden' animate={modelControls}
-                     className="w-[250px] mt-3  border-[3px] border-gray-800 rounded-full  hover:bg-gray-800 hover:text-white hidden md:block ">
+                     className="w-[250px] mt-5  border-[3px] border-gray-800 rounded-full  hover:bg-gray-800 hover:text-white hidden md:block ">
                         ORDER NOW
                     </motion.button>
                 </div>
                 <div className="md:my-auto md:pr-4 ">
                     <motion.p variants={variant3} initial='hidden' animate={modelControls}
-                     className="max-w-3xl text-sm">
+                     className="max-w-3xl sm:text-sm">
                     The inside of Model 3 is unlike any other car. You can use your smartphone as a key, and access all driver controls in the central 15-inch touchscreen. The all-glass roof extends from front to back, creating a sense of openness from every seat.
                     </motion.p>
                     <motion.button variants={variant4} initial='hidden' animate={modelControls}

@@ -133,7 +133,7 @@ const Autopilot = () => {
                     ORDER NOW
                 </motion.div>               
             </div>
-            <div className="ml-10  max-w-4xl lg:my-auto lg:pr-5 text-base">
+            <div className="ml-10  max-w-4xl lg:my-auto lg:pr-5 text-base pr-5">
                 <motion.p
                  variants={variant3} initial='hidden' animate={TopicControls}>
                     Autopilot enables your car to steer, accelerate and brake automatically within its lane under your active supervision, assisting with the most burdensome parts of driving. With over-the-air software updates, the latest enhancements are available instantly.

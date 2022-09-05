@@ -84,7 +84,7 @@ const Last =() =>{
                 </motion.p>
                 <div className="flex flex-col lg:flex-row ">
                     <motion.button  variants={variant2} initial='hidden' animate={TopicControls}
-                     className=" w-5/6 rounded-full text-sm border-[3px]  border-gray-800 hover:bg-gray-800 hover:text-white   md:w-[250px] lg:w-[250px] lg:mr-20"
+                     className=" w-5/6 rounded-full text-sm border-[3px] py-1  border-gray-800 hover:bg-gray-800 hover:text-white   md:w-[250px] lg:w-[250px] lg:mr-20"
                     >
                         ORDER NOW
                     </motion.button>

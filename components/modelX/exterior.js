@@ -102,7 +102,7 @@ const Exterior = () => {
                     </div>
                     <div className="sm:my-auto pr-5">
                         <motion.p variants={variant3} initial='hidden' animate={Controls}
-                         className="text-sm ">With the lowest drag coefficient of any SUV, Model X is built for speed and range. Refined aerodynamic elements work together with new wheels and tires to help you travel farther, with sharper handling and better ride comfort.</motion.p>
+                         className="sm:text-sm ">With the lowest drag coefficient of any SUV, Model X is built for speed and range. Refined aerodynamic elements work together with new wheels and tires to help you travel farther, with sharper handling and better ride comfort.</motion.p>
                         <motion.button variants={variant4} initial='hidden' animate={Controls}
                          className="sm:hidden   border-[4px]  mt-5 border-gray-700 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-700">
                             ORDER NOW

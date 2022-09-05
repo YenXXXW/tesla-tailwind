@@ -90,7 +90,7 @@ const Range = () => {
                         <p className="text-2xxs md:hidden">Superchargers</p>
                     </motion.div>
                 </div>
-                <div className="w-full h-[60vh] relative lg:hidden">
+                <div className="w-full h-[50vh] sm:h-[60vh] relative lg:hidden">
                     <Image src='/modelX/X16.jpg' layout="fill" objectFit="cover"/>
                 </div>
                 <div className="hidden w-full h-screen relative lg:block">
@@ -99,9 +99,9 @@ const Range = () => {
             </div>
             <div className="ml-8 flex flex-col sm:flex-row lg:flex-col lg:w-[25%] pt-3 h-[40vh] lg:h-screen">
                 <div className="min-w-[250px] sm:my-auto lg:my-0">
-                    <motion.p  variants={variant1} initial='hidden' animate={Controls}>Range</motion.p>
+                    <motion.p  variants={variant1} initial='hidden' animate={Controls}  className="text-xl font-thin">Range</motion.p>
                     <motion.p  variants={variant2} initial='hidden' animate={Controls}
-                     className="text-xl md:text-2xl font-bold lg:mb-3">Go Anywhere</motion.p>
+                     className="text-2xl md:text-3xl mb-3">Go Anywhere</motion.p>
                     <motion.button variants={variant4} initial='hidden' animate={Controls}
                      className="hidden sm:block lg:hidden border-[4px]  mt-5 border-gray-700 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-700">
                         ORDER NOW
@@ -109,7 +109,7 @@ const Range = () => {
                 </div>
                 <div className="sm:my-auto lg:my-0">
                     <motion.p variants={variant3} initial='hidden' animate={Controls}
-                     className="text-sm ">With the most storage space and towing capacity of any electric SUV, and seating for up to seven adults, Model X delivers maximum utility. Front doors open and close automatically, Falcon Wing doors allow for easier loading and a standard trailer hitch lets you bring your gear anywhere you go.</motion.p>
+                     className="sm:text-sm ">With the most storage space and towing capacity of any electric SUV, and seating for up to seven adults, Model X delivers maximum utility. Front doors open and close automatically, Falcon Wing doors allow for easier loading and a standard trailer hitch lets you bring your gear anywhere you go.</motion.p>
                     <motion.button variants={variant4} initial='hidden' animate={Controls}
                      className="sm:hidden lg:block lg:mt-[270px] border-[4px]  mt-3 border-gray-700 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-700">
                         ORDER NOW

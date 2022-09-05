@@ -21,7 +21,7 @@ function ModelX() {
             <ImageSelect />
             <StayConnected />
             <BeyondLudicrious />
-            <ElectricPowerTrain />
+            
             <Utility />
             <Exterior />
             <NewWeels />

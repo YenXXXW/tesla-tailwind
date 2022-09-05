@@ -32,9 +32,10 @@ function ElectricPowerTrain() {
 
     useEffect(()=>{
         const interval = setInterval(()=>{
-            if (image === '/modelS/S14.jpg'){
+            if (inView && image === '/modelS/S14.jpg'){
                 setImage('/modelS/S6.jpg')
-            }else{
+            }
+            if(inView && image === '/modelS/S6.jpg'){
                 setImage('/modelS/S14.jpg')
             }
         },2900)

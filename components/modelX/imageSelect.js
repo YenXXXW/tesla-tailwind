@@ -1,22 +1,25 @@
 import { useState , useEffect } from 'react';
+import { useInView } from "react-intersection-observer";
 import Image from 'next/image';
 
 function ImageSelect() {
     const [image , setImage ] = useState('/modelX/X3.jpg')
+   
+    const { ref , inView  } = useInView()
 
     useEffect(()=>{
 
         const interval = setInterval(()=>{
-            if (image === '/modelX/X3.jpg'){
+            if (inView && image === '/modelX/X3.jpg'){
                 setImage('/modelX/X4.jpg')
             }
-            if (image === '/modelX/X4.jpg'){
+            if (inView && image === '/modelX/X4.jpg'){
                 setImage('/modelX/X5.jpg')
             }
-            if(image === '/modelX/X5.jpg'){
+            if(inView && image === '/modelX/X5.jpg'){
                 setImage('/modelX/X6.jpg')
             }
-            if (image === '/modelX/X6.jpg'){
+            if (inView && image === '/modelX/X6.jpg'){
                 setImage('/modelX/X3.jpg')
             }
         },2000)
@@ -28,7 +31,7 @@ function ImageSelect() {
     return (
         <div className="relative bg-black w-full pt-[20%]">
             <div className={image === '/modelX/X3.jpg' ? "w-full relative    " : 'hidden'}>
-                <div className='flex justify-center'>
+                <div className='flex justify-center' ref={ref}>
                     <Image src={'/modelX/X3.jpg'} width='1000px' height={'500px'}
                     className=" rounded-3xl "/>
                 </div>

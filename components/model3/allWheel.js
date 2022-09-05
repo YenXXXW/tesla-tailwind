@@ -66,10 +66,10 @@ const AllWheel = () => {
     },[inView])
 
     return ( 
-        <div className="h-screen"  ref={ref}>
+        <div className="h-screen"  >
             <div className="h-[45vh] sm:h-[60vh] w-full relative">
                 <div className="absolute z-30 bottom-5 w-full text-white">
-                    <div className="flex justify-around text-center w-full lg:px-20">
+                    <div className="flex justify-around text-center w-full lg:px-20" ref={ref}>
                         <motion.div variants={variant1} initial='hidden' animate={modelControls}>
                             <p className="ml-2 text-xl xs:text-2xl xl:text-3xl">2</p>
                             <p className="hidden text-xs lg:block">Independent motors digitally control</p>

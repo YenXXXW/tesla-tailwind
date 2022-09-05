@@ -80,9 +80,9 @@ const Performance = () => {
 
     return (
         <div>
-            <div className=" h-[50vh] md:h-[60vh] w-full relative " ref={ref}>
+            <div className=" h-[50vh] md:h-[60vh] w-full relative " >
                 <div className="absolute z-30 bottom-5 w-full text-white">
-                    <div className="flex justify-around text-center w-full">
+                    <div className="flex justify-around text-center w-full" ref={ref}>
                         <div>
                             <div className="flex justify-center px-0 ">
                                 <div className="w-[51px] h-[30px]  my-auto ">

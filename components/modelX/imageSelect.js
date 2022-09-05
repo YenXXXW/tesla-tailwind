@@ -27,10 +27,10 @@ function ImageSelect() {
         return () =>{
             clearInterval(interval);   
         } 
-    },[image])
+    },[inView , image])
     return (
-        <div className="relative bg-black w-full pt-[20%]">
-            <div className={image === '/modelX/X3.jpg' ? "w-full relative    " : 'hidden'}>
+        <div className="relative bg-black w-full pt-[20%]" ref={ref}>
+            <div className={image === '/modelX/X3.jpg' ? "w-full relative " : 'hidden'}>
                 <div className='flex justify-center' ref={ref}>
                     <Image src={'/modelX/X3.jpg'} width='1000px' height={'500px'}
                     className=" rounded-3xl "/>

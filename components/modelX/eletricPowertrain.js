@@ -22,6 +22,9 @@ function ElectricPowerTrain() {
    const { ref , inView} = useInView()
    const Controls = useAnimation()
 
+   const { ref : ref1 , inView:  inView1} = useInView()
+   const { ref : ref2 , inView:  inView2} = useInView()
+
    useEffect(()=>{
         if(inView){
             Controls.start('visible')
@@ -32,16 +35,31 @@ function ElectricPowerTrain() {
 
     useEffect(()=>{
         const interval = setInterval(()=>{
-            if (inView && image === '/modelS/S14.jpg'){
+            if (inView1 && image === '/modelS/S14.jpg'){
                 setImage('/modelS/S6.jpg')
             }
-            if(inView && image === '/modelS/S6.jpg'){
+            if(inView1 && image === '/modelS/S6.jpg'){
                 setImage('/modelS/S14.jpg')
             }
         },2900)
+        console.log(`thiis is ${inView1}`)
 
         return () => clearInterval(interval);
-    },[image])
+    },[inView1,image])
+
+    useEffect(()=>{
+        const interval = setInterval(()=>{
+            if (inView2 && image === '/modelS/S14.jpg'){
+                setImage('/modelS/S6.jpg')
+            }
+            if(inView2 && image === '/modelS/S6.jpg'){
+                setImage('/modelS/S14.jpg')
+            }
+        },2900)
+        console.log(`thiis is ${inView2}`)
+
+        return () => clearInterval(interval);
+    },[inView2,image])
 
     return (
         <>
@@ -59,7 +77,7 @@ function ElectricPowerTrain() {
             <Image src='/modelS/S6.jpg' layout="fill" objectFit="cover"/>
         </div>
         <div className="pb-6">
-            <div className="relative flex 2xs:hidden overflow-x-hidden overflow-y-visible">
+            <div className="relative flex 2xs:hidden overflow-x-hidden overflow-y-visible" ref={ref1}>
                 <div className={image === '/modelS/S14.jpg' ? "border-t-4 border-black pl-3 relative left-[0%] w-[250px] ease-in duration-500 cursor-pointer bg-red-400 h-[65vh]"
                 : "border-t-2 border-black pl-3 absolute -left-[42%] w-[250px] ease-in duration-500 opacity-40 cursor-pointer bg-red-400 h-[65vh]"}  onClick={()=>setImage('/modelS/S14.jpg')}>
                     <h4 className='font-bold mt-3'>Model X</h4>
@@ -100,7 +118,7 @@ function ElectricPowerTrain() {
                     </div> 
                 </div>
                 </div>
-            <div className=" hidden 2xs:block mb-5 w-full text-center ">
+            <div className=" hidden 2xs:block mb-5 w-full text-center " ref={ref2}>
                 <div className="flex justify-center text-sm">
                     <div className={image === '/modelS/S14.jpg' ? " px-4 border-t-4 border-black  md:w-[450px] mr-[70px]  cursor-pointer" :
                     "px-4 border-t-2 border-red  md:w-[450px] mr-[70px] opacity-40 cursor-pointer"} onClick={()=>{setImage('/modelS/S14.jpg')}}>

@@ -95,7 +95,7 @@ function Features() {
         <div className="max-w-4xl ml-8 md:ml-28  lg:ml-[100px] px-4" ref={ref}>
             <motion.p className=" font-bold text-2xl my-4 "  variants={variant1} initial='hidden' animate={Controls}>Features</motion.p>
             <motion.p
-             className="text-sm"  variants={variant2} initial='hidden' animate={Controls}
+             className="text-base mb-5"  variants={variant2} initial='hidden' animate={Controls}
             >Enhanced Autopilot and Full Self-Driving capability introduce additional features and improve existing functionality to make your car more capable over time, includi
             </motion.p>
         </div>

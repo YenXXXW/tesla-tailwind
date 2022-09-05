@@ -78,8 +78,8 @@ function ElectricPowerTrain() {
         </div>
         <div className="pb-6">
             <div className="relative flex 2xs:hidden overflow-x-hidden overflow-y-visible" ref={ref1}>
-                <div className={image === '/modelS/S14.jpg' ? "border-t-4 border-black pl-3 relative left-[0%] w-[250px] ease-in duration-500 cursor-pointer bg-red-400 h-[65vh]"
-                : "border-t-2 border-black pl-3 absolute -left-[42%] w-[250px] ease-in duration-500 opacity-40 cursor-pointer bg-red-400 h-[65vh]"}  onClick={()=>setImage('/modelS/S14.jpg')}>
+                <div className={image === '/modelS/S14.jpg' ? "border-t-4 border-black pl-3 relative left-[0%] w-[250px] ease-in duration-500 cursor-pointer h-[65vh]"
+                : "border-t-2 border-black pl-3 absolute -left-[42%] w-[250px] ease-in duration-500 opacity-40 cursor-pointer h-[65vh]"}  onClick={()=>setImage('/modelS/S14.jpg')}>
                     <h4 className='font-bold mt-3'>Model X</h4>
                     <p className="text-sm max-w-xl my-3">Dual Motor All-Wheel Drive platform has the longest range, and now delivers incredible power and acceleration.</p>
                     <div>

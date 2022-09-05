@@ -91,20 +91,20 @@ const Exterior = () => {
             </div>
             <div className="pl-10 w-full">
                 <div className="mx-auto flex flex-col sm:flex-row max-w-[900px] pt-3 h-[50vh] md:h-[40vh] lg:h-[30vh] ">
-                    <div className="min-w-[250px] my-auto mr-20">
-                        <motion.p variants={variant1} initial='hidden' animate={Controls}>Exterior</motion.p>
+                    <div className="min-w-[250px] sm:my-auto mr-20">
+                        <motion.p variants={variant1} initial='hidden' animate={Controls} className="text-xl font-thin">Exterior</motion.p>
                         <motion.p variants={variant2} initial='hidden' animate={Controls}
-                         className="text-xl md:text-2xl font-bold lg:mb-3">Designed for Efficiency</motion.p>
+                         className="text-2xl md:text-3xl mb-3">Designed for Efficiency</motion.p>
                         <motion.button variants={variant4} initial='hidden' animate={Controls}
                          className="hidden sm:block  border-[4px]  mt-5 border-gray-700 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-700">
                             ORDER NOW
                         </motion.button>
                     </div>
-                    <div className="my-auto  ">
+                    <div className="sm:my-auto pr-5">
                         <motion.p variants={variant3} initial='hidden' animate={Controls}
                          className="text-sm ">With the lowest drag coefficient of any SUV, Model X is built for speed and range. Refined aerodynamic elements work together with new wheels and tires to help you travel farther, with sharper handling and better ride comfort.</motion.p>
                         <motion.button variants={variant4} initial='hidden' animate={Controls}
-                         className="sm:hidden   border-[4px]  mt-3 border-gray-700 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-700">
+                         className="sm:hidden   border-[4px]  mt-5 border-gray-700 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-700">
                             ORDER NOW
                         </motion.button>
                     </div>                    

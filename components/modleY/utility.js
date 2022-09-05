@@ -83,7 +83,8 @@ const Utility = () => {
             <div className="w-full flex flex-col  pb-6">  
                 <div className="mx-auto flex flex-col sm:flex-row pt-3  justify-center my-10 pl-8 pr-5" ref={ref}>
                     <div className="min-w-[250px]  mr-10">
-                        <motion.p  variants={variant1} initial='hidden' animate={Controls} className='text-xl font-light'>Utility</motion.p>
+                        <motion.p  variants={variant1} initial='hidden' 
+                        animate={Controls} className='text-xl font-light'>Utility</motion.p>
                         <motion.p  variants={variant2} initial='hidden' animate={Controls}
                         className="text-2xl md:text-3xl mb-3">A Place for Everything</motion.p>
                         <motion.button  variants={variant4} initial='hidden' animate={Controls}
@@ -107,7 +108,7 @@ const Utility = () => {
                 </div>
             </div>
             <div className="text-sm max-w-lg pl-8 mx-auto">  
-                <div className="flex mt-10  w-[150px] h-[30px] ">
+                <div className="flex mt-7 sm:mt-10  w-[150px] h-[30px] ">
                     <svg className="w-[150px] h-[16px]">
                     <circle className="cursor-pointer " fill={image === a ? 'black' : 'gray'} stroke="none" r='6' cx='10' cy='8' 
                     onClick={()=>setImage(a)}/>

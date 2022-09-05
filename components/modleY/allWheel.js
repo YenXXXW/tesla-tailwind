@@ -146,21 +146,21 @@ const AllWheel = () => {
             </div>
             <div className="pl-10 w-full">
                 <div className="mx-auto flex flex-col sm:flex-row max-w-[900px] pt-3 h-[50vh] md:h-[40vh] lg:h-[30vh] ">
-                    <div className="min-w-[250px] my-auto mr-20">
+                    <div className="min-w-[250px] sm:my-auto mr-20">
                         <motion.p variants={variant1} initial='hidden' animate={Controls}
-                         className="font-thin">All-Wheel Drive</motion.p>
+                         className="font-light text-xl">All-Wheel Drive</motion.p>
                         <motion.p variants={variant2} initial='hidden' animate={Controls}
-                         className="text-xl md:text-2xl font-bold lg:mb-3">Dual Motor</motion.p>
+                         className="text-2xl md:text-3xl mb-3">Dual Motor</motion.p>
                         <motion.button variants={variant4} initial='hidden' animate={Controls}
                          className="hidden sm:block  border-[4px]  mt-5 border-gray-700 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-700">
                             ORDER NOW
                         </motion.button>
                     </div>
-                    <div className="my-auto  ">
+                    <div className="sm:my-auto  ">
                         <motion.p variants={variant3} initial='hidden' animate={Controls}
-                         className="text-sm ">Tesla All-Wheel Drive has two ultra-responsive, independent electric motors that digitally control torque to the front and rear wheels—for far better handling, traction and stability control. Model Y is capable in rain, snow, mud and off-road.</motion.p>
+                         className="sm:text-sm ">Tesla All-Wheel Drive has two ultra-responsive, independent electric motors that digitally control torque to the front and rear wheels—for far better handling, traction and stability control. Model Y is capable in rain, snow, mud and off-road.</motion.p>
                         <motion.button variants={variant4} initial='hidden' animate={Controls}
-                         className="sm:hidden   border-[4px]  mt-3 border-gray-700 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-700">
+                         className="sm:hidden   border-[4px]  mt-5 border-gray-700 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-700">
                             ORDER NOW
                         </motion.button>
                     </div>                    

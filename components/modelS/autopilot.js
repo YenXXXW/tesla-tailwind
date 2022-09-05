@@ -120,11 +120,11 @@ const Autopilot = () => {
         </div>
         <div className="lg:flex my-5">
             <div className="ml-10 my-8 lg:ml-[100px]  mr-[100px]" ref={TopicRef}>
-                <motion.p className="text-[22px]"
+                <motion.p className="text-xl font-light"
                  variants={variant1} initial='hidden' animate={TopicControls}>
                     Autopilot
                 </motion.p>
-                <motion.p className='font-bold mt-2 mb-4 text-3xl'
+                <motion.p className='text-2xl  md:text-3xl mb-3'
                  variants={variant2} initial='hidden' animate={TopicControls}>
                     Future of Driving
                 </motion.p> 

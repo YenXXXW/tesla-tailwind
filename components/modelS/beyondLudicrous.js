@@ -63,38 +63,38 @@ const BeyondLudicrious =()=>{
 
     return(
         <>
-        <div className="h-[500px] relative ">
+        <div className="h-[60vh] relative ">
             <Image src='/modelS/S5.jpg' layout='fill' objectFit='cover'/>
-            <div className="absolute bottom-20 w-full">
+            <div className="absolute bottom-12 w-full">
                 <div className="flex justify-around text-white xl:mx-40 lg:mx-52"  ref={ref}>
                     <motion.div className="text-center" 
                      variants={variant1} initial='hidden' animate={Controls}>
-                        <p className="text-xl md:text-2xl font-bold">1,020hp</p>
-                        <p>Peak Power</p>
+                        <p className="text-xl md:text-2xl ">1,020hp</p>
+                        <p className="text-xs">Peak Power</p>
                     </motion.div>
                     <motion.div className="text-center"
                      variants={variant2} initial='hidden' animate={Controls}>
-                        <p className="text-xl md:text-2xl font-bold">9.23s</p>
-                        <p>@155 mph 1/4 mile</p>
+                        <p className="text-xl md:text-2xl ">9.23s</p>
+                        <p className="text-xs">@155 mph 1/4 mile</p>
                     </motion.div>
                     <motion.div className="text-center"
                      variants={variant3} initial='hidden' animate={Controls}>
-                        <p className="text-xl md:text-2xl font-bold">1.99s</p>
-                        <p>0-60 mph*</p>
+                        <p className="text-xl md:text-2xl ">1.99s</p>
+                        <p className="text-xs">0-60 mph*</p>
                     </motion.div>
                 </div>
             </div>
         </div>
         <motion.div variants={variant1} initial='hidden' animate={TopicControls} className="lg:flex">
             <div className="ml-10 my-8 lg:ml-[100px] xl:ml-[150px] mr-[100px]" ref={TopicRef}>
-                <p className="font-light text-[22px]">Plaid</p>
-                <h2 className="font-bold">BeyondLudicrious</h2> 
+                <p className="font-light text-xl">Plaid</p>
+                <h2 className="text-2xl md:text-3xl mb-3">BeyondLudicrious</h2> 
                 <div className="mt-4 hidden lg:block lg:w-[250px] text-center border-gray-800  border-[4px] rounded-full py-1  hover:bg-gray-800 hover:text-white ">
                     ORDER NOW
                 </div>               
             </div>
-            <div className="ml-10 mr-3  max-w-4xl lg:my-auto ">
-                <p className="md:text-lg">Model S Plaid has the quickest acceleration of any vehicle in production. Updated battery architecture for all Model S trims enables back-to-back track runs without performance degradation.</p>
+            <div className="pl-10 pr-3  max-w-3xl lg:my-auto ">
+                <p className="sm:text-sm">Model S Plaid has the quickest acceleration of any vehicle in production. Updated battery architecture for all Model S trims enables back-to-back track runs without performance degradation.</p>
             </div>
             <div className="mt-10 mx-auto w-[90%] text-center border-gray-800  border-[4px] rounded-full py-1 hover:bg-gray-800 hover:text-white md:w-[200px] md:ml-10 lg:hidden">
                 ORDER NOW

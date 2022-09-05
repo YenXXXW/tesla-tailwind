@@ -105,9 +105,9 @@ const Utility = () => {
             </div>
             <div className="ml-8 flex flex-col sm:flex-row lg:flex-col lg:w-[29%] pt-3 h-[40vh] lg:h-screen">
                 <div className="min-w-[250px] sm:my-auto lg:my-0">
-                    <motion.p  variants={variant1} initial='hidden' animate={Controls}>Utility</motion.p>
+                    <motion.p  variants={variant1} initial='hidden' animate={Controls} className='font-light text-xl'>Utility</motion.p>
                     <motion.p  variants={variant2} initial='hidden' animate={Controls}
-                    className="text-xl md:text-3xl font-bold lg:mb-3">Even More Capable</motion.p>
+                    className="text-2xl md:text-3xl mb-3">Even More Capable</motion.p>
                     <motion.button  variants={variant4} initial='hidden' animate={Controls}
                      className="hidden sm:block lg:hidden border-[3px]  mt-5 border-gray-800 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-800">
                         ORDER NOW
@@ -115,9 +115,9 @@ const Utility = () => {
                 </div>
                 <div className="sm:my-auto lg:my-0 pr-6">
                     <motion.p  variants={variant3} initial='hidden' animate={Controls}
-                    className="text-sm ">With up to 348 miles of estimated range and access to the world&apos;s largest and most powerful fast charging network, you&apos;ll spend less time plugged in and more time on the road.</motion.p>
+                    className="sm:text-sm">With up to 348 miles of estimated range and access to the world&apos;s largest and most powerful fast charging network, you&apos;ll spend less time plugged in and more time on the road.</motion.p>
                     <motion.button variants={variant4} initial='hidden' animate={Controls}
-                     className="sm:hidden lg:block lg:mt-[340px] border-[3px]  mt-3 border-gray-800 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-800">
+                     className="sm:hidden lg:block lg:mt-[340px] border-[3px]  mt-5 border-gray-800 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-800">
                         ORDER NOW
                     </motion.button>
                 </div>

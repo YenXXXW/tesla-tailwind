@@ -98,8 +98,8 @@ function ElectricPowerTrain() {
                     </div>
                 
                 </div>
-                <div className={image === '/modelS/S6.jpg' ? "border-t-4 border-black pl-3 relative left-[30%] w-[250px] ease-in duration-500 cursor-pointer bg-red-400 h-[65vh]" : 
-                "border-t-2 border-black pl-3 absolute left-[73%] w-[250px] ease-in duration-500 opacity-40 cursor-pointer bg-red-400 h-[65vh]"} onClick={()=>setImage('/modelS/S6.jpg')}>
+                <div className={image === '/modelS/S6.jpg' ? "border-t-4 border-black pl-3 relative left-[30%] w-[250px] ease-in duration-500 cursor-pointer h-[65vh]" : 
+                "border-t-2 border-black pl-3 absolute left-[73%] w-[250px] ease-in duration-500 opacity-40 cursor-pointer h-[65vh]"} onClick={()=>setImage('/modelS/S6.jpg')}>
                     <h4 className='font-bold mt-3'>Model X Plaid</h4>
                     <p className="text-sm max-w-xl my-3">Tri Motor All-Wheel Drive platform with torque vectoring features three independent motors, each with a carbon fiber-sleeved rotor that maintains peak power output all the way to top speed.</p>
                     <div>

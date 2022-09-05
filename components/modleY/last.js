@@ -75,7 +75,7 @@ const Last =() =>{
     },[TopicInView , inView])
 
     return(
-        <div className="pt-10 h-screen text-white">
+        <div className="pt-10 h-screen ">
         <div className="pt-10 ml-9 text-center md:flex lg:text-start ">
             <div className="mx-auto lg:w-2/5" ref={TopicRef}>
                 <motion.p className="text-start xs:text-center text-2xl font-bold mt-7 mb-4 "
@@ -99,7 +99,7 @@ const Last =() =>{
             <div className="lg:w-2/5" ref={ref}>
                 <motion.div className="relative mt-[100px] md:mt-0 xl:hidden"
                  variants={variant4} initial='hidden' animate={Controls}>
-                    <Image src='/modelY/Y5.avif' width='500px' height={'200px'}/>
+                    <Image src='/modelY/Y5.jpg' width='500px' height={'200px'}/>
                 </motion.div>
             </div>            
         </div>

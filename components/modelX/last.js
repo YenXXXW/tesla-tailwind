@@ -82,7 +82,7 @@ const Last =() =>{
                  variants={variant1} initial='hidden' animate={TopicControls}>
                     Model X
                 </motion.p>
-                <div className="flex w-full  bg-red-300  flex-col lg:flex-row ">
+                <div className="flex w-full  flex-col lg:flex-row ">
                     <motion.button  variants={variant2} initial='hidden' animate={TopicControls}
                      className=" mx-auto w-[300px] justify-center rounded-full text-lg font-bold border-[4px] border-gray-800 hover:bg-gray-800 hover:text-white hover:font-normal md:w-[250px] lg:w-[250px] lg:mr-20"
                     >

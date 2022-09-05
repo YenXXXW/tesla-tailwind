@@ -94,16 +94,16 @@ const AllWheel = () => {
             <div className="max-w-[1100px] pl-8 md:pl-10 flex flex-col my-5 lg:flex-row ">
                 <div className="sm:w-[380px] lg:pl-14">
                     <motion.p variants={variant1} initial='hidden' animate={modelControls}
-                     className="font-light mt-2">All-Wheel Drive</motion.p>
+                     className="font-light text-xl mt-2">All-Wheel Drive</motion.p>
                     <motion.p variants={variant2} initial='hidden' animate={modelControls}
-                     className="text-3xl font-bold">Dual Motor</motion.p>
+                     className="text-2xl md:text-3xl mb-3">Dual Motor</motion.p>
                     <motion.button variants={variant4} initial='hidden' animate={modelControls}
                      className="hidden w-[250px] border-[3px] border-gray-800 rounded-full  mt-6 py-1 lg:block hover:bg-gray-800 hover:text-white"
                     >ORDER NOW</motion.button>
                 </div>
-                <div className="lg:pl-14">
+                <div className="lg:pl-14 pr-5">
                     <motion.p variants={variant3} initial='hidden' animate={modelControls}
-                     className="text-sm lg:pl-40 lg:pt-3">Tesla All-Wheel Drive has two independent motors for improved redundancy, each with only one moving part for minimal maintenance and maximum durability. Unlike traditional all-wheel drive systems, they digitally control torque to the front and rear wheels for far better handling and traction control.</motion.p>
+                     className="sm:text-sm lg:pl-40 lg:pt-3">Tesla All-Wheel Drive has two independent motors for improved redundancy, each with only one moving part for minimal maintenance and maximum durability. Unlike traditional all-wheel drive systems, they digitally control torque to the front and rear wheels for far better handling and traction control.</motion.p>
                     <motion.button variants={variant4} initial='hidden' animate={modelControls}
                      className=" w-[250px] border-[3px] border-gray-800 rounded-full  mt-6 py-1 lg:hidden hover:bg-gray-800 hover:text-white"
                     >ORDER NOW</motion.button>

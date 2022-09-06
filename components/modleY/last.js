@@ -76,26 +76,25 @@ const Last =() =>{
 
     return(
         <div className="pt-10">
-        <div className="pt-10 ml-9 text-center md:flex lg:text-start ">
-            <div className="mx-auto lg:w-2/5" ref={TopicRef}>
-                <motion.p className="text-start xs:text-center text-2xl font-bold mt-7 mb-4 "
-                 variants={variant1} initial='hidden' animate={TopicControls}>
-                    Order Model Y
-                </motion.p>
-                <div className="flex flex-col lg:flex-row ">
-                    <motion.button  variants={variant2} initial='hidden' animate={TopicControls}
-                     className=" w-5/6 rounded-full text-sm border-[3px] py-1  border-gray-800 hover:bg-gray-800 hover:text-white   md:w-[250px] lg:w-[250px] lg:mr-20"
-                    >
-                        ORDER NOW
-                    </motion.button>
-                    <motion.button  variants={variant3} initial='hidden' animate={TopicControls}
-                     className=" w-5/6 rounded-full py-1 text-sm border-[3px] mt-4  border-gray-800 hover:bg-gray-800 hover:text-white  md:w-[250px] lg:mt-0 lg:w-[250px]"
-                    >
-                        Compare
-                    </motion.button>
+            <div className="pt-10 ml-9 text-center md:flex lg:text-start ">
+                <div className="mx-auto lg:w-2/5" ref={TopicRef}>
+                    <motion.p className="text-center text-2xl font-bold mt-7 mb-4 "
+                    variants={variant1} initial='hidden' animate={TopicControls}>
+                        Order Model Y
+                    </motion.p>
+                    <div className="flex flex-col lg:flex-row ">
+                        <motion.button  variants={variant2} initial='hidden' animate={TopicControls}
+                        className=" w-[300px] mx-auto py-1 rounded-full text-sm border-[4px] mt-4 border-gray-800 bg-gray-800 text-white hover:bg-white hover:text-gray-800 md:w-[250px] lg:w-[250px] lg:mr-20"
+                        >
+                            ORDER NOW
+                        </motion.button>
+                        <motion.button  variants={variant3} initial='hidden' animate={TopicControls}
+                        className=" w-[300px] mx-auto py-1  rounded-full text-sm  border-[4px] mt-4 border-gray-800 hover:bg-gray-800 hover:text-white hover:font-normal md:w-[250px] lg:mt-4 lg:w-[250px]"
+                        >
+                            Compare
+                        </motion.button>
+                    </div>                
                 </div>
-                
-            </div>
             <div className="lg:w-2/5" ref={ref}>
                 <motion.div className="relative mt-[100px] md:mt-0 xl:hidden"
                  variants={variant4} initial='hidden' animate={Controls}>

@@ -89,7 +89,7 @@ const Last =() =>{
                             ORDER NOW
                         </motion.button>
                         <motion.button  variants={variant3} initial='hidden' animate={TopicControls}
-                        className=" w-[300px] mx-auto py-1  rounded-full text-sm  border-[4px] mt-4 border-gray-800 hover:bg-gray-800 hover:text-white hover:font-normal md:w-[250px] lg:mt-0 lg:w-[250px]"
+                        className=" w-[300px] mx-auto py-1  rounded-full text-sm  border-[4px] mt-4 border-gray-800 hover:bg-gray-800 hover:text-white hover:font-normal md:w-[250px] lg:mt-4 lg:w-[250px]"
                         >
                             Compare
                         </motion.button>

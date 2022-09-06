@@ -68,7 +68,7 @@ function IndexComp({photo , model , order  }) {
             <div className="py-1 text-center mx-auto w-4/6 px-5 rounded-full bg-gray-600 text-white font-light md:w-[200px] lg:w-[35%]">
                 Custom Order
             </div>
-            <div className="py-1 text-center mx-auto mt-3 w-5/6 px-5 rounded-full text-gray-600 bg-white md:mt-0 md:w-[200px] lg:w-[35%]">
+            <div className="py-1 text-center mx-auto mt-3 w-4/6 px-5 rounded-full text-gray-600 bg-white md:mt-0 md:w-[200px] lg:w-[35%]">
                 Existing Inventory
             </div>
         </div>

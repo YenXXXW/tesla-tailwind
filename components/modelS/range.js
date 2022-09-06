@@ -92,9 +92,9 @@ const Range =()=>{
                 <div className=" pl-8  max-w-4xl lg:my-auto xl:my-2 xl:pr-0 pr-5">
                     <p className="sm:text-sm">With up to 405 miles of estimated range and access to the world&apos;s largest and most powerful fast charging network, you&apos;ll spend less time plugged in and more time on the road.</p>
                 </div>
-                <div className="pl-8 mt-5 mx-auto w-[65%] text-center border-gray-800  border-[4px] rounded-full py-1 hover:bg-gray-800 hover:text-white md:w-[200px] md:ml-10 lg:hidden xl:block">
-                    ORDER NOW
-                </div>
+                    <button 
+                     className="ml-8  mx-auto justify-center md:mx-0  border-[4px] border-gray-700 
+                    w-5/6 md:w-[250px] rounded-full hover:text-white hover:bg-gray-700 md:hidden mt-5 lg:flex lg:mt-[250px] xl:mt-[330px]">ORDER NOW</button>
             </motion.div>
         </div>
         

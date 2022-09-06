@@ -213,7 +213,7 @@ const Safety = () => {
                     includes Tesla&apos;s latest active safety features, such as Automatic Emergency Braking, at no extra cost.</motion.p>
                     <motion.button variants={variant4} initial='hidden' animate={Controls4}
                      className="  mx-auto justify-center md:mx-0  border-[4px] border-gray-700 
-                    w-5/6 md:w-[250px] rounded-full hover:text-white hover:bg-gray-700 md:hidden mt-4 lg:flex lg:mt-[250px] xl:mt-[330px]">ORDER NOW</motion.button>
+                    w-5/6 md:w-[250px] rounded-full hover:text-white hover:bg-gray-700 md:hidden mt-5 lg:flex lg:mt-[250px] xl:mt-[330px]">ORDER NOW</motion.button>
                 </div>
                 
             </div>

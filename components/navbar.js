@@ -52,7 +52,7 @@ const Navbar = ({fill , position }) => {
                     <p>Shop</p>
                     <p>Account</p>
                 </div>
-                <div className='bg-slate-400 rounded-lg px-4 py-1 lg:py-0 lg:bg-transparent cursor-pointer'
+                <div className='backdrop-blur-sm rounded-lg px-4 py-1 lg:py-0 lg:bg-transparent cursor-pointer'
                 onClick={()=>setMenu(true)}>
                     Menu
                 </div>

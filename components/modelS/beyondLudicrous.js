@@ -63,7 +63,7 @@ const BeyondLudicrious =()=>{
 
     return(
         <>
-        <div className="h-[60vh] relative ">
+        <div className="bg-white h-[60vh] relative ">
             <Image src='/modelS/S5.jpg' layout='fill' objectFit='cover'/>
             <div className="absolute bottom-12 w-full">
                 <div className="flex justify-around text-white xl:mx-40 lg:mx-52"  ref={ref}>
@@ -85,7 +85,7 @@ const BeyondLudicrious =()=>{
                 </div>
             </div>
         </div>
-        <motion.div variants={variant1} initial='hidden' animate={TopicControls} className="lg:flex">
+        <motion.div variants={variant1} initial='hidden' animate={TopicControls} className="bg-white lg:flex">
             <div className="ml-10 my-8 lg:ml-[100px] xl:ml-[150px] mr-[100px]" ref={TopicRef}>
                 <p className="font-light text-xl">Plaid</p>
                 <h2 className="text-2xl md:text-3xl mb-3">BeyondLudicrious</h2> 

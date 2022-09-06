@@ -75,7 +75,7 @@ const Last =() =>{
     },[TopicInView , inView])
 
     return(
-        <div className="pt-10">
+        <div className="pt-10 bg-white">
             <div className="pt-10 ml-9 text-center md:flex lg:text-start ">
                 <div className="mx-auto lg:w-2/5" ref={TopicRef}>
                     <motion.p className="text-center text-2xl font-bold mt-7 mb-4 "

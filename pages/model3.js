@@ -1,6 +1,5 @@
 import FirstPage from "../components/model3/firstPage";
 import Safety from "../components/model3/safety";
-import Test from "../components/modelS/test";
 import Performance from "../components/model3/performance";
 import AllWheel from "../components/model3/allWheel";
 import Range from "../components/model3/range";
@@ -22,7 +21,6 @@ function Model3() {
             </Head>           
             <FirstPage />
             <Safety bottom={'very low rollover risk'}/>
-            <Test />
             <Performance />
             <AllWheel />
             <Range />

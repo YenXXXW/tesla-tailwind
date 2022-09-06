@@ -12,11 +12,9 @@ import Autopilot from "../components/modelS/autopilot";
 import Specs from "../components/modelS/spec";
 import Last from "../components/modelS/last";
 import Safety from "../components/modelS/safety";
-import Test from "../components/modelS/test";
 import FirstPage from "../components/modelS/firstPage";
 import InteriorTheFuture from "../components/modelS/interiorthefuture";
 import Features from "../components/modelS/features";
-import { useEffect, useState } from "react";
 import Freedom from "../components/modelS/freedom";
 
 function ModelS() {
@@ -45,7 +43,6 @@ function ModelS() {
             <Features />
             <Specs />
             <Last />
-            <Test />
         </div>
     );
 }

@@ -27,32 +27,32 @@ const Navbar = ({fill , position }) => {
             </div>
             <div className='font-bold w-[70%] lg:hidden'></div>
                 <div className='hidden lg:flex  w-[70%]  justify-around pl-[10%] pr-[5%] '>
-                <Link href='/modelS' ><p className='font-bold no-underline cursor-pointer'>
-                    Model S</p>
+                <Link href='/modelS' ><div className='px-2 py-1 no-underline  rounded-lg  cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>
+                    Model S</div>
                 </Link>
-                <Link href='/model3'><p className='font-bold no-underline cursor-pointer'>
+                <Link href='/model3'><p className='px-2 py-1 no-underline  rounded-lg  cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>
                     Model 3</p>
                 </Link>
-                <Link href='/modelX'><p className='font-bold no-underline cursor-pointer'>
+                <Link href='/modelX'><p className='px-2 py-1 no-underline  rounded-lg  cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>
                     Model X</p>
                 </Link>
-                <Link href='/modelY'><p className='font-bold no-underline cursor-pointer'>
+                <Link href='/modelY'><p className='px-2 py-1 no-underline  rounded-lg  cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>
                     Model Y</p>
                 </Link>
-                <Link href='/solarPanels'><p className='font-bold no-underline cursor-pointer'>
+                <Link href='/solarPanels'><p className='px-2 py-1 no-underline  rounded-lg  cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>
                     Solar Panels</p>
                 </Link>
-                <Link href='/solarRoof'><p className='font-bold no-underline cursor-pointer'>
+                <Link href='/solarRoof'><p className='px-2 py-1  no-underline  rounded-lg  cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>
                     Solar Roof</p>
                 </Link>
             </div>
-            <div className='font-bold flex justify-around w-[300px] '>
+            <div className=' flex justify-around w-[300px] '>
                 <div className='w-[100px] lg:hidden'></div>
                 <div className='hidden lg:flex justify-around w-[200px]'>
-                    <p>Shop</p>
-                    <p>Account</p>
+                    <p className='px-2 py-1  no-underline  rounded-lg  cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>Shop</p>
+                    <p className='px-2 py-1  no-underline  rounded-lg  cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>Account</p>
                 </div>
-                <div className='backdrop-blur-sm rounded-lg px-4 py-1 lg:py-0 lg:bg-transparent cursor-pointer'
+                <div className='backdrop-blur-sm bg-black/10 rounded-lg px-4 lg:px-2 py-1  lg:bg-transparent cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'
                 onClick={()=>setMenu(true)}>
                     Menu
                 </div>
@@ -61,43 +61,43 @@ const Navbar = ({fill , position }) => {
             <div className={menu ? ' fixed top-0 right-0 h-screen w-full backdrop-blur-sm bg-black/30' : ''} />
             
             {/* Drawer */}
-            <div className={menu ? 'fixed top-0 right-0 h-screen w-[300px] bg-white ease-in duration-500 ':
+            <div className={menu ? 'fixed top-0 right-0 h-screen w-[300px] bg-white ease-in duration-500 pr-10 ':
                             'fixed  top-0 -right-[100%] ease-in duration-500 '}>
                 <div className='pt-10 ml-[250px]' onClick={()=>setMenu(false)}>
                     <AiOutlineClose size={20} className='cursor-pointer text-black'/>
                 </div>
-                <div className='flex flex-col ml-10 text-lg font-bold text-black lg:hidden'>
+                <div className='flex flex-col ml-10 text-black  lg:hidden'>
                     <Link href={'/modelS'} >
-                        <p className='no-underline  my-3 cursor-pointer'>Model S</p>
+                        <div className='no-underline px-5 py-1 rounded-lg my-3 cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>Model S</div>
                     </Link>
                     <Link href={'/model3'}>
-                        <p className='no-underline  my-3 cursor-pointer'>Model 3</p>
+                        <p className='no-underline  px-5 py-1 rounded-lg my-3 cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>Model 3</p>
                     </Link>
                     <Link href={'/modelX'}>
-                        <p className='no-underline my-3 cursor-pointer'>Model X</p>
+                        <p className='no-underline  px-5 py-1 rounded-lg my-3 cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>Model X</p>
                     </Link>
                     <Link href={'/modelY'}>
-                        <p className='no-underline my-3 cursor-pointer'>Model Y</p>
+                        <p className='no-underline  px-5 py-1 rounded-lg my-3 cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>Model Y</p>
                     </Link>
                     <Link href={'/solarPanels'}>
-                        <p className='no-underline my-3 cursor-pointer'>Solar Panels</p>
+                        <p className='no-underline  px-5 py-1 rounded-lg my-3 cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>Solar Panels</p>
                     </Link>
                     <Link href={'/solarRoof'}>
-                        <p className='no-underline my-3 cursor-pointer'>Solar Roof</p>
+                        <p className='no-underline  px-5 py-1 rounded-lg my-3 cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>Solar Roof</p>
                     </Link>
                 </div>
-                <div className='flex flex-col ml-10 text-lg text-black font-bold'>
+                <div className='flex flex-col ml-10  text-black '>
                     <Link href='/'>
-                        <p className='no-underline my-3 cursor-pointer'>Eisting Inventory</p>
+                        <p className='no-underline  px-5 py-1 rounded-lg my-3 cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>Eisting Inventory</p>
                     </Link>
                     <Link href='/'>
-                        <p className='no-underline my-3 cursor-pointer'>Used Inventory</p>
+                        <p className='no-underline  px-5 py-1 rounded-lg my-3 cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>Used Inventory</p>
                     </Link>
                     <Link href='/'>
-                        <p className='no-underline my-3 cursor-pointer'>Trade-In</p>
+                        <p className='no-underline  px-5 py-1 rounded-lg my-3 cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>Trade-In</p>
                     </Link>
                     <Link href='/'>
-                        <p className='no-underline my-3 cursor-pointer'>Test Drive</p>
+                        <p className='no-underline  px-5 py-1 rounded-lg my-3 cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>Test Drive</p>
                     </Link>
                                   
                 </div>

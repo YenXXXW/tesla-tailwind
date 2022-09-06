@@ -83,9 +83,9 @@ const FirstPage = () => {
             <Navbar fill={'black'} position={'absolute'}/>
             <Image src='/solarPannel/SP1.jpg' layout="fill" objectFit="cover"/>
             <motion.div variants={variant1} initial='hidden' animate={modelControls}
-             className="absolute top-[15%] w-full">
+             className="absolute top-[15%] w-full ">
                 <p className="text-center text-5xl">Solar Pannels</p>
-                <p className="text-center">Lowest Cost Solar Panels in America—Money-back guarantee</p>
+                <p className="text-center text-sm">Lowest Cost Solar Panels in America—Money-back guarantee</p>
             </motion.div>
             <div className="absolute w-full bottom-[20%] xs:bottom-[15%] flex flex-col
             px-3 lg:px-[20%] lg:flex-row">

@@ -99,24 +99,24 @@ function VideoSelect() {
                 </svg>
             </div>
             <div className={video === '/modelS/Sv1.mp4' ? 'mt-5 ' : 'hidden'}>
-                <p className='my-3 text-white text-xl font-bold tracking-widest '>Cinematic Experience</p>
-                <p className='text-white'>A 17&quot; touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.</p>
+                <p className='my-3 text-white font-bold tracking-widest '>Cinematic Experience</p>
+                <p className='text-white text-sm'>A 17&quot; touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness for gaming, movies and more.</p>
             </div>
-            <div className={video === '/modelS/Sv2.mp4' ? 'mt-5  max-w-[1000px]' : 'hidden'}>
-                <p className='my-3 text-white text-xl font-bold tracking-widest '>Yoke Steering</p>
-                <p className='text-white'>A bold new approach gives you a true connection to Model S, offering better steering feel and unobstructed views of your dash and the road ahead. Tap the brake and Model S automatically selects the correct direction to start your trip.</p>
+            <div className={video === '/modelS/Sv2.mp4' ? 'mt-5  max-w-[800px]' : 'hidden'}>
+                <p className='my-3 text-white font-bold tracking-widest '>Yoke Steering</p>
+                <p className='text-white text-sm'>A bold new approach gives you a true connection to Model S, offering better steering feel and unobstructed views of your dash and the road ahead. Tap the brake and Model S automatically selects the correct direction to start your trip.</p>
             </div>
-            <div className={video === '/modelS/Sv3.mp4' ? 'mt-5  max-w-[1000px]' : 'hidden'}>
-                <p className='my-3 text-white text-xl  font-bold tracking-widest '>Perfect Environment</p>
-                <p className='text-white'>Air vents are hidden throughout the cabin, while tri-zone temperature controls, ventilated seats and HEPA filtration deliver the perfect environment.</p>
+            <div className={video === '/modelS/Sv3.mp4' ? 'mt-5  max-w-[800px]' : 'hidden'}>
+                <p className='my-3 text-white font-bold tracking-widest '>Perfect Environment</p>
+                <p className='text-white text-sm'>Air vents are hidden throughout the cabin, while tri-zone temperature controls, ventilated seats and HEPA filtration deliver the perfect environment.</p>
             </div>
-            <div className={video === '/modelS/Sv4.mp4' ? 'mt-5   max-w-[1000px]' : 'hidden'}>
-                <p className='my-3 text-white text-xl font-bold tracking-widest'>Redesigned Second Row</p>
-                <p className='text-white'>Seating for three adults, with extra legroom, headroom and a stowable armrest with integrated storage and wireless charging.</p>
+            <div className={video === '/modelS/Sv4.mp4' ? 'mt-5   max-w-[800px]' : 'hidden'}>
+                <p className='my-3 text-white font-bold tracking-widest'>Redesigned Second Row</p>
+                <p className='text-white text-sm'>Seating for three adults, with extra legroom, headroom and a stowable armrest with integrated storage and wireless charging.</p>
             </div>
-            <div className={video === '/modelS/Sv5.mp4' ? 'mt-5  max-w-[1000px]' : 'hidden'}>
-                <p className='my-3 text-white text-xl font-bold tracking-widest '>Console-Grade Gaming</p>
-                <p className='text-white'>Up to 10 teraflops of processing power unlock in-car gaming on-par with today’s newest consoles. Play from any seat with wireless controller and headset compatibility.</p>
+            <div className={video === '/modelS/Sv5.mp4' ? 'mt-5  max-w-[800px]' : 'hidden'}>
+                <p className='my-3 text-white font-bold tracking-widest '>Console-Grade Gaming</p>
+                <p className='text-white text-sm'>Up to 10 teraflops of processing power unlock in-car gaming on-par with today’s newest consoles. Play from any seat with wireless controller and headset compatibility.</p>
             </div>
             </div>
             

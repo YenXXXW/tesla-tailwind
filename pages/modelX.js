@@ -12,10 +12,16 @@ import Freedom from "../components/modelS/freedom"
 import Features from "../components/modelS/features"
 import Specs from "../components/modelX/specs";
 import Last from "../components/modelX/last";
+import Head from "next/head";
 
 function ModelX() {
     return (
-        <div>
+        <div className="bg-white">
+            <Head>
+                <title>Model X | Tesla</title>
+                <meta name="description" content="Tesla clone by wai" />
+                <link rel="icon" href="/tesla-logo-red.png" />
+            </Head> 
             <FirstPage />
             <AllNewInterior />
             <ImageSelect />

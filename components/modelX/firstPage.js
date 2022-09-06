@@ -90,7 +90,7 @@ const FirstPage = () => {
                 <h2 className="text-center font-bold">Model X</h2>
                 <p className="text-center text-xl ">Plaid</p>
             </motion.div>
-            <div className="absolute w-full bottom-[20%] xs:bottom-[15%] text-white font-bold  tracking-wide flex flex-col
+            <div className="absolute w-full bottom-[20%] xs:bottom-[15%] text-white tracking-wide flex flex-col
              px-3 lg:flex-row lg:px-48">
                 <div className="flex justify-around md:w-[70%] md:mx-auto">
                     <motion.div variants={variant1} initial='hidden' animate={specControls}>
@@ -114,7 +114,7 @@ const FirstPage = () => {
                         <p className="text-center mt-2 text-xs font-normal lg:text-sm ">Peak Power</p>
                     </motion.div>
                 </div>
-                <motion.button className="mt-3 border-[4px] h-10 rounded-full sm:mx-auto sm:w-[200px] hover:text-gray-800 hover:bg-white"
+                <motion.button className="mt-3 border-[4px] h-9 rounded-full sm:mx-auto sm:w-[200px] hover:text-gray-800 hover:bg-white"
                 variants={variant5} initial='hidden' animate={specControls}>ORDER NOW</motion.button>
             </div>
         </div>

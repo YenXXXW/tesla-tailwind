@@ -8,10 +8,16 @@ import PowerWall from '../components/solarPannels/powerWall';
 import Savings from '../components/solarPannels/savings';
 import Specs from '../components/solarPannels/specs';
 import Efficiency from "../components/solarRoof/efficiency";
+import Head from 'next/head';
 
 function SolarPanels() {
     return (
-        <div>
+        <div className='bg-white'>
+            <Head>
+                <title>Solar Panels | Tesla</title>
+                <meta name="description" content="Tesla clone by wai" />
+                <link rel="icon" href="/tesla-logo-red.png" />
+            </Head> 
             <FirstPage />
             <Savings />
             <Design />
@@ -20,8 +26,7 @@ function SolarPanels() {
             <Efficiency />
             <Experience />
             <Specs />
-            <Last />
-            
+            <Last />            
         </div>
     );
 }

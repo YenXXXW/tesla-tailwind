@@ -58,17 +58,17 @@ function IndexComp({photo , model , order  }) {
             <Image src={photo} layout='fill' objectFit='cover' />
             
         <motion.div variants={GeneralVariants} initial='hidden' animate={controls}
-        className=' px-5 py-2  absolute top-[15%] w-full '>
-            <h1 className="text-center  ">{model}</h1>
-            <p className={order ? 'text-center  text-lg' : 'hidden'}>Order online for <a>Touchless Delivery</a></p>
-            <p className={model === 'Solar Panels'? 'text-center text-lg' : 'hidden' }>Lowest cost Solar Panels in America</p>
-            <p className={model === 'Solar Roof'?  'text-center  text-lg' : 'hidden' }>Produce Clean Energy From Your Roof</p>
+        className=' px-5 py-2  absolute top-[16%] w-full '>
+            <p className="text-center text-4xl ">{model}</p>
+            <p className={order ? 'text-center text-sm' : 'hidden'}>Order online for <a>Touchless Delivery</a></p>
+            <p className={model === 'Solar Panels'? 'text-center text-sm' : 'hidden' }>Lowest cost Solar Panels in America</p>
+            <p className={model === 'Solar Roof'?  'text-center text-sm' : 'hidden' }>Produce Clean Energy From Your Roof</p>
         </motion.div>
         <div className="bottom-[20%] sm:bottom-[15%] absolute w-full  flex flex-col md:flex-row md:px-[200px] md:justify-between">
-            <div className="py-2 text-center mx-auto w-5/6 px-5 rounded-full bg-gray-900 text-white md:w-[200px] lg:w-2/5">
+            <div className="py-1 text-center mx-auto w-4/6 px-5 rounded-full bg-gray-600 text-white font-light md:w-[200px] lg:w-[35%]">
                 Custom Order
             </div>
-            <div className="py-2 text-center mx-auto mt-3 w-5/6 px-5 rounded-full text-gray-900 bg-white md:mt-0 md:w-[200px] lg:w-2/5">
+            <div className="py-1 text-center mx-auto mt-3 w-5/6 px-5 rounded-full text-gray-600 bg-white md:mt-0 md:w-[200px] lg:w-[35%]">
                 Existing Inventory
             </div>
         </div>

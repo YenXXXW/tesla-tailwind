@@ -91,15 +91,15 @@ const FirstPage = () => {
                 {/* first flex div */}
                 <div className="flex justify-around text-center w-full">
                     <div>
-                        <p className="ml-2 font-bold text-xl xs:text-2xl xl:text-3xl">73 cu ft</p>
+                        <p className="ml-2 text-xl xs:text-2xl xl:text-3xl">73 cu ft</p>
                         <p className='text-xs lg:text-sm'>Cargo Space</p>
                     </div>
                     <motion.div variants={variant2} initial='hidden' animate={modelControls}>
-                        <p className="ml-2 font-bold text-xl xs:text-2xl xl:text-3xl">330 mi</p>
+                        <p className="ml-2 text-xl xs:text-2xl xl:text-3xl">330 mi</p>
                         <p className='text-xs  lg:text-sm'>Range (EPA est.)</p>
                     </motion.div>
                     <motion.div  variants={variant3} initial='hidden' animate={modelControls}>
-                        <p className="ml-2 font-bold text-xl xs:text-2xl xl:text-3xl">AWD</p>
+                        <p className="ml-2 text-xl xs:text-2xl xl:text-3xl">AWD</p>
                         <p className='text-xs  lg:text-sm'>Dual Motor</p>
                     </motion.div>
                 </div>

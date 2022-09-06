@@ -2,6 +2,7 @@ import Image from "next/image";
 import { motion , useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import Navbar from "../navbar";
 
 const FirstPage = () => {
 
@@ -81,13 +82,14 @@ const FirstPage = () => {
     return (
         <>
         <div className="h-screen relative " ref= {ref}>
+            <Navbar fill={'black'} position={'absolute'}/>
             <Image src={'/modelS/S1.jpg'} layout='fill' objectFit="cover"/>
             <motion.div className="w-full absolute top-[15%]"
             variants={variant1} initial='hidden' animate={modelControls}>
                 <h2 className="text-center font-bold">Model S</h2>
                 <p className="text-center text-xl">Plaid</p>
             </motion.div>
-            <div className="absolute w-full bottom-[20%] xs:bottom-[15%] text-white font-bold  tracking-wide flex flex-col
+            <div className="absolute w-full bottom-[20%] xs:bottom-[15%] text-white  tracking-wide flex flex-col
              px-3 lg:flex-row lg:px-48">
                 <div className="flex justify-around md:w-[70%] md:mx-auto">
                     <motion.div variants={variant1} initial='hidden' animate={specControls}>

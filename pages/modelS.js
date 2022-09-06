@@ -21,28 +21,14 @@ import Freedom from "../components/modelS/freedom";
 
 function ModelS() {
 
-    const [scrollY , setScrollY] = useState(0)
-
-    useEffect(()=>{
-        const handleScroll =()=>{
-            setScrollY(window.scrollY)
-        }
-        handleScroll()
-        window.addEventListener( 'scroll' , handleScroll);
-        return()=>{
-            window.removeEventListener('scroll' , handleScroll)
-        }
-    })
+    
     return (
-        <div className="w-full">
+        <div className="w-full bg-white">
             <Head>
                 <title>Model S | Tesla</title>
                 <meta name="description" content="Tesla clone by wai" />
                 <link rel="icon" href="/tesla-logo-red.png" />
-            </Head>
-            <div className={scrollY > 50 ? "hidden" : 'block'}>
-                <Navbar fill='black' position={'fixed'}/>
-            </div>
+            </Head>           
                        
             <FirstPage />
             <InteriorTheFuture />

@@ -119,8 +119,8 @@ const Safety = () => {
 
 
     return (
-        <div className="ml-10 mt-[40px]  flex flex-col lg:flex-row-reverse mb-16 justify-between">
-            <div className="relative lg:w-[65%] mt-24 xs:mt-0 bg-white" >              
+        <div className="ml-10 mt-[40px]  flex flex-col lg:flex-row-reverse mb-16 justify-between bg-white">
+            <div className="relative lg:w-[65%] mt-24 xs:mt-0 " >              
                 
                 <div className="absolute hidden h-[500px] z-30 w-full top-[30px] xl:block">
                     <motion.p variants={Svgvariant1} initial='hidden' animate={SvgControls}
@@ -198,16 +198,16 @@ const Safety = () => {
                     <motion.p className="font-light text-xl"
                      variants={variant1} initial='hidden' animate={Controls1}
                     >Safety</motion.p>
-                    <motion.h2 className="font-bold"
+                    <motion.p className="text-2xl md:text-3xl mb-3"
                      variants={variant2} initial='hidden' animate={Controls2}
-                    >High Impact Protection</motion.h2>
+                    >High Impact Protection</motion.p>
                     <motion.button  variants={variant4} initial='hidden' animate={Controls4}
                      className="hidden  mx-auto justify-center md:mx-0  border-[4px] border-gray-700 
                     w-5/6 md:w-[230px] rounded-full hover:text-white hover:bg-gray-700 md:flex mt-4 lg:hidden ">ORDER NOW</motion.button>
                 </div>
                 <div>
                     <motion.p  variants={variant3} initial='hidden' animate={Controls3}
-                     className="mt-4 text-xs xs:text-sm xl:text-lg max-w-4xl md:text-lg">Model S is built from the ground up as an electric vehicle,
+                     className="mt-4 text-xs sm:text-sm xl:text-lg max-w-4xl md:text-lg">Model S is built from the ground up as an electric vehicle,
                     with a high-strength architecture and floor-mounted battery pack for
                     incredible occupant protection and low rollover risk. Every new Model S
                     includes Tesla&apos;s latest active safety features, such as Automatic Emergency Braking, at no extra cost.</motion.p>

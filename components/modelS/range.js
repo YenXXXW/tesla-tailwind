@@ -83,14 +83,14 @@ const Range =()=>{
             <motion.div variants={variant1} initial='hidden' animate={TopicControls}
              className="lg:flex xl:flex-col xl:w-1/4">
                 <div className="ml-10 mt-3 md:my-8 lg:ml-[100px] xl:ml-10 " ref={TopicRef}>
-                    <p className="font-light text-[22px]">Range</p>
-                    <h2 className="font-bold mb-8">Go Anywhere</h2> 
+                    <p className="font-light text-xl">Range</p>
+                    <h2 className="text-2xl md:text-3xl mb-8">Go Anywhere</h2> 
                     <div className="mt-4 hidden lg:block xl:hidden lg:w-[250px] text-center border-gray-800  border-[4px] rounded-full py-1  hover:bg-gray-800 hover:text-white ">
                         ORDER NOW
                     </div>               
                 </div>
-                <div className="ml-10 mr-10  max-w-4xl lg:my-auto xl:my-2 xl:mr-0 text-sm">
-                    <p>With up to 405 miles of estimated range and access to the world&apos;s largest and most powerful fast charging network, you&apos;ll spend less time plugged in and more time on the road.</p>
+                <div className=" pl-8  max-w-4xl lg:my-auto xl:my-2 xl:pr-0 pr-5">
+                    <p className="sm:text-sm">With up to 405 miles of estimated range and access to the world&apos;s largest and most powerful fast charging network, you&apos;ll spend less time plugged in and more time on the road.</p>
                 </div>
                 <div className="ml-10 my-3 mx-auto w-[65%] text-center border-gray-800  border-[4px] rounded-full py-1 hover:bg-gray-800 hover:text-white md:w-[200px] md:ml-10 lg:hidden xl:block">
                     ORDER NOW

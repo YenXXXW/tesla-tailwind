@@ -91,7 +91,7 @@ function Features() {
 
 
     return (
-        <div className="py-10">
+        <div className="py-10 bg-white">
         <div className="max-w-4xl ml-8 md:ml-28  lg:ml-[100px] px-4" ref={ref}>
             <motion.p className=" font-bold text-2xl my-4 "  variants={variant1} initial='hidden' animate={Controls}>Features</motion.p>
             <motion.p

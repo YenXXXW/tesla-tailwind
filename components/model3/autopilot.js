@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { IoIosArrowUp } from 'react-icons/io'
 import { motion , useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
@@ -75,7 +77,12 @@ const Autopilot = () => {
 
     return (
         <>
-        <div className="bg-white relative h-[45vh] lg:h-[60vh] py-10">
+        <div className="bg-white relative h-[45vh] lg:h-[60vh] py-10" id='autopilot'>
+            <div className="absolute right-[2%] top-[2%] z-30">
+                <Link href='/model3/#intro'>
+                    <IoIosArrowUp size='25' className="text-black cursor-pointer"/>
+                </Link>
+            </div>
             <Image src='/modelS/36.jpg'layout="fill" objectFit="cover"/>
             <div className="absolute w-full bottom-5 lg:top-5">
                 <div className="flex flex-row text-center justify-between  mx-auto w-[75%] xs:w-[60%] md:w-1/2 lg:flex-col lg:ml-10 lg:text-start" ref={TopicRef}>

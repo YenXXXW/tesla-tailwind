@@ -1,4 +1,5 @@
-import Image from "next/image";
+import Link from "next/link";
+import { IoIosArrowUp } from 'react-icons/io'
 import { useEffect } from "react";
 import { motion , useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -66,7 +67,12 @@ const Savings = () => {
 
     
     return (
-        <div className="w-full flex flex-col lg:flex-row-reverse pb-10">
+        <div className="w-full mt-2 flex flex-col lg:flex-row-reverse relative pb-10" id='savings'>
+            <div className="absolute right-[2%] top-[2%] z-30">
+                <Link href='/solarPanels/#intro'>
+                    <IoIosArrowUp size='25' className="text-black cursor-pointer"/>
+                </Link>
+            </div>
             <div className="w-full lg:w-[70%] " ref={ref}>
                 <video src='/solarPannel/SPv1.mp4'  autoPlay loop defaultmuted='true' width='940px'/>
             </div>

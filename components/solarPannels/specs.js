@@ -1,8 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
+import { IoIosArrowUp } from 'react-icons/io'
 
 const Specs = () => {
     return ( 
-        <div className="sm:h-screen bg-black flex flex-col sm:flex-row pb-5 pl-7 ">
+        <div className="sm:h-screen relative bg-black flex flex-col sm:flex-row pb-5 mt-2 pl-7" id='specs'>
+            <div className="absolute right-[2%] top-[2%] z-30">
+                <Link href='/solarPanels/#intro'>
+                    <IoIosArrowUp size='25' className="text-white cursor-pointer"/>
+                </Link>
+            </div>            
             <div className=" flex  justify-center h-[300px] sm:hidden ">
                 <Image src='/solarPannel/SP6.jpg' width={'400px'} height={'200px'} className='align-middle '/>
             </div>

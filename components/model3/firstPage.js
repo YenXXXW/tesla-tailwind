@@ -79,7 +79,7 @@ const FirstPage = () => {
     },[inView])
 
     return ( 
-        <div className="h-screen relative text-white tracking-wide" ref={ref}>
+        <div className="h-screen relative text-white tracking-wide" ref={ref} id='intro'>
             <Navbar fill={'white'} position={'absolute'}/>
             <Image src='/model3/31.jpg' layout="fill" objectFit="cover"/>
             <motion.div variants={variant1} initial='hidden' animate={modelControls}

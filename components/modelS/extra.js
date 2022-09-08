@@ -1,98 +1,43 @@
-import Image from "next/image";
-import { useEffect } from "react";
-import { motion , useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import Head from 'next/head'
+import Image from 'next/image'
+import IndexComp from '../components/indexComp'
+import Navbar from '../components/navbar'
+import { useAnimation } from'framer-motion'
+import IndexScroll from '../components/indexScrool'
 
-const Savings = () => {
+export default function Home() {
+  const Scontrols = useAnimation()
+  
 
-    const variant1 ={
-        hidden : {
-            y: 50 , opacity : 0
-        }, 
-        visible : {
-            y : 0 , opacity : 1,
-            transition : {
-                delay : 0.2
-            }
-        }
-    }
-    const variant2 ={
-        hidden : {
-            y: 50 , opacity : 0
-        }, 
-        visible : {
-            y : 0 , opacity : 1,
-            transition : {
-                delay : 0.35
-            }
-        }
-    }
-    const variant3 ={
-        hidden : {
-            y: 50 , opacity : 0
-        }, 
-        visible : {
-            y : 0 , opacity : 1,
-            transition : {
-                delay : 0.50
-            }
-        }
-    }
-    const variant4 ={
-        hidden : {
-            y: 50 , opacity : 0
-        }, 
-        visible : {
-            y : 0 , opacity : 1,
-            transition : {
-                delay : 0.65
-            }
-        }
-    }
 
-    const Controls = useAnimation()        
-    const { ref , inView  } = useInView()
-
-    useEffect(()=>{
-        if (inView){
-            Controls.start("visible")
-        }
-        if(!inView){
-            Controls.start('hidden')
-        }
+  return (
+    <div className='snap-y snap-mandatory overflow-scroll'>
+      <Head>
+        <title>Electric Cars, Solar & Clean Energy</title>
+        <meta name="description" content="Tesla clone by wai" />
+        <link rel="icon" href="/tesla-logo-red.png" />
+      </Head>
        
-    },[inView])
-    
-
-    
-    return (
-        <div className="w-full h-screen flex flex-col lg:flex-row-reverse pb-10">
-            <div className="w-full lg:w-[70%] " ref={ref}>
-                <video src='/SolarPannel/SPv1.mp4'  autoPlay loop defaultmuted='true' width='940px'/>
-            </div>
-            <div className="ml-8 flex flex-col sm:flex-row lg:flex-col lg:w-[29%] pt-3  lg:h-screen">
-                <div className="min-w-[250px] sm:my-auto lg:my-0">
-                    <motion.p  variants={variant1} initial='hidden' animate={Controls}>Savings</motion.p>
-                    <motion.p  variants={variant2} initial='hidden' animate={Controls}
-                    className="text-xl md:text-3xl font-bold lg:mb-3">Electricity For Less</motion.p>
-                    <motion.button  variants={variant4} initial='hidden' animate={Controls}
-                     className="hidden sm:block lg:hidden border-[3px]  mt-5 border-gray-800 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-800">
-                        See your Savings
-                    </motion.button>
-                </div>
-                <div className="sm:my-auto lg:my-0 pr-6">
-                    <motion.p  variants={variant3} initial='hidden' animate={Controls}
-                    className="text-sm ">Use solar energy to power your home and reduce your dependence on the grid. Purchase solar at the lowest price of any national provider with Tesla&apos;s price match guarantee and take control of your monthly electricity bill. Learn more about your potential savings in our Design Studio.</motion.p>
-                    <motion.button variants={variant4} initial='hidden' animate={Controls}
-                     className="sm:hidden lg:block lg:mt-[280px] border-[3px]  mt-3 border-gray-800 h-8 rounded-full w-[200px] hover:text-white hover:bg-gray-800">
-                        See your Savings
-                    </motion.button>
-                </div>
-                
-            </div>
-        </div>
-
-    );
+      <Navbar fill='black' position={'fixed'}/>
+      <IndexScroll />
+      <div className="snap-start">
+        <IndexComp photo={'/index/1.jpg'} model={'Model 3'} order={true}/>
+      </div>
+      <div className="snap-start">
+        
+      </div>
+      <div className="snap-start">
+        <IndexComp photo={'/index/3.jpg'} model={'Model S'} order={true}/>
+      </div>
+      <div className="snap-start">
+        <IndexComp photo={'/index/4.jpg'} model={'Model X'} order={true}/>
+      </div>
+      <div className="snap-start">
+        <IndexComp photo={'/index/5.jpg'} model={'Solar Panels'} order={false}/>  
+      </div>
+      <div  className="snap-start">
+        <IndexComp photo={'/index/6.jpg'} model={'Solar Roof'} order={false}/>
+      </div>       
+    </div>  
+  )
 }
- 
-export default Savings;

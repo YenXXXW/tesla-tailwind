@@ -2,6 +2,8 @@ import Image from "next/image";
 import { useEffect } from "react";
 import { motion , useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Link from "next/link";
+import { IoIosArrowUp } from 'react-icons/io'
 
 const  Experience = () => {
     const variant1 ={
@@ -65,7 +67,12 @@ const  Experience = () => {
     
 
     return (
-        <div className="w-full my-10 h-screen">
+        <div className="w-full my-10 h-screen relative" id='experience'>
+            <div className="absolute right-[2%] top-[2%] z-30">
+                <Link href='/solarPanels/#intro'>
+                    <IoIosArrowUp size='25' className="text-white cursor-pointer"/>
+                </Link>
+            </div>     
             <div className="w-full h-[60vh] sm:h-[50vh] lg:h-[70vh] relative" ref={ref}>
                 <Image src='/SolarRoof/SR5.jpg' layout='fill' objectFit='cover'/>
             </div>

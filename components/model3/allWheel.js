@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { IoIosArrowUp } from 'react-icons/io'
 import { motion , useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
@@ -67,7 +69,12 @@ const AllWheel = () => {
 
     return ( 
         <div className="h-screen"  >
-            <div className="h-[45vh] sm:h-[60vh] w-full relative">
+            <div className="h-[45vh] sm:h-[60vh] w-full relative" id='allwheel'>
+                <div className="absolute right-[2%] top-[2%] z-30">
+                    <Link href='/model3/#intro'>
+                        <IoIosArrowUp size='25' className="text-white cursor-pointer"/>
+                    </Link>
+                </div>
                 <div className="absolute z-30 bottom-5 w-full text-white">
                     <div className="flex justify-around text-center w-full lg:px-20" ref={ref}>
                         <motion.div variants={variant1} initial='hidden' animate={modelControls}>

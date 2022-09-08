@@ -1,8 +1,14 @@
 import Link from "next/link";
+import { IoIosArrowUp } from 'react-icons/io'
 
 const Last = () => {
     return (
-        <div className="h-screen flex flex-col text-white bg-black">
+        <div className="h-screen flex flex-col text-white bg-black" id="order">
+            <div className="absolute right-[2%] top-[2%] z-30">
+                <Link href='/solarPanels/#intro'>
+                    <IoIosArrowUp size='25' className="text-white cursor-pointer"/>
+                </Link>
+            </div>    
             <div className="h-[65vh] sm:h-[90vh] w-full justify-center flex">
                 <div className=" flex flex-col justify-center sm:w-[300px]">
                     <p className="text-3xl text-center">Transform your Roof</p>

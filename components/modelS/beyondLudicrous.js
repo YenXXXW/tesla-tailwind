@@ -63,7 +63,7 @@ const BeyondLudicrious =()=>{
 
     return(
         <>
-        <div className="bg-white h-[60vh] relative ">
+        <div className="bg-white h-[60vh] relative " id='Sbeyond'>
             <Image src='/modelS/S5.jpg' layout='fill' objectFit='cover'/>
             <div className="absolute bottom-12 w-full">
                 <div className="flex justify-around text-white xl:mx-40 lg:mx-52"  ref={ref}>

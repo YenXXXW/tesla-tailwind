@@ -65,7 +65,7 @@ const PowerWall = () => {
     
 
     return (
-        <div className="w-full my-10 ">
+        <div className="w-full my-10 " id='powerwall'>
             <div className="w-full h-[60vh] lg:h-[70vh] relative" ref={ref}>
                 <Image src='/solarPannel/SP3.jpg' layout='fill' objectFit='cover'/>
             </div>

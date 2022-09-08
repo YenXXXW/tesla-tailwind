@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { IoIosArrowUp } from 'react-icons/io'
 import { AiOutlineWifi } from 'react-icons/ai';
 import { motion , useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -68,8 +70,13 @@ const Interior = () => {
     },[inView])
 
     return ( 
-        <div className="h-screen flex flex-col" ref={ref}>        
-            <div className="h-[60vh] lg:h-[65vh] w-full relative">                
+        <div className="h-screen flex flex-col relative" ref={ref}>        
+            <div className="absolute right-[2%] top-[2%] z-40">
+                <Link href='/model3/#intro'>
+                    <IoIosArrowUp size='25' className="text-white cursor-pointer"/>
+                </Link>
+            </div>
+            <div className="h-[60vh] lg:h-[65vh] w-full relative" id='interior'>                
                 <div className="flex w-full justify-around z-30 absolute bottom-10 text-center text-white text-xs md:hidden">
                     <motion.div variants={variant1} initial='hidden' animate={modelControls}>
                         <p className="text-2xl font-bold">15 inch</p>

@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { IoIosArrowUp } from 'react-icons/io'
 import { motion , useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
@@ -86,9 +88,13 @@ const Safety = ({bottom}) => {
     },[inView])  
 
     return (
-        <div className="py-10 flex flex-col lg:flex-row " >
-            <div className="bg-white flex justify-center">
-                
+        <div className="py-10 flex flex-col lg:flex-row relative"  >
+            <div className="bg-white flex justify-center" id='safety'>
+                <div className="absolute right-[2%] top-[2%] z-30">
+                    <Link href='/model3/#intro'>
+                        <IoIosArrowUp size='25' className="text-black cursor-pointer"/>
+                    </Link>
+                </div>
                 <div className="relative w-[300px] md:w-[400px] lg:w-[73vw] " >
                     <p className="absolute text-2xxs z-40 left-[52%] top-[10%] md:text-sm ">Rigid Structure</p>
                     <p className="absolute text-2xxs z-40 left-[8%] top-[30%] lg:left-[14%] lg:top-[37%] md:text-sm ">Impact Protection</p>

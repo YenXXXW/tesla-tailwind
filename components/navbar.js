@@ -39,16 +39,16 @@ const Navbar = ({fill , position }) => {
                 <Link href='/modelY'><p className='px-2 py-1 no-underline  rounded-lg  cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>
                     Model Y</p>
                 </Link>
-                <Link href='/solarPanels'><p className='px-2 py-1 no-underline  rounded-lg  cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>
-                    Solar Panels</p>
-                </Link>
                 <Link href='/solarRoof'><p className='px-2 py-1  no-underline  rounded-lg  cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>
                     Solar Roof</p>
                 </Link>
+                <Link href='/solarPanels'><p className='px-2 py-1 no-underline  rounded-lg  cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>
+                    Solar Panels</p>
+                </Link>                
             </div>
-            <div className=' flex justify-around w-[300px] '>
+            <div className=' flex justify-around w-[250px]'>
                 <div className='w-[100px] lg:hidden'></div>
-                <div className='hidden lg:flex justify-around w-[200px]'>
+                <div className='hidden lg:flex justify-between w-[150px]'>
                     <p className='px-2 py-1  no-underline  rounded-lg  cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>Shop</p>
                     <p className='px-2 py-1  no-underline  rounded-lg  cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>Account</p>
                 </div>
@@ -79,12 +79,13 @@ const Navbar = ({fill , position }) => {
                     <Link href={'/modelY'}>
                         <p className='no-underline  px-5 py-1 rounded-lg my-3 cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>Model Y</p>
                     </Link>
-                    <Link href={'/solarPanels'}>
-                        <p className='no-underline  px-5 py-1 rounded-lg my-3 cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>Solar Panels</p>
-                    </Link>
                     <Link href={'/solarRoof'}>
                         <p className='no-underline  px-5 py-1 rounded-lg my-3 cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>Solar Roof</p>
                     </Link>
+                    <Link href={'/solarPanels'}>
+                        <p className='no-underline  px-5 py-1 rounded-lg my-3 cursor-pointer hover:backdrop-blur-sm hover:bg-black/10'>Solar Panels</p>
+                    </Link>
+                    
                 </div>
                 <div className='flex flex-col ml-10  text-black '>
                     <Link href='/'>

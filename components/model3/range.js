@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { IoIosArrowUp } from 'react-icons/io'
 import { motion , useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
@@ -68,8 +70,13 @@ const Range = () => {
     },[inView])
 
     return ( 
-        <div className="mt-5  flex flex-col lg:flex-row" >
-            <div className="relative h-[55vh] md:h-[60vh] w-full lg:h-[568px] lg:w-[70vw]">
+        <div className="mt-5 relative flex flex-col lg:flex-row" >
+            <div className="absolute right-[2%] top-[2%] z-30">
+                <Link href='/model3/#intro'>
+                    <IoIosArrowUp size='25' className="text-black cursor-pointer"/>
+                </Link>
+            </div>
+            <div className="relative h-[55vh] md:h-[60vh] w-full lg:h-[568px] lg:w-[70vw]" id='range'>
                 <div className="flex w-full justify-around absolute bottom-10 text-white z-30 text-center" ref={ref}>
                     <motion.div variants={variant1} initial='hidden' animate={modelControls}>
                         <p className="text-xl xs:text-2xl xl:text-3xl">358 mi</p>

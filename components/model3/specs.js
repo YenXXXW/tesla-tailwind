@@ -1,4 +1,6 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import Link from "next/link";
+import { IoIosArrowUp } from 'react-icons/io';
 import { useState , useEffect} from 'react';
 import { motion , useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -90,7 +92,12 @@ function Specs() {
     },[inView , specInView1 , specInView2 , specInView3 ])
     return (
         <>
-        <div className='bg-black lg:flex md:h-screen' ref={ref}>
+        <div className='bg-black md:flex mt-2 relative' ref={ref} id='specs'>
+            <div className="absolute right-[2%] top-[2%] z-30">
+                <Link href='/model3/#intro'>
+                    <IoIosArrowUp size='25' className="text-white cursor-pointer"/>
+                </Link>
+            </div>
             <motion.div variants={variant1} initial='hidden' animate={Controls}
              className='flex m-auto h-[450px] lg:w-2/5 '>
                 <Image src='/modelS/spec.jpg' width='600px' height={'450px'}/>
@@ -100,16 +107,19 @@ function Specs() {
                     <span className='text-2xl font-bold '>Model 3 </span>
                     <span className='text-2xl'>Specs</span>
                 </motion.div>
-                <motion.button className={model === 'S' ? ' text-sm w-[150px] h-7 border-[3px] border-white mt-2 rounded-full xs:w-[200px] cursor-pointer'
-                :'text-sm  w-[150px] h-7 border-[3px] border-gray-700 mt-2 rounded-full xs:w-[200px] cursor-pointer'}onClick={()=>setModel('S')}
-                 variants={variant2} initial='hidden' animate={Controls}>
-                    Performance
-                </motion.button>
-                <motion.button className={model === 'SP' ? 'text-sm  ml-4 w-[150px] h-7 border-[3px] border-white rounded-full xs:w-[200px] '
-                :'text-sm  ml-4 w-[150px] h-7 border-[3px] border-gray-700 rounded-full xs:w-[200px] '}onClick={()=>setModel('SP')}
-                variants={variant2} initial='hidden' animate={Controls}>
-                    Long Range AWD
-                </motion.button>
+                <div>
+                    <motion.button className={model === 'S' ? ' text-sm w-[150px] h-7 border-[3px] border-white mt-2 rounded-full xs:w-[200px] cursor-pointer'
+                    :'text-sm  w-[150px] h-7 border-[3px] border-gray-700 mt-2 rounded-full xs:w-[200px] cursor-pointer'}onClick={()=>setModel('S')}
+                    variants={variant2} initial='hidden' animate={Controls}>
+                        Performance
+                    </motion.button>
+                    <motion.button className={model === 'SP' ? 'text-sm  ml-4 w-[150px] h-7 border-[3px] border-white rounded-full xs:w-[200px] '
+                    :'text-sm  ml-4 w-[150px] h-7 border-[3px] border-gray-700 rounded-full xs:w-[200px] '}onClick={()=>setModel('SP')}
+                    variants={variant2} initial='hidden' animate={Controls}>
+                        Long Range AWD
+                    </motion.button>
+                </div>
+                
                 
                 <motion.button className={model === 'RW' ? 'text-sm  mt-1 w-[150px] h-7 border-[3px] border-white rounded-full xs:w-[200px]'
                 :'text-sm  mt-1 w-[150px] h-7 border-[3px] border-gray-700 rounded-full xs:w-[200px] '}onClick={()=>setModel('RW')}

@@ -1,7 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter } from 'next/router'
 
 const Scroll = () => {
+
+    const router = useRouter()
+
+    const [Yheight , setYheight] = useState(0)
+    useEffect(()=>{
+        const handleScroll=()=>{
+            setYheight(window.innerHeight)
+            console.log(Yheight)
+        }
+        window.addEventListener('scroll' , handleScroll)
+        return()=>window.removeEventListener('scroll' , handleScroll)
+    })
     const [name , setName ] = useState({
         name1 : false ,
         name2 : false ,
@@ -16,7 +29,7 @@ const Scroll = () => {
 
     const [ page ,setPage ] = useState('model3')
     return (
-        <div className="hidden text-white text-2xxs lg:flex fixed left-[1%] z-50 h-screen flex-col justify-center">
+        <div className="hidden text-white text-2xxs md:flex fixed left-[1%] z-50 h-screen flex-col justify-center">
             
             <div className="flex flex-row ">
                 <Link href='/model3/#intro'>

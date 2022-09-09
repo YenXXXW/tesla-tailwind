@@ -10,11 +10,13 @@ import LastPage from "../components/model3/last";
 import Scroll from "../components/model3/3Scroll"
 import Head from "next/head";
 
+
 function Model3() {
 
     
     return (
-        <div className="bg-white lg:h-screen lg:overflow-y-hidden">  
+        <div className="h-[100vh]">
+            <div className="bg-white scrollbar-hide overflow-y-hidden ">  
             <Head>
                 <title>Model 3 | Tesla</title>
                 <meta name="description" content="Tesla clone by wai" />
@@ -31,7 +33,8 @@ function Model3() {
             <Specs />
             <LastPage />
         </div>
-        
+
+        </div>        
     );
 }
 

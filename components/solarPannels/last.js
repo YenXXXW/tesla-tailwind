@@ -3,7 +3,7 @@ import { IoIosArrowUp } from 'react-icons/io'
 
 const Last = () => {
     return (
-        <div className="h-screen flex flex-col text-white bg-black" id="order">
+        <div className="h-screen flex flex-col text-white bg-black relative" id="order">
             <div className="absolute right-[2%] top-[2%] z-30">
                 <Link href='/solarPanels/#intro'>
                     <IoIosArrowUp size='25' className="text-white cursor-pointer"/>

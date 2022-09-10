@@ -89,7 +89,7 @@ function IndexComp({photo , model , order , arrow}) {
     },[ inView1])
     return (        
             <div className='relative z-1 h-screen' >
-                <Image src={photo} layout='fill' objectFit='cover' />                
+                <Image src={photo} layout='fill' objectFit='cover'/>                
                 <motion.div variants={GeneralVariants} initial='hidden' animate={controls}
                 className=' px-5 py-2  absolute top-[16%] w-full '>
                     <p className="text-center text-4xl " ref={ref1}>{model}</p>

@@ -10,11 +10,11 @@ const Scroll = () => {
     useEffect(()=>{
         const handleScroll=()=>{
             setYheight(window.innerHeight)
-            console.log(Yheight)
+            console.log(window.scrollY)
         }
         window.addEventListener('scroll' , handleScroll)
         return()=>window.removeEventListener('scroll' , handleScroll)
-    })
+    },)
     const [name , setName ] = useState({
         name1 : false ,
         name2 : false ,

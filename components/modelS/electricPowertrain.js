@@ -56,7 +56,7 @@ function ElectricPowerTrain() {
                 setImage('/modelS/S14.jpg')
             }
         },2900)
-        console.log(`thiis is ${inView2}`)
+
 
         return () => clearInterval(interval);
     },[inView2,image])

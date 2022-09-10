@@ -16,13 +16,12 @@ function Model3() {
     
     return (
         <div className="h-[100vh]">
-            <div className="bg-white scrollbar-hide overflow-y-hidden ">  
+            <div className="bg-white">  
             <Head>
                 <title>Model 3 | Tesla</title>
                 <meta name="description" content="Tesla clone by wai" />
                 <link rel="icon" href="/tesla-logo-red.png" />
             </Head>     
-            <Scroll />
             <FirstPage />
             <Safety bottom={'very low rollover risk'}/>
             <Performance />
